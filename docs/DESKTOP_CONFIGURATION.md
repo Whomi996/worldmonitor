@@ -1,10 +1,10 @@
-# Desktop Runtime Configuration Schema
+# 桌面运行时配置架构
 
-World Monitor desktop now uses a runtime configuration schema with per-feature toggles and secret-backed credentials.
+World Monitor 桌面现在使用运行时配置模式，其中包含每个功能的切换和秘密支持的凭据。
 
-## Secret keys
+## 密钥
 
-The desktop vault schema supports the following required keys used by services and relays:
+桌面保管库架构支持服务和中继使用的以下必需密钥：
 
 - `GROQ_API_KEY`
 - `OPENROUTER_API_KEY`
@@ -20,28 +20,28 @@ The desktop vault schema supports the following required keys used by services a
 - `AISSTREAM_API_KEY`
 - `VITE_WS_RELAY_URL`
 
-## Feature schema
+## 特征架构
 
-Each feature includes:
+每个功能包括：
 
-- `id`: stable feature identifier.
-- `requiredSecrets`: list of keys that must be present and valid.
-- `enabled`: user-toggle state from runtime settings panel.
-- `available`: computed (`enabled && requiredSecrets valid`).
-- `fallback`: user-facing degraded behavior description.
+- `id`：稳定特征标识符。
+- `requiredSecrets`：必须存在且有效的密钥列表。
+- `enabled`：运行时设置面板中的用户切换状态。
+- `available`：计算的 (`enabled && requiredSecrets valid`)。
+- `fallback`：面向用户的降级行为描述。
 
-## Desktop secret storage
+## 桌面秘密存储
 
-Desktop builds persist secrets in OS credential storage through Tauri command bindings backed by Rust `keyring` entries (`world-monitor` service namespace).
+桌面构建通过 Rust `keyring` 条目（`world-monitor` 服务命名空间）支持的 Tauri 命令绑定将机密保留在操作系统凭证存储中。
 
-Secrets are **not stored in plaintext files** by the frontend.
+前端**不将秘密存储在明文文件中**。
 
-## Degradation behavior
+## 降级行为
 
-If required secrets are missing/disabled:
+如果所需的机密丢失/禁用：
 
-- Summarization: Groq/OpenRouter disabled, browser model fallback.
-- FRED / EIA: economic and oil analytics return empty state.
-- Cloudflare / ACLED: outages/conflicts return empty state.
-- Wingbits: flight enrichment disabled, heuristic-only flight classification remains.
-- AIS / OpenSky relay: live tracking features are disabled cleanly.
+- 总结：Groq/OpenRouter 已禁用，浏览器模型回退。
+- FRED / EIA：经济和石油分析返回空状态。
+- Cloudflare / ACLED：中断/冲突返回空状态。
+- Wingbits：飞行丰富功能已禁用，启发式飞行分类仍然存在。
+- AIS / OpenSky 中继：实时跟踪功能被彻底禁用。

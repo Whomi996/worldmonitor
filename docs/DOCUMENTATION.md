@@ -1,434 +1,434 @@
-# World Monitor v2
+# 世界监视器 v2
 
-AI-powered real-time global intelligence dashboard aggregating news, markets, geopolitical data, and infrastructure monitoring into a unified situation awareness interface.
+由人工智能驱动的实时全球情报仪表板将新闻、市场、地缘政治数据和基础设施监控聚合到统一的态势感知界面中。
 
 🌐 **[Live Demo: worldmonitor.app](https://worldmonitor.app)** | 💻 **[Tech Variant: tech.worldmonitor.app](https://tech.worldmonitor.app)**
 
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
-![D3.js](https://img.shields.io/badge/D3.js-F9A03C?style=flat&logo=d3.js&logoColor=white)
-![Version](https://img.shields.io/badge/version-2.1.4-blue)
+__持有人_0__
+__持有人_0__
+__持有人_0__
+__持有人_0__
 
-![World Monitor Dashboard](../new-world-monitor.png)
+__持有人_0__
 
-## Platform Variants
+## 平台变体
 
-World Monitor runs two specialized variants from a single codebase, each optimized for different monitoring needs:
+World Monitor 从单个代码库运行两个专门的变体，每个变体都针对不同的监控需求进行了优化：
 
-| Variant | URL | Focus |
+|变体 |网址 |焦点|
 |---------|-----|-------|
-| **🌍 World Monitor** | [worldmonitor.app](https://worldmonitor.app) | Geopolitical intelligence, military tracking, conflict monitoring, infrastructure security |
-| **💻 Tech Monitor** | [tech.worldmonitor.app](https://tech.worldmonitor.app) | Technology sector intelligence, AI/startup ecosystems, cloud infrastructure, tech events |
+| **🌍世界监视器** | [worldmonitor.app](https://worldmonitor.app) |地缘政治情报、军事追踪、冲突监控、基础设施安全 |
+| **💻 技术监控** | [tech.worldmonitor.app](https://tech.worldmonitor.app) |科技行业情报、人工智能/初创生态系统、云基础设施、科技活动 |
 
-A compact **variant switcher** in the header allows seamless navigation between variants while preserving your map position and panel configuration.
+标题中的紧凑**变体切换器**允许在变体之间无缝导航，同时保留您的地图位置和面板配置。
 
 ---
 
-## World Monitor (Geopolitical)
+## 世界监测（地缘政治）
 
-The primary variant focuses on geopolitical intelligence, military tracking, and infrastructure security monitoring.
+主要变体侧重于地缘政治情报、军事跟踪和基础设施安全监控。
 
-### Key Capabilities
-- **Conflict Monitoring** - Active war zones, hotspots, and crisis areas with real-time escalation tracking
-- **Military Intelligence** - 220+ military bases, flight tracking, naval vessel monitoring, surge detection
-- **Infrastructure Security** - Undersea cables, pipelines, datacenters, internet outages
-- **Economic Intelligence** - FRED indicators, oil analytics, government spending, sanctions tracking
-- **Natural Disasters** - Earthquakes, severe weather, NASA EONET events (wildfires, volcanoes, floods)
-- **AI-Powered Analysis** - Focal point detection, country instability scoring, infrastructure cascade analysis
+### 关键功能
+- **冲突监控** - 活跃战区、热点地区和危机地区，并提供实时升级跟踪
+- **军事情报** - 220 多个军事基地、飞行跟踪、海军舰艇监控、激增检测
+- **基础设施安全** - 海底电缆、管道、数据中心、互联网中断
+- **经济情报** - FRED 指标、石油分析、政府支出、制裁跟踪
+- **自然灾害** - 地震、恶劣天气、NASA EONET 事件（野火、火山、洪水）
+- **人工智能支持的分析** - 焦点检测、国家不稳定评分、基础设施级联分析
 
-### Intelligence Panels
-| Panel | Purpose |
+### 情报面板
+|面板|目的|
 |-------|---------|
-| **AI Insights** | LLM-synthesized world brief with focal point detection |
-| **AI Strategic Posture** | Theater-level military force aggregation with strike capability assessment |
-| **Country Instability Index** | Real-time stability scores for 20 monitored countries |
-| **Strategic Risk Overview** | Composite risk score combining all intelligence modules |
-| **Infrastructure Cascade** | Dependency analysis for cables, pipelines, and chokepoints |
-| **Live Intelligence** | GDELT-powered topic feeds (Military, Cyber, Nuclear, Sanctions) |
+| **人工智能见解** |具有焦点检测功能的 LLM 合成世界简介 |
+| **人工智能战略态势** |战区级军事力量聚合与打击能力评估|
+| **国家不稳定指数** | 20 个受监控国家的实时稳定性评分 |
+| **战略风险概述** |结合所有情报模块的综合风险评分|
+| **基础设施级联** |电缆、管道和阻塞点的依赖性分析 |
+| **实时情报** | GDELT 支持的主题源（军事、网络、核、制裁）|
 
-### News Coverage
-80+ curated sources across geopolitics, defense, energy, think tanks, and regional news (Middle East, Africa, Latin America, Asia-Pacific).
+### 新闻报道
+涵盖地缘政治、国防、能源、智囊团和地区新闻（中东、非洲、拉丁美洲、亚太地区）的 80 多个精选资源。
 
 ---
 
-## Tech Monitor
+## 技术监控
 
-The tech variant ([tech.worldmonitor.app](https://tech.worldmonitor.app)) provides specialized layers for technology sector monitoring.
+技术变体 ([tech.worldmonitor.app](https://tech.worldmonitor.app)) 为技术部门监控提供专门的层。
 
-### Tech Ecosystem Layers
-| Layer | Description |
+### 技术生态系统层
+|层 |描述 |
 |-------|-------------|
-| **Tech HQs** | Headquarters of major tech companies (Big Tech, unicorns, public companies) |
-| **Startup Hubs** | Major startup ecosystems with ecosystem tier, funding data, and notable companies |
-| **Cloud Regions** | AWS, Azure, GCP data center regions with zone counts |
-| **Accelerators** | Y Combinator, Techstars, 500 Startups, and regional accelerator locations |
-| **Tech Events** | Upcoming conferences and tech events with countdown timers |
+| **技术总部** |主要科技公司总部（大型科技公司、独角兽、上市公司）|
+| **创业中心** |主要初创企业生态系统，包括生态系统层级、融资数据和知名公司 |
+| **云区域** |具有区域计数的 AWS、Azure、GCP 数据中心区域 |
+| **加速器** | Y Combinator、Techstars、500 Startups 和区域加速器地点 |
+| **科技活动** |即将举行的会议和技术活动，带有倒计时器 |
 
-### Tech Infrastructure Layers
-| Layer | Description |
+### 技术基础设施层
+|层 |描述 |
 |-------|-------------|
-| **AI Datacenters** | 111 major AI compute clusters (≥10,000 GPUs) |
-| **Undersea Cables** | Submarine fiber routes critical for cloud connectivity |
-| **Internet Outages** | Network disruptions affecting tech operations |
+| **人工智能数据中心** | 111个主要AI计算集群（≥10,000个GPU）|
+| **海底电缆** |海底光纤路由对于云连接至关重要|
+| **互联网中断** |网络中断影响技术运营|
 
-### Tech News Categories
-- **Startups & VC** - Funding rounds, acquisitions, startup news
-- **Cybersecurity** - Security vulnerabilities, breaches, threat intelligence
-- **Cloud & Infrastructure** - AWS, Azure, GCP announcements, outages
-- **Hardware & Chips** - Semiconductors, AI accelerators, manufacturing
-- **Developer & Open Source** - Languages, frameworks, open source projects
-- **Tech Policy** - Regulation, antitrust, digital governance
+### 科技新闻类别
+- **初创公司和风险投资** - 融资轮次、收购、初创公司新闻
+- **网络安全** - 安全漏洞、漏洞、威胁情报
+- **云和基础设施** - AWS、Azure、GCP 公告、中断
+- **硬件和芯片** - 半导体、人工智能加速器、制造
+- **开发人员和开源** - 语言、框架、开源项目
+- **技术政策** - 监管、反垄断、数字治理
 
-### Regional Tech HQ Coverage
+### 区域技术总部覆盖范围
 
-| Region | Notable Companies |
+|地区 |著名公司 |
 |--------|------------------|
-| **Silicon Valley** | Apple, Google, Meta, Nvidia, Intel, Cisco, Oracle, VMware |
-| **Seattle** | Microsoft, Amazon, Tableau, Expedia |
-| **New York** | Bloomberg, MongoDB, Datadog, Squarespace |
-| **London** | Revolut, Deliveroo, Darktrace, Monzo |
-| **Tel Aviv** | Wix, Check Point, Monday.com, Fiverr |
-| **Dubai/MENA** | Careem, Noon, Anghami, Property Finder, Kitopi |
-| **Riyadh** | Tabby, Presight.ai, Ninja, XPANCEO |
-| **Singapore** | Grab, Razer, Sea Limited |
-| **Berlin** | Zalando, Delivery Hero, N26, Celonis |
-| **Tokyo** | Sony, Toyota, SoftBank, Rakuten |
+| **硅谷** |苹果、谷歌、Meta、Nvidia、英特尔、思科、甲骨文、VMware |
+| **西雅图** |微软、亚马逊、Tableau、Expedia |
+| **纽约** |彭博社、MongoDB、Datadog、Squarespace |
+| **伦敦** | Revolut、Deliveroo、Darktrace、Monzo |
+| **特拉维夫** | Wix、Check Point、Monday.com、Fiverr |
+| **迪拜/中东和北非** | Careem、Noon、Anghami、房产查找器、Kitopi |
+| **利雅得** | Tabby、Presight.ai、Ninja、XPANCEO |
+| **新加坡** | Grab、Razer、Sea Limited |
+| **柏林** | Zalando，送货英雄，N26，Celonis |
+| **东京** |索尼、丰田、软银、乐天 |
 
 ---
 
 ## Features
 
-### Interactive Global Map
-- **Zoom & Pan** - Smooth navigation with mouse/trackpad gestures
-- **Regional Focus** - 8 preset views for rapid navigation (Global, Americas, Europe, MENA, Asia, Latin America, Africa, Oceania)
-- **Layer System** - Toggle visibility of 20+ data layers organized by category
-- **Time Filtering** - Filter events by time range (1h, 6h, 24h, 48h, 7d)
-- **Pinnable Map** - Pin the map to the top while scrolling through panels, or let it scroll with the page
-- **Smart Marker Clustering** - Nearby markers group at low zoom, expand on zoom in
+### 互动全球地图
+- **缩放和平移** - 使用鼠标/触控板手势平滑导航
+- **区域焦点** - 8 个预设视图用于快速导航（全球、美洲、欧洲、中东和北非、亚洲、拉丁美洲、非洲、大洋洲）
+- **图层系统** - 切换按类别组织的 20 多个数据层的可见性
+- **时间过滤** - 按时间范围（1小时、6小时、24小时、48小时、7天）过滤事件
+- **可固定地图** - 在滚动面板时将地图固定到顶部，或让它随页面滚动
+- **智能标记聚类** - 低缩放时附近的标记组，放大时展开
 
-### Marker Clustering
+### 标记聚类
 
-Dense regions with many data points use intelligent clustering to prevent visual clutter:
+具有许多数据点的密集区域使用智能聚类来防止视觉混乱：
 
-**How It Works**
-- Markers within a pixel radius (adaptive to zoom level) merge into cluster badges
-- Cluster badges show the count of grouped items
-- Clicking a cluster opens a popup listing all grouped items
-- Zooming in reduces cluster radius, eventually showing individual markers
+**它是如何运作的**
+- 像素半径内的标记（适应缩放级别）合并到集群徽章中
+- 集群徽章显示分组项目的数量
+- 单击集群会打开一个弹出窗口，列出所有分组的项目
+- 放大缩小簇半径，最终显示单个标记
 
-**Grouping Logic**
-- **Protests**: Cluster within same country only (riots sorted first, high severity prioritized)
-- **Tech HQs**: Cluster within same city (Big Tech sorted before unicorns before public companies)
-- **Tech Events**: Cluster within same location (sorted by date, soonest first)
+**分组逻辑**
+- **抗议**：仅在同一国家/地区内聚集（骚乱首先排序，严重程度高的优先）
+- **科技总部**：同一城市内的集群（大型科技公司排在独角兽之前，排在上市公司之前）
+- **技术活动**：同一地点的集群（按日期排序，最早的在前）
 
-This prevents issues like Dubai and Riyadh companies appearing merged at global zoom, while still providing clean visualization at continental scales.
+这可以防止像迪拜和利雅得公司这样的问题在全球范围内出现合并，同时仍然在大陆范围内提供清晰的可视化。
 
-### Data Layers
+### 数据层
 
-Layers are organized into logical groups for efficient monitoring:
+层被组织成逻辑组以进行有效监控：
 
-**Geopolitical**
-| Layer | Description |
+**地缘政治**
+|层 |描述 |
 |-------|-------------|
-| **Conflicts** | Active conflict zones with involved parties and status |
-| **Hotspots** | Intelligence hotspots with activity levels based on news correlation |
-| **Sanctions** | Countries under economic sanctions regimes |
-| **Protests** | Live social unrest events from ACLED and GDELT |
+| **冲突** |活跃冲突地区的参与方和现状|
+| **热点** |基于新闻相关性的情报热点及其活动水平|
+| **制裁** |受到经济制裁的国家 |
+| **抗议** | ACLED 和 GDELT 现场直播社会骚乱事件 |
 
-**Military & Strategic**
-| Layer | Description |
+**军事与战略**
+|层 |描述 |
 |-------|-------------|
-| **Military Bases** | 220+ global military installations from 9 operators |
-| **Nuclear Facilities** | Power plants, weapons labs, enrichment sites |
-| **Gamma Irradiators** | IAEA-tracked Category 1-3 radiation sources |
-| **APT Groups** | State-sponsored cyber threat actors with geographic attribution |
-| **Spaceports** | 12 major launch facilities (NASA, SpaceX, Roscosmos, CNSA, ESA, ISRO, JAXA) |
-| **Critical Minerals** | Strategic mineral deposits (lithium, cobalt, rare earths) with operator info |
+| **军事基地** |来自 9 个运营商的 220 多个全球军事设施 |
+| **核设施** |发电厂、武器实验室、浓缩场所|
+| **伽马辐射器** | IAEA 追踪的 1-3 类辐射源 |
+| **APT 组** |国家支持的具有地理归属的网络威胁行为者 |
+| **太空港** | 12 个主要发射设施（NASA、SpaceX、Roscosmos、CNSA、ESA、ISRO、JAXA）|
+| **关键矿物质** |战略矿藏（锂、钴、稀土）及运营商信息 |
 
-**Infrastructure**
-| Layer | Description |
+**基础设施**
+|层 |描述 |
 |-------|-------------|
-| **Undersea Cables** | 55 major submarine cable routes worldwide |
-| **Pipelines** | 88 operating oil & gas pipelines across all continents |
-| **Internet Outages** | Network disruptions via Cloudflare Radar |
-| **AI Datacenters** | 111 major AI compute clusters (≥10,000 GPUs) |
+| **海底电缆** |全球55条主要海底电缆线路|
+| **管道** |横跨各大洲的 88 条正在运营的石油和天然气管道 |
+| **互联网中断** | Cloudflare Radar 造成的网络中断 |
+| **人工智能数据中心** | 111个主要AI计算集群（≥10,000个GPU）|
 
-**Transport**
-| Layer | Description |
+**运输**
+|层 |描述 |
 |-------|-------------|
-| **Ships (AIS)** | Live vessel tracking via AIS with chokepoint monitoring and 61 strategic ports* |
-| **Delays** | FAA airport delay status and ground stops |
+| **船舶（AIS）** |通过 AIS 进行实时船舶跟踪，包括阻塞点监控和 61 个战略港口* |
+| **延误** |美国联邦航空管理局 (FAA) 机场延误状况和地面停靠点 |
 
-*\*AIS data via [AISStream.io](https://aisstream.io) uses terrestrial receivers with stronger coverage in European/Atlantic waters. Middle East, Asia, and open ocean coverage is limited. Satellite AIS providers (Spire, Kpler) offer global coverage but require commercial licenses.*
+*\*通过 [AISStream.io](https://aisstream.io) 的 AIS 数据使用欧洲/大西洋水域覆盖范围更强的地面接收器。中东、亚洲和公海覆盖范围有限。卫星 AIS 提供商（Spire、Kpler）提供全球覆盖，但需要商业许可证。*
 
-**Natural Events**
-| Layer | Description |
+**自然事件**
+|层 |描述 |
 |-------|-------------|
-| **Natural** | USGS earthquakes (M4.5+) + NASA EONET events (storms, wildfires, volcanoes, floods) |
-| **Weather** | NWS severe weather warnings |
+| **自然** | USGS 地震 (M4.5+) + NASA EONET 事件（风暴、野火、火山、洪水）|
+| **天气** |国家气象局恶劣天气警告|
 
-**Economic & Labels**
-| Layer | Description |
+**经济和标签**
+|层 |描述 |
 |-------|-------------|
-| **Economic** | Tabbed economic panel with FRED indicators, EIA oil analytics, and USASpending.gov government contracts |
-| **Countries** | Country boundary labels |
-| **Waterways** | Strategic waterways and chokepoints |
+| **经济** |包含 FRED 指标、EIA 石油分析和 USASpending.gov 政府合同的选项卡经济面板 |
+| **国家** |国家边界标签|
+| **水路** |战略水道和咽喉要道|
 
-### Intelligence Panels
+### 情报面板
 
-Beyond raw data feeds, the dashboard provides synthesized intelligence panels:
+除了原始数据源之外，仪表板还提供综合智能面板：
 
-| Panel | Purpose |
+|面板|目的|
 |-------|---------|
-| **AI Strategic Posture** | Theater-level military aggregation with strike capability analysis |
-| **Strategic Risk Overview** | Composite risk score combining all intelligence modules |
-| **Country Instability Index** | Real-time stability scores for 20 monitored countries |
-| **Infrastructure Cascade** | Dependency analysis for cables, pipelines, and chokepoints |
-| **Live Intelligence** | GDELT-powered topic feeds (Military, Cyber, Nuclear, Sanctions) |
-| **Intel Feed** | Curated defense and security news sources |
+| **人工智能战略态势** |战区级军事聚合与打击能力分析|
+| **战略风险概述** |结合所有情报模块的综合风险评分|
+| **国家不稳定指数** | 20 个受监控国家的实时稳定性评分 |
+| **基础设施级联** |电缆、管道和阻塞点的依赖性分析 |
+| **实时情报** | GDELT 支持的主题源（军事、网络、核、制裁）|
+| **英特尔饲料** |精选的国防和安全新闻来源|
 
-These panels transform raw signals into actionable intelligence by applying scoring algorithms, trend detection, and cross-source correlation.
+这些面板通过应用评分算法、趋势检测和跨源关联，将原始信号转化为可操作的情报。
 
-### News Aggregation
+###新闻聚合
 
-Multi-source RSS aggregation across categories:
-- **World / Geopolitical** - BBC, Reuters, AP, Guardian, NPR, Politico, The Diplomat
-- **Middle East / MENA** - Al Jazeera, BBC ME, Guardian ME, Al Arabiya, Times of Israel
-- **Africa** - BBC Africa, News24, Google News aggregation (regional & Sahel coverage)
-- **Latin America** - BBC Latin America, Guardian Americas, Google News aggregation
-- **Asia-Pacific** - BBC Asia, South China Morning Post, Google News aggregation
-- **Energy & Resources** - Google News aggregation (oil/gas, nuclear, mining, Reuters Energy)
-- **Technology** - Hacker News, Ars Technica, The Verge, MIT Tech Review
-- **AI / ML** - ArXiv, VentureBeat AI, The Verge AI, MIT Tech Review
-- **Finance** - CNBC, MarketWatch, Financial Times, Yahoo Finance
-- **Government** - White House, State Dept, Pentagon, Treasury, Fed, SEC, UN News, CISA
-- **Intel Feed** - Defense One, Breaking Defense, Bellingcat, Krebs Security, Janes
-- **Think Tanks** - Foreign Policy, Atlantic Council, Foreign Affairs, CSIS, RAND, Brookings, Carnegie
-- **Crisis Watch** - International Crisis Group, IAEA, WHO, UNHCR
-- **Regional Sources** - Xinhua, TASS, Kyiv Independent, Moscow Times
-- **Layoffs Tracker** - Tech industry job cuts
+跨类别的多源 RSS 聚合：
+- **世界/地缘政治** - BBC、路透社、美联社、卫报、NPR、Politico、外交官
+- **中东/中东和北非** - 半岛电视台、BBC ME、Guardian ME、阿拉伯电视台、以色列时报
+- **非洲** - BBC Africa、News24、Google 新闻聚合（区域和萨赫勒报道）
+- **拉丁美洲** - BBC 拉丁美洲、卫报美洲、Google 新闻聚合
+- **亚太地区** - BBC Asia、南华早报、Google 新闻聚合
+- **能源与资源** - Google 新闻聚合（石油/天然气、核能、采矿、路透社能源）
+- **技术** - 黑客新闻、Ars Technica、The Verge、麻省理工学院技术评论
+- **人工智能/机器学习** - ArXiv、VentureBeat AI、The Verge AI、麻省理工学院技术评论
+- **财经** - CNBC、MarketWatch、金融时报、雅虎财经
+- **政府** - 白宫、国务院、五角大楼、财政部、美联储、美国证券交易委员会、联合国新闻、CISA
+- **英特尔信息流** - 防御一号、突破防御、Bellingcat、Krebs Security、Janes
+- **智库** - 外交政策、大西洋理事会、外交事务、战略与国际研究中心、兰德、布鲁金斯学会、卡内基
+- **危机观察** - 国际危机组织、国际原子能机构、世界卫生组织、联合国难民署
+- **地区来源** - 新华社、塔斯社、基辅独立报、莫斯科时报
+- **裁员追踪** - 科技行业裁员
 
-### Source Filtering
+### 源过滤
 
-The **📡 SOURCES** button in the header opens a global source management modal, enabling fine-grained control over which news sources appear in the dashboard.
+标题中的 **📡 SOURCES** 按钮可打开全局源管理模式，从而可以对仪表板中显示的新闻源进行细粒度控制。
 
-**Capabilities:**
-- **Search**: Filter the source list by name to quickly find specific outlets
-- **Individual Toggle**: Click any source to enable/disable it
-- **Bulk Actions**: "Select All" and "Select None" for quick adjustments
-- **Counter Display**: Shows "45/77 enabled" to indicate current selection
-- **Persistence**: Settings are saved to localStorage and persist across sessions
+**能力：**
+- **搜索**：按名称过滤货源列表，快速找到特定网点
+- **单独切换**：单击任何源以启用/禁用它
+- **批量操作**：“全选”和“全选”以进行快速调整
+- **计数器显示**：显示“45/77启用”以指示当前选择
+- **持久性**：设置保存到 localStorage 并在会话之间保留
 
-**Use Cases:**
-- **Noise Reduction**: Disable high-volume aggregators (Google News) to focus on primary sources
-- **Regional Focus**: Enable only sources relevant to a specific geographic area
-- **Source Quality**: Disable sources with poor signal-to-noise ratio
-- **Bias Management**: Balance coverage by enabling/disabling sources with known editorial perspectives
+**使用案例：**
+- **降噪**：禁用大容量聚合器（Google 新闻）以专注于主要来源
+- **区域焦点**：仅启用与特定地理区域相关的来源
+- **信号源质量**：禁用信噪比较差的信号源
+- **偏见管理**：通过启用/禁用具有已知编辑观点的来源来平衡覆盖范围
 
-**Technical Details:**
-- Disabled sources are filtered at fetch time (not display time), reducing bandwidth and API calls
-- Affects all news panels simultaneously—disable BBC once, it's gone everywhere
-- Panels with all sources disabled show "All sources disabled" message
-- Changes take effect on the next refresh cycle
+**技术细节：**
+- 禁用的源在获取时（而不是显示时）进行过滤，减少带宽和 API 调用
+- 同时影响所有新闻面板 - 禁用 BBC 一次，它就消失了
+- 禁用所有源的面板显示“所有源已禁用”消息
+- 更改在下一个刷新周期生效
 
-### Regional Intelligence Panels
+### 区域情报小组
 
-Dedicated panels provide focused coverage for strategically significant regions:
+专门小组针对具有重要战略意义的地区提供重点报道：
 
-| Panel | Coverage | Key Topics |
+|面板|覆盖范围|关键主题|
 |-------|----------|------------|
-| **Middle East** | MENA region | Israel-Gaza, Iran, Gulf states, Red Sea |
-| **Africa** | Sub-Saharan Africa | Sahel instability, coups, insurgencies, resources |
-| **Latin America** | Central & South America | Venezuela, drug trafficking, regional politics |
-| **Asia-Pacific** | East & Southeast Asia | China-Taiwan, Korean peninsula, ASEAN |
-| **Energy & Resources** | Global | Oil markets, nuclear, mining, energy security |
+| **中东** |中东和北非地区 |以色列-加沙、伊朗、海湾国家、红海 |
+| **非洲** |撒哈拉以南非洲|萨赫勒不稳定、政变、叛乱、资源|
+| **拉丁美洲** |中美洲和南美洲 |委内瑞拉、贩毒、地区政治 |
+| **亚太地区** |东亚及东南亚 |中国-台湾、朝鲜半岛、东盟|
+| **能源与资源** |全球|石油市场、核能、采矿、能源安全|
 
-Each panel aggregates region-specific sources to provide concentrated situational awareness for that theater. This enables focused monitoring when global events warrant attention to a particular region.
+每个面板汇总特定区域的来源，为该战区提供集中的态势感知。当全球事件需要关注特定地区时，这可以实现集中监控。
 
-### Live News Streams
+### 实时新闻流
 
-Embedded YouTube live streams from major news networks with channel switching:
+通过频道切换嵌入来自主要新闻网络的 YouTube 直播：
 
-| Channel | Coverage |
+|频道|覆盖范围|
 |---------|----------|
-| **Bloomberg** | Business & financial news |
-| **Sky News** | UK & international news |
-| **Euronews** | European perspective |
-| **DW News** | German international broadcaster |
-| **France 24** | French global news |
-| **Al Arabiya** | Middle East news (Arabic perspective) |
-| **Al Jazeera** | Middle East & international news |
+| **彭博社** |商业及财经新闻 |
+| **天空新闻** |英国及国际新闻 |
+| **欧洲新闻** |欧洲视角|
+| **德国之声新闻** |德国国际广播公司 |
+| **法国 24** |法国全球新闻 |
+| **阿拉伯电视台** |中东新闻（阿拉伯语视角）|
+| **半岛电视台** |中东及国际新闻 |
 
-**Core Features:**
-- **Channel Switcher** - One-click switching between networks
-- **Live Indicator** - Blinking dot shows stream status, click to pause/play
-- **Mute Toggle** - Audio control (muted by default)
-- **Double-Width Panel** - Larger video player for better viewing
+**核心特点：**
+- **频道切换器** - 一键切换网络
+- **实时指示器** - 闪烁点显示流状态，单击可暂停/播放
+- **静音切换** - 音频控制（默认静音）
+- **双宽面板** - 更大的视频播放器，观看效果更好
 
-**Performance Optimizations:**
+**性能优化：**
 
-The live stream panel uses the **YouTube IFrame Player API** rather than raw iframe embedding. This provides several advantages:
+直播面板使用 **YouTube IFrame Player API** 而不是原始 iframe 嵌入。这提供了几个优点：
 
-| Feature | Benefit |
+|特色 |效益 |
 |---------|---------|
-| **Persistent player** | No iframe reload on mute/play/channel change |
-| **API control** | Direct `playVideo()`, `pauseVideo()`, `mute()` calls |
-| **Reduced bandwidth** | Same stream continues across state changes |
-| **Faster switching** | Channel changes via `loadVideoById()` |
+| **坚持不懈的玩家** |静音/播放/频道更改时不会重新加载 iframe |
+| **API控制** |直接 `playVideo()`、`pauseVideo()`、`mute()` 调用 |
+| **减少带宽** |相同的流在状态变化时继续
+| **更快的切换** |通过 `loadVideoById()` 更改频道 |
 
-**Idle Detection:**
+**空闲检测：**
 
-To conserve resources, the panel implements automatic idle pausing:
+为了节省资源，面板实现自动空闲暂停：
 
-| Trigger | Action |
+|触发|行动|
 |---------|--------|
-| **Tab hidden** | Stream pauses (via Visibility API) |
-| **5 min idle** | Stream pauses (no mouse/keyboard activity) |
-| **User returns** | Stream resumes automatically |
-| **Manual pause** | User intent tracked separately |
+| **选项卡隐藏** |流暂停（通过 Visibility API）|
+| **闲置 5 分钟** |流暂停（无鼠标/键盘活动）|
+| **用户退货** |流自动恢复 |
+| **手动暂停** |单独跟踪用户意图 |
 
-This prevents background tabs from consuming bandwidth while preserving user preference for manually-paused streams.
+这可以防止后台选项卡消耗带宽，同时保留用户对手动暂停流的偏好。
 
-### Market Data
-- **Stocks** - Major indices and tech stocks via Finnhub (Yahoo Finance backup)
-- **Commodities** - Oil, gold, natural gas, copper, VIX
-- **Crypto** - Bitcoin, Ethereum, Solana via CoinGecko
-- **Sector Heatmap** - Visual sector performance (11 SPDR sectors)
-- **Economic Indicators** - Fed data via FRED (assets, rates, yields)
-- **Oil Analytics** - EIA data: WTI/Brent prices, US production, US inventory with weekly changes
-- **Government Spending** - USASpending.gov: Recent federal contracts and awards
+### 市场数据
+- **股票** - 主要指数和科技股通过Finnhub（雅虎财经备份）
+- **商品** - 石油、黄金、天然气、铜、VIX
+- **加密货币** - 比特币、以太坊、Solana 通过 CoinGecko
+- **行业热图** - 视觉行业表现（11 个 SPDR 行业）
+- **经济指标** - 通过 FRED 获得的美联储数据（资产、利率、收益率）
+- **石油分析** - EIA 数据：WTI/布伦特原油价格、美国产量、美国库存（每周变化）
+- **政府支出** - USASpending.gov：最近的联邦合同和奖项
 
-### Prediction Markets
-- Polymarket integration for event probability tracking
-- Correlation analysis with news events
+### 预测市场
+- 用于事件概率跟踪的综合市场整合
+- 与新闻事件的相关性分析
 
-### Search (⌘K)
-Universal search across all data sources:
-- News articles
-- Geographic hotspots and conflicts
-- Infrastructure (pipelines, cables, datacenters)
-- Nuclear facilities and irradiators
-- Markets and predictions
+### 搜索 (⌘K)
+跨所有数据源的通用搜索：
+- 新闻文章
+- 地理热点和冲突
+- 基础设施（管道、电缆、数据中心）
+- 核设施和辐照器
+- 市场和预测
 
-### Data Export
-- CSV and JSON export of current dashboard state
-- Historical playback from snapshots
+### 数据导出
+- 当前仪表板状态的 CSV 和 JSON 导出
+- 快照历史回放
 
 ---
 
-## Signal Intelligence
+## 信号情报
 
-The dashboard continuously analyzes data streams to detect significant patterns and anomalies. Signals appear in the header badge (⚡) with confidence scores.
+仪表板不断分析数据流以检测重要模式和异常情况。信号出现在标题徽章 (⚡) 中并带有置信度分数。
 
-### Intelligence Findings Badge
+### 情报调查结果徽章
 
-The header displays an **Intelligence Findings** badge that consolidates two types of alerts:
+标题显示 **情报发现** 徽章，其中合并了两种类型的警报：
 
-| Alert Type | Source | Examples |
+|警报类型 |来源 |示例 |
 |------------|--------|----------|
-| **Correlation Signals** | Cross-source pattern detection | Velocity spikes, market divergence, prediction leading |
-| **Unified Alerts** | Module-generated alerts | CII spikes, geographic convergence, infrastructure cascades |
+| **相关信号** |跨源模式检测 |速度飙升、市场分歧、预测领先 |
+| **统一警报** |模块生成的警报 | CII 峰值、地理融合、基础设施级联 |
 
-**Interaction**: Clicking the badge—or clicking an individual alert—opens a detail modal showing:
-- Full alert description and context
-- Component breakdown (for composite alerts)
-- Affected countries or regions
-- Confidence score and priority level
-- Timestamp and trending direction
+**交互**：单击徽章 - 或单击单个警报 - 打开一个详细模式，显示：
+- 完整的警报描述和上下文
+- 组件故障（针对复合警报）
+- 受影响国家或地区
+- 置信度分数和优先级
+- 时间戳和趋势方向
 
-This provides a unified command center for all intelligence findings, whether generated by correlation analysis or module-specific threshold detection.
+这为所有情报发现提供了一个统一的指挥中心，无论是通过相关性分析还是特定于模块的阈值检测生成的。
 
-### Signal Types
+### 信号类型
 
-The system detects 12 distinct signal types across news, markets, military, and infrastructure domains:
+该系统可检测新闻、市场、军事和基础设施领域的 12 种不同信号类型：
 
-**News & Source Signals**
+**新闻和来源信号**
 
-| Signal | Trigger | What It Means |
+|信号|触发|这意味着什么？
 |--------|---------|---------------|
-| **◉ Convergence** | 3+ source types report same story within 30 minutes | Multiple independent channels confirming the same event—higher likelihood of significance |
-| **△ Triangulation** | Wire + Government + Intel sources align | The "authority triangle"—when official channels, wire services, and defense specialists all report the same thing |
-| **🔥 Velocity Spike** | Topic mention rate doubles with 6+ sources/hour | A story is accelerating rapidly across the news ecosystem |
+| **◉ 融合** | 30 分钟内超过 3 种来源类型报告了相同的故事 |多个独立渠道确认同一事件——重要性更高的可能性 |
+| **△三角测量** | Wire + 政府 + 英特尔消息来源一致 | “权威三角”——官方渠道、通讯社和国防专家都报道同样的事情 |
+| **🔥 速度峰值** |主题提及率翻倍，每小时有 6 个以上来源 |新闻生态系统中的故事正在迅速加速|
 
-**Market Signals**
+**市场信号**
 
-| Signal | Trigger | What It Means |
+|信号|触发|这意味着什么？
 |--------|---------|---------------|
-| **🔮 Prediction Leading** | Prediction market moves 5%+ with low news coverage | Markets pricing in information not yet reflected in news |
-| **📰 News Leads Markets** | High news velocity without corresponding market move | Breaking news not yet priced in—potential mispricing |
-| **✓ Market Move Explained** | Market moves 2%+ with correlated news coverage | Price action has identifiable news catalyst—entity correlation found related stories |
-| **📊 Silent Divergence** | Market moves 2%+ with no correlated news after entity search | Unexplained price action after exhaustive search—possible insider knowledge or algorithm-driven |
-| **📈 Sector Cascade** | Multiple related sectors moving in same direction | Market reaction cascading through correlated industries |
+| **🔮 预测领先** |新闻报道较少，预测市场上涨 5% 以上 |市场定价信息尚未反映在新闻中|
+| **📰 新闻引领市场** |高新闻传播速度却没有相应的市场走势|尚未定价的突发新闻——潜在的错误定价|
+| **✓ 市场走势解释** |相关新闻报道导致市场波动 2% 以上 |价格走势具有可识别的新闻催化剂——实体相关性发现相关故事|
+| **📊 沉默的分歧** |实体搜索后市场波动 2%+ 无相关新闻 |详尽搜索后无法解释的价格走势——可能是内幕知识或算法驱动 |
+| **📈 扇区级联** |多个相关行业齐头并进|相关行业的市场反应级联|
 
-**Infrastructure & Energy Signals**
+**基础设施和能源信号**
 
-| Signal | Trigger | What It Means |
+|信号|触发|这意味着什么？
 |--------|---------|---------------|
-| **🛢 Flow Drop** | Pipeline flow disruption keywords detected | Physical commodity supply constraint—may precede price spike |
-| **🔁 Flow-Price Divergence** | Pipeline disruption news without corresponding oil price move | Energy supply disruption not yet priced in—potential information edge |
+| **🛢 流量下降** |检测到管道流量中断关键字 |实物大宗商品供应受限——可能先于价格飙升|
+| **🔁 流量价​​格背离** |管道中断的消息没有相应的油价波动|能源供应中断尚未反映在潜在信息优势中
 
-**Geopolitical & Military Signals**
+**地缘政治和军事信号**
 
-| Signal | Trigger | What It Means |
+|信号|触发|这意味着什么？
 |--------|---------|---------------|
-| **🌍 Geographic Convergence** | 3+ event types in same 1°×1° grid cell | Multiple independent data streams converging on same location—heightened regional activity |
-| **🔺 Hotspot Escalation** | Multi-component score exceeds threshold with rising trend | Hotspot showing corroborated escalation across news, CII, convergence, and military data |
-| **✈ Military Surge** | Transport/fighter activity 2× baseline in theater | Unusual military airlift concentration—potential deployment or crisis response |
+| **🌍地理融合** |同一 1°×1° 网格单元中的 3+ 事件类型 |多个独立数据流汇聚到同一位置——区域活动加剧 |
+| **🔺 热点升级** |多项得分突破阈值呈上升趋势 |热点显示新闻、CII、融合和军事数据确实升级|
+| **✈ 军事增兵** |战区运输/战斗机活动 2× 基线 |不寻常的军事空运集中——潜在部署或危机应对|
 
-### How It Works
+### 它是如何运作的
 
-The correlation engine maintains rolling snapshots of:
-- News topic frequency (by keyword extraction)
-- Market price changes
-- Prediction market probabilities
+关联引擎维护以下内容的滚动快照：
+- 新闻主题频率（通过关键词提取）
+- 市场价格变化
+- 预测市场概率
 
-Each refresh cycle compares current state to previous snapshot, applying thresholds and deduplication to avoid alert fatigue. Signals include confidence scores (60-95%) based on the strength of the pattern.
+每个刷新周期都会将当前状态与之前的快照进行比较，应用阈值和重复数据删除以避免警报疲劳。信号包括基于模式强度的置信度分数 (60-95%)。
 
-### Entity-Aware Correlation
+### 实体感知关联
 
-The signal engine uses a **knowledge base of 100+ entities** to intelligently correlate market movements with news coverage. Rather than simple keyword matching, the system understands that "AVGO" (the ticker) relates to "Broadcom" (the company), "AI chips" (the sector), and entities like "Nvidia" (a competitor).
+信号引擎使用 **100 多个实体的知识库**来智能地将市场走势与新闻报道关联起来。该系统不是简单的关键字匹配，而是理解“AVGO”（股票代码）与“Broadcom”（公司）、“AI 芯片”（行业）以及“Nvidia”（竞争对手）等实体相关。
 
-#### Entity Knowledge Base
+#### 实体知识库
 
-Each entity in the registry contains:
+注册表中的每个实体包含：
 
-| Field | Purpose | Example |
+|领域|目的|示例|
 |-------|---------|---------|
-| **ID** | Canonical identifier | `broadcom` |
-| **Name** | Display name | `Broadcom Inc.` |
-| **Type** | Category | `company`, `commodity`, `crypto`, `country`, `person` |
-| **Aliases** | Alternative names | `AVGO`, `Broadcom`, `Broadcom Inc` |
-| **Keywords** | Related topics | `AI chips`, `semiconductors`, `VMware` |
-| **Sector** | Industry classification | `semiconductors` |
-| **Related** | Linked entities | `nvidia`, `intel`, `amd` |
+| **ID** |规范标识符| `broadcom` |
+| **姓名** |显示名称 | `Broadcom Inc.` |
+| **类型** |类别 | `company`、`commodity`、`crypto`、`country`、`person` |
+| **别名** |别名 | `AVGO`、`Broadcom`、`Broadcom Inc` |
+| **关键词** |相关主题 | `AI chips`、`semiconductors`、`VMware` |
+| **部门** |行业分类 | `semiconductors` |
+| **相关** |链接实体 | `nvidia`、`intel`、`amd` |
 
-#### Entity Types
+#### 实体类型
 
-| Type | Count | Examples |
+|类型 |计数|示例 |
 |------|-------|----------|
-| **Companies** | 50+ | Nvidia, Apple, Tesla, Broadcom, Boeing, Lockheed Martin, TSMC, Rheinmetall |
-| **Indices** | 5+ | S&P 500, Dow Jones, NASDAQ |
-| **Sectors** | 10+ | Technology (XLK), Finance (XLF), Energy (XLE), Healthcare (XLV), Semiconductors (SMH) |
-| **Commodities** | 10+ | Oil (WTI), Gold, Natural Gas, Copper, Silver, VIX |
-| **Crypto** | 3 | Bitcoin, Ethereum, Solana |
-| **Countries** | 15+ | China, Russia, Iran, Israel, Ukraine, Taiwan, Saudi Arabia, UAE, Qatar, Turkey, Egypt |
+| **公司** | 50+ |英伟达、苹果、特斯拉、博通、波音、洛克希德·马丁、台积电、莱茵金属 |
+| **指数** | 5+ |标准普尔 500 指数、道琼斯指数、纳斯达克指数 |
+| **行业** | 10+ |技术 (XLK)、金融 (XLF)、能源 (XLE)、医疗保健 (XLV)、半导体 (SMH) |
+| **商品** | 10+ |石油 (WTI)、黄金、天然气、铜、银、VIX |
+| **加密货币** | 3 |比特币、以太坊、Solana |
+| **国家** | 15+ |中国、俄罗斯、伊朗、以色列、乌克兰、台湾、沙特阿拉伯、阿联酋、卡塔尔、土耳其、埃及 |
 
-#### How Entity Matching Works
+#### 实体匹配的工作原理
 
-When a market moves significantly (≥2%), the system:
+当市场大幅波动（≥2%）时，系统：
 
-1. **Looks up the ticker** in the entity registry (e.g., `AVGO` → `broadcom`)
-2. **Gathers all identifiers**: aliases, keywords, sector peers, related entities
-3. **Scans all news clusters** for matches against any identifier
-4. **Scores confidence** based on match type:
-   - Alias match (exact name): 95%
-   - Keyword match (topic): 70%
-   - Related entity match: 60%
+1. **在实体注册表中查找代码**（例如，`AVGO` → `broadcom`）
+2. **收集所有标识符**：别名、关键字、部门同行、相关实体
+3. **扫描所有新闻集群**以查找与任何标识符的匹配项
+4. **根据匹配类型评分置信度**：
+- 别名匹配（确切名称）：95%
+- 关键词匹配（主题）：70%
+- 相关实体匹配：60%
 
-If correlated news is found → **"Market Move Explained"** signal with the news headline.
-If no correlation after exhaustive search → **"Silent Divergence"** signal.
+如果找到相关新闻 → **“市场走势解释”** 带有新闻标题的信号。
+如果详尽搜索后没有相关性→**“无声分歧”**信号。
 
-#### Example: Broadcom +2.5%
+#### 示例：博通 +2.5%
 
 ```
 1. Ticker AVGO detected with +2.5% move
@@ -438,28 +438,28 @@ If no correlation after exhaustive search → **"Silent Divergence"** signal.
 5. Result: "✓ Market Move Explained: Broadcom AI Revenue Beats Estimates"
 ```
 
-Without this system, the same move would generate a generic "Silent Divergence: AVGO +2.5%" signal.
+如果没有这个系统，同样的举动将产生通用的“无声分歧：AVGO +2.5%”信号。
 
-#### Sector Coverage
+#### 行业覆盖范围
 
-The entity registry spans strategically significant sectors:
+实体注册机构涵盖具有重要战略意义的部门：
 
-| Sector | Examples | Keywords Tracked |
+|部门|示例 |关键词跟踪 |
 |--------|----------|------------------|
-| **Technology** | Apple, Microsoft, Nvidia, Google, Meta, TSMC | AI, cloud, chips, datacenter, streaming |
-| **Defense & Aerospace** | Lockheed Martin, Raytheon, Northrop Grumman, Boeing, Rheinmetall, Airbus | F-35, missiles, drones, tanks, defense contracts |
-| **Semiconductors** | ASML, Samsung, AMD, Intel, Broadcom | Lithography, EUV, foundry, fab, wafer |
-| **Critical Minerals** | Albemarle, SQM, MP Materials, Freeport-McMoRan | Lithium, rare earth, cobalt, copper |
-| **Finance** | JPMorgan, Berkshire Hathaway, Visa, Mastercard | Banking, credit, investment, interest rates |
-| **Healthcare** | Eli Lilly, Novo Nordisk, UnitedHealth, J&J | Pharma, drugs, GLP-1, obesity, diabetes |
-| **Energy** | Exxon, Chevron, ConocoPhillips | Oil, gas, drilling, refinery, LNG |
-| **Consumer** | Tesla, Walmart, Costco, Home Depot | EV, retail, grocery, housing |
+| **技术** |苹果、微软、英伟达、谷歌、Meta、台积电 |人工智能、云、芯片、数据中心、流媒体 |
+| **国防与航空航天** |洛克希德·马丁公司、雷神公司、诺斯罗普·格鲁门公司、波音公司、莱茵金属公司、空客公司 | F-35、导弹、无人机、坦克、国防合同|
+| **半导体** | ASML、三星、AMD、英特尔、博通 |光刻、EUV、代工​​、晶圆厂、晶圆 |
+| **关键矿物质** | Albemarle、SQM、MP Materials、自由港麦克莫兰 |锂、稀土、钴、铜|
+| **金融** |摩根大通、伯克希尔哈撒韦、Visa、万事达卡 |银行、信贷、投资、利率|
+| **医疗保健** |礼来 (Eli Lilly)、诺和诺德 (Novo Nordisk)、联合健康 (UnitedHealth)、强生 (J&J) |制药、药物、GLP-1、肥胖、糖尿病 |
+| **能源** |埃克森美孚、雪佛龙、康菲石油公司 |石油、天然气、钻井、炼油厂、液化天然气 |
+| **消费者** |特斯拉、沃尔玛、好市多、家得宝 |电动汽车、零售、食品杂货、住房 |
 
-This broad coverage enables correlation detection across diverse geopolitical and market events.
+这种广泛的覆盖范围使得能够跨不同的地缘政治和市场事件进行相关性检测。
 
-### Entity Registry Architecture
+### 实体注册表架构
 
-The entity registry is a knowledge base of 600+ entities with rich metadata for intelligent correlation:
+实体注册表是包含 600 多个实体的知识库，具有用于智能关联的丰富元数据：
 
 ```typescript
 {
@@ -475,133 +475,133 @@ The entity registry is a knowledge base of 600+ entities with rich metadata for 
 }
 ```
 
-**Entity Types**:
+**实体类型**：
 
-| Type | Count | Use Case |
+|类型 |计数|使用案例|
 |------|-------|----------|
-| `company` | 100+ | Market-news correlation, sector analysis |
-| `country` | 200+ | Focal point detection, CII scoring |
-| `index` | 20+ | Market overview, regional tracking |
-| `commodity` | 15+ | Energy and mineral correlation |
-| `currency` | 10+ | FX market tracking |
+| `company` | 100+ |市场新闻相关性、行业分析 |
+| `country` | 200+ |焦点检测、CII 评分 |
+| `index` | 20+ |市场概览、区域追踪 |
+| `commodity` | 15+ |能源和矿产相关性 |
+| `currency` | 10+ |外汇市场追踪|
 
-**Lookup Indexes**:
+**查找索引**：
 
-The registry provides multiple lookup paths for fast entity resolution:
+注册表提供了多个查找路径以实现快速实体解析：
 
-| Index | Query Example | Use Case |
+|索引 |查询示例|使用案例|
 |-------|---------------|----------|
-| `byId` | `'NVDA'` → Nvidia entity | Direct lookup from ticker |
-| `byAlias` | `'nvidia'` → Nvidia entity | Case-insensitive name match |
-| `byKeyword` | `'AI chips'` → [Nvidia, AMD, Intel] | News keyword extraction |
-| `bySector` | `'semiconductors'` → all chip companies | Sector cascade analysis |
-| `byCountry` | `'US'` → all US entities | Country-level aggregation |
+| `byId` | `'NVDA'` → Nvidia 实体 |从股票代码直接查找 |
+| `byAlias` | `'nvidia'` → Nvidia 实体 |不区分大小写的名称匹配 |
+| `byKeyword` | `'AI chips'` → [Nvidia、AMD、英特尔] |新闻关键词提取 |
+| `bySector` | `'semiconductors'` → 所有芯片公司|行业级联分析|
+| `byCountry` | `'US'` → 所有美国实体 |国家级汇总|
 
-### Signal Deduplication
+### 信号重复数据删除
 
-To prevent alert fatigue, signals use **type-specific TTL (time-to-live)** values for deduplication:
+为了防止警报疲劳，信号使用 **特定于类型的 TTL（生存时间）** 值进行重复数据删除：
 
-| Signal Type | TTL | Rationale |
+|信号类型| TTL |理由|
 |-------------|-----|-----------|
-| **Silent Divergence** | 6 hours | Market moves persist; don't re-alert on same stock |
-| **Flow-Price Divergence** | 6 hours | Energy events unfold slowly |
-| **Explained Market Move** | 6 hours | Same correlation shouldn't repeat |
-| **Prediction Leading** | 2 hours | Prediction markets update more frequently |
-| **Other signals** | 30 minutes | Default for fast-moving events |
+| **沉默的分歧** | 6 小时 |市场走势持续；请勿对同一股票再次发出警报 |
+| **流量价格背离** | 6 小时 |能源事件缓慢展开 |
+| **解释市场走势** | 6 小时 |相同的相关性不应重复 |
+| **预测领先** | 2小时|预测市场更新更频繁 |
+| **其他信号** | 30 分钟 |快速移动事件的默认设置 |
 
-Market signals use **symbol-only keys** (e.g., `silent_divergence:AVGO`) rather than including the price change. This means a stock moving +2.5% then +3.0% won't trigger duplicate alerts—the first alert covers the story.
+市场信号使用**仅符号键**（例如 `silent_divergence:AVGO`），而不包括价格变化。这意味着股票移动+2.5%然后+3.0%不会触发重复的警报——第一个警报涵盖了整个故事。
 
 ---
 
-## Source Intelligence
+## 来源情报
 
-Not all sources are equal. The system implements a dual classification to prioritize authoritative information.
+并非所有来源都是平等的。系统实行双重分类，优先权威信息。
 
-### Source Tiers (Authority Ranking)
+### 来源层级（权威排名）
 
-| Tier | Sources | Characteristics |
+|等级 |来源 |特点 |
 |------|---------|-----------------|
-| **Tier 1** | Reuters, AP, AFP, Bloomberg, White House, Pentagon | Wire services and official government—fastest, most reliable |
-| **Tier 2** | BBC, Guardian, NPR, Al Jazeera, CNBC, Financial Times | Major outlets—high editorial standards, some latency |
-| **Tier 3** | Defense One, Bellingcat, Foreign Policy, MIT Tech Review | Domain specialists—deep expertise, narrower scope |
-| **Tier 4** | Hacker News, The Verge, VentureBeat, aggregators | Useful signal but requires corroboration |
+| **1 级** |路透社、美联社、法新社、彭博社、白宫、五角大楼 |有线服务和官方政府——最快、最可靠 |
+| **2 级** | BBC、卫报、NPR、半岛电视台、CNBC、金融时报 |主要媒体——编辑标准高，但有一定延迟 |
+| **第 3 级** | 《国防一号》、《Bellingcat》、《外交政策》、《麻省理工科技评论》|领域专家——深厚的专业知识，更窄的范围|
+| **4 级** |黑客新闻、The Verge、VentureBeat、聚合器 |有用的信号，但需要证实|
 
-When multiple sources report the same story, the **lowest tier** (most authoritative) source is displayed as the primary, with others listed as corroborating.
+当多个来源报告同一故事时，**最低层**（最权威）来源将显示为主要来源，其他来源则列为佐证。
 
-### Source Types (Categorical)
+### 来源类型（分类）
 
-Sources are also categorized by function for triangulation detection:
+源还按三角测量检测的功能进行分类：
 
-- **Wire** - News agencies (Reuters, AP, AFP, Bloomberg)
-- **Gov** - Official government (White House, Pentagon, State Dept, Fed, SEC)
-- **Intel** - Defense/security specialists (Defense One, Bellingcat, Krebs)
-- **Mainstream** - Major news outlets (BBC, Guardian, NPR, Al Jazeera)
-- **Market** - Financial press (CNBC, MarketWatch, Financial Times)
-- **Tech** - Technology coverage (Hacker News, Ars Technica, MIT Tech Review)
+- **Wire** - 新闻机构（路透社、美联社、法新社、彭博社）
+- **政府** - 官方政府（白宫、五角大楼、国务院、美联储、证券交易委员会）
+- **英特尔** - 国防/安全专家（Defense One、Bellingcat、Krebs）
+- **主流** - 主要新闻媒体（BBC、卫报、NPR、半岛电视台）
+- **市场** - 财经媒体（CNBC、MarketWatch、金融时报）
+- **科技** - 技术报道（黑客新闻、Ars Technica、麻省理工学院技术评论）
 
-### Propaganda Risk Indicators
+### 宣传风险指标
 
-The dashboard visually flags sources with known state affiliations or propaganda risk, enabling users to appropriately weight information from these outlets.
+仪表板直观地标记了具有已知国家关系或宣传风险的消息来源，使用户能够适当权衡来自这些渠道的信息。
 
-**Risk Levels**
+**风险级别**
 
-| Level | Visual | Meaning |
+|水平|视觉 |意义|
 |-------|--------|---------|
-| **High** | ⚠ State Media (red) | Direct state control or ownership |
-| **Medium** | ! Caution (orange) | Significant state influence or funding |
-| **Low** | (none) | Independent editorial control |
+| **高** | ⚠ 国家媒体（红色）|国家直接控制或所有权|
+| **中** | ！注意（橙色）|重大的国家影响或资助|
+| **低** | （无）|独立编辑控制|
 
-**Flagged Sources**
+**标记来源**
 
-| Source | Risk Level | State Affiliation | Notes |
+|来源 |风险等级|国家隶属关系 |笔记|
 |--------|------------|-------------------|-------|
-| **Xinhua** | High | China (CCP) | Official news agency of PRC |
-| **TASS** | High | Russia | State-owned news agency |
-| **RT** | High | Russia | Registered foreign agent in US |
-| **CGTN** | High | China (CCP) | China Global Television Network |
-| **PressTV** | High | Iran | IRIB subsidiary |
-| **Al Jazeera** | Medium | Qatar | Qatari government funded |
-| **TRT World** | Medium | Turkey | Turkish state broadcaster |
+| **新华社** |高|中国（中共）|中华人民共和国官方通讯社 |
+| **塔斯社** |高|俄罗斯 |国有通讯社|
+| **转发** |高|俄罗斯 |美国注册外国代理人|
+| **中国国际电视台** |高|中国（中共）|中国环球电视网|
+| **新闻电视** |高|伊朗 | IRIB 子公司 |
+| **半岛电视台** |中等|卡塔尔 |卡塔尔政府资助|
+| **TRT世界** |中等|土耳其 |土耳其国家广播公司 |
 
-**Display Locations**
+**展示地点**
 
-Propaganda risk badges appear in:
-- **Cluster primary source**: Badge next to the main source name
-- **Top sources list**: Small badge next to each flagged source
-- **Cluster view**: Visible when expanding multi-source clusters
+宣传风险徽章出现在：
+- **集群主要源**：主源名称旁边的徽章
+- **热门来源列表**：每个标记来源旁边的小徽章
+- **集群视图**：扩展多源集群时可见
 
-**Why Include State Media?**
+**为什么要包括国家媒体？**
 
-State-controlled outlets are included rather than filtered because:
+国家控制的网点被纳入而不是被过滤，因为：
 
-1. **Signal Value**: What state media reports (and omits) reveals government priorities
-2. **Rapid Response**: State media often breaks domestic news faster than international outlets
-3. **Narrative Analysis**: Understanding how events are framed by different governments
-4. **Completeness**: Excluding them creates blind spots in coverage
+1. **信号价值**：官方媒体报道（和省略）的内容揭示了政府的优先事项
+2. **快速反应**：官方媒体通常比国际媒体更快地报道国内新闻
+3. **叙事分析**：了解不同政府如何塑造事件
+4. **完整性**：排除它们会造成覆盖盲点
 
-The badges ensure users can **contextualize** state media reports rather than unknowingly treating them as independent journalism.
+这些徽章确保用户可以**了解**官方媒体的报道，而不是在不知不觉中将其视为独立新闻。
 
 ---
 
-## Entity Extraction System
+## 实体提取系统
 
-The dashboard extracts **named entities** (companies, countries, leaders, organizations) from news headlines to enable news-to-market correlation and entity-based filtering.
+该仪表板从新闻标题中提取**命名实体**（公司、国家、领导者、组织），以实现新闻与市场的关联和基于实体的过滤。
 
-### How It Works
+### 它是如何运作的
 
-Headlines are scanned against a curated entity index containing:
+根据策划的实体索引扫描标题，其中包含：
 
-| Entity Type | Examples | Purpose |
+|实体类型 |示例 |目的|
 |-------------|----------|---------|
-| **Companies** | Apple, Tesla, NVIDIA, Boeing | Market symbol correlation |
-| **Countries** | Russia, China, Iran, Ukraine | Geopolitical attribution |
-| **Leaders** | Putin, Xi Jinping, Khamenei | Political event tracking |
-| **Organizations** | NATO, OPEC, Fed, SEC | Institutional news filtering |
-| **Commodities** | Oil, Gold, Bitcoin | Commodity news correlation |
+| **公司** |苹果、特斯拉、英伟达、波音 |市场符号相关性 |
+| **国家** |俄罗斯、中国、伊朗、乌克兰 |地缘政治归因|
+| **领导者** |普京、习近平、哈梅内伊 |政治事件追踪|
+| **组织** |北约、欧佩克、美联储、美国证券交易委员会 |机构新闻过滤|
+| **商品** |石油、黄金、比特币 |商品新闻相关|
 
-### Entity Matching
+### 实体匹配
 
-Each entity has multiple match patterns for comprehensive detection:
+每个实体都有多种匹配模式以进行全面检测：
 
 ```
 Entity: NVIDIA (NVDA)
@@ -613,171 +613,171 @@ Entity: NVIDIA (NVDA)
     - Keyword match: "H100 shortage..." → 70% confidence
 ```
 
-### Confidence Scoring
+### 置信度评分
 
-Entity extraction produces confidence scores based on match quality:
+实体提取根据匹配质量生成置信度分数：
 
-| Match Type | Confidence | Example |
+|比赛类型 |信心|示例|
 |------------|------------|---------|
-| **Direct name** | 95% | "Apple reports earnings" |
-| **Alias** | 90% | "Tim Cook announces..." |
-| **Keyword** | 70% | "iPhone sales decline" |
-| **Related cluster** | 63% | Secondary headline mention (90% × 0.7) |
+| **直名** | 95% | “苹果公布财报” |
+| **别名** | 90% | “蒂姆·库克宣布……” |
+| **关键字** | 70% | “iPhone销量下滑”|
+| **相关集群** | 63% |次要标题提及 (90% × 0.7) |
 
-### Market Correlation
+### 市场相关性
 
-When a market symbol moves significantly, the system searches news clusters for related entities:
+当市场符号大幅波动时，系统会在新闻集群中搜索相关实体：
 
-1. **Symbol lookup** - Find entity by market symbol (e.g., `AAPL` → Apple)
-2. **News search** - Find clusters mentioning the entity or related entities
-3. **Confidence ranking** - Sort by extraction confidence
-4. **Result** - "Market Move Explained" or "Silent Divergence" signal
+1. **符号查找** - 按市场符号查找实体（例如 `AAPL` → Apple）
+2. **新闻搜索** - 查找提及实体或相关实体的集群
+3. **置信度排名** - 按提取置信度排序
+4. **结果** - “市场走势得到解释”或“无声背离”信号
 
-This enables signals like:
-- **Explained**: "AVGO +5.2% — Broadcom mentioned in 3 news clusters (AI chip demand)"
-- **Silent**: "AVGO +5.2% — No correlated news after entity search"
+这可以实现如下信号：
+- **解释**：“AVGO +5.2% — 3 个新闻集群中提到博通（AI 芯片需求）”
+- **沉默**：“AVGO +5.2% — 实体搜索后没有相关新闻”
 
 ---
 
-## Signal Context ("Why It Matters")
+## 信号上下文（“为什么重要”）
 
-Every signal includes contextual information explaining its analytical significance:
+每个信号都包含解释其分析意义的上下文信息：
 
-### Context Fields
+### 上下文字段
 
-| Field | Purpose | Example |
+|领域|目的|示例|
 |-------|---------|---------|
-| **Why It Matters** | Analytical significance | "Markets pricing in information before news" |
-| **Actionable Insight** | What to do next | "Monitor for breaking news in 1-6 hours" |
-| **Confidence Note** | Signal reliability caveats | "Higher confidence if multiple markets align" |
+| **为什么重要** |分析意义| “市场先于新闻定价”|
+| **可行的见解** |下一步做什么 | “1-6小时监控突发新闻”|
+| **信心说明** |信号可靠性警告| “如果多个市场一致，信心就会更高”|
 
-### Signal-Specific Context
+### 信号特定上下文
 
-| Signal | Why It Matters |
+|信号|为什么这很重要？
 |--------|---------------|
-| **Prediction Leading** | Prediction markets often price in information before it becomes news—traders may have early access to developments |
-| **Silent Divergence** | Market moving without identifiable catalyst—possible insider knowledge, algorithmic trading, or unreported development |
-| **Velocity Spike** | Story accelerating across multiple sources—indicates growing significance and potential for market/policy impact |
-| **Triangulation** | The "authority triangle" (wire + government + intel) aligned—gold standard for breaking news confirmation |
-| **Flow-Price Divergence** | Supply disruption not yet reflected in prices—potential information edge or markets have better information |
-| **Hotspot Escalation** | Geopolitical hotspot showing escalation across news, instability, convergence, and military presence |
+| **预测领先** |预测市场通常会在信息成为新闻之前对其进行定价——交易者可以尽早了解事态发展|
+| **沉默的分歧** |市场走势没有可识别的催化剂——可能是内幕知识、算法交易或未报告的发展 |
+| **速度峰值** |多个来源的报道加速——表明市场/政策影响的重要性和潜力日益增长|
+| **三角测量** | “权威三角”（电报+政府+情报）一致——突发新闻确认的黄金标准 |
+| **流量价格背离** |供应中断尚未反映在价格中——潜在的信息优势或市场拥有更好的信息|
+| **热点升级** |地缘政治热点在新闻、不稳定、融合和军事存在方面呈现升级|
 
-This contextual layer transforms raw alerts into **actionable intelligence** by explaining the analytical reasoning behind each signal.
+该上下文层通过解释每个信号背后的分析推理，将原始警报转化为**可操作的情报**。
 
 ---
 
-## Algorithms & Design
+## 算法与设计
 
-### News Clustering
+### 新闻聚类
 
-Related articles are grouped using **Jaccard similarity** on tokenized headlines:
+相关文章使用标记化标题上的 **Jaccard 相似度** 进行分组：
 
 ```
 similarity(A, B) = |A ∩ B| / |A ∪ B|
 ```
 
-**Tokenization**:
-- Headlines are lowercased and split on word boundaries
-- Stop words removed: "the", "a", "an", "in", "on", "at", "to", "for", "of", "and", "or"
-- Short tokens (<3 characters) filtered out
-- Result cached per headline for performance
+**标记化**：
+- 标题为小写并在字边界处分割
+- 删除停用词：“the”、“a”、“an”、“in”、“on”、“at”、“to”、“for”、“of”、“and”、“or”
+- 过滤掉短标记（<3 个字符）
+- 每个标题缓存结果以提高性能
 
-**Inverted Index Optimization**:
-Rather than O(n²) pairwise comparison, the algorithm uses an inverted index:
+**倒排索引优化**：
+该算法使用倒排索引，而不是 O(n²) 成对比较：
 
-1. Build token → article indices map
-2. For each article, find candidate matches via shared tokens
-3. Only compute Jaccard for candidates with token overlap
-4. This reduces comparisons from ~10,000 to ~500 for typical news loads
+1. 构建代币→文章索引图
+2. 对于每篇文章，通过共享令牌查找候选匹配项
+3. 只计算具有 token 重叠的候选者的 Jaccard
+4. 这将典型新闻负载的比较从约 10,000 次减少到约 500 次
 
-**Clustering Rules**:
-- Articles with similarity ≥ 0.5 are grouped into clusters
-- Clusters are sorted by source tier, then recency
-- The most authoritative source becomes the "primary" headline
-- Clusters maintain full item list for multi-source attribution
+**聚类规则**：
+- 相似度≥0.5的文章被分组为簇
+- 集群按源层排序，然后按新近度排序
+- 最权威的来源成为“主要”标题
+- 集群维护多源归因的完整项目列表
 
-### Velocity Analysis
+### 速度分析
 
-Each news cluster tracks publication velocity:
+每个新闻集群跟踪发布速度：
 
-- **Sources per hour** = article count / time span
-- **Trend** = rising/stable/falling based on first-half vs second-half publication rate
-- **Levels**: Normal (<3/hr), Elevated (3-6/hr), Spike (>6/hr)
+- **每小时来源** = 文章数/时间跨度
+- **趋势** = 基于上半年与下半年发表率的上升/稳定/下降
+- **级别**：正常（<3/hr), Elevated (3-6/hr), Spike (>6/小时）
 
-### Sentiment Detection
+### 情绪检测
 
-Headlines are scored against curated word lists:
+标题是根据精选的单词列表进行评分的：
 
-**Negative indicators**: war, attack, killed, crisis, crash, collapse, threat, sanctions, invasion, missile, terror, assassination, recession, layoffs...
+**负面指标**：战争、袭击、死亡、危机、坠机、崩溃、威胁、制裁、入侵、导弹、恐怖、暗杀、经济衰退、裁员……
 
-**Positive indicators**: peace, deal, agreement, breakthrough, recovery, growth, ceasefire, treaty, alliance, victory...
+**积极指标**：和平、协议、协议、突破、复苏、增长​​、停火、条约、联盟、胜利......
 
-Score determines sentiment classification: negative (<-1), neutral (-1 to +1), positive (>+1)
+分数决定情感分类：负 (<-1), neutral (-1 to +1), positive (>+1)
 
-### Entity Extraction
+### 实体提取
 
-News headlines are scanned against the entity knowledge base using **word-boundary regex matching**:
+使用**字边界正则表达式匹配**根据实体知识库扫描新闻标题：
 
 ```
 regex = /\b{escaped_alias}\b/gi
 ```
 
-**Index Structure**:
-The entity index pre-builds five lookup maps for O(1) access:
+**指数结构**：
+实体索引预先构建了五个查找映射以进行 O(1) 访问：
 
-| Map | Key | Value | Purpose |
+|地图 |关键|价值|目的|
 |-----|-----|-------|---------|
-| `byId` | Entity ID | Full entity record | Direct lookup |
-| `byAlias` | Lowercase alias | Entity ID | Name matching |
-| `byKeyword` | Lowercase keyword | Set of entity IDs | Topic matching |
-| `bySector` | Sector name | Set of entity IDs | Sector queries |
-| `byType` | Entity type | Set of entity IDs | Type filtering |
+| `byId` |实体 ID |完整的实体记录 |直接查找|
+| `byAlias` |小写别名 |实体 ID |姓名匹配|
+| `byKeyword` |小写关键字 |实体 ID 集 |主题匹配 |
+| `bySector` |部门名称 |实体 ID 集 |部门查询 |
+| `byType` |实体类型 |实体 ID 集 |类型过滤|
 
-**Matching Algorithm**:
+**匹配算法**：
 
-1. **Alias matching** (highest confidence):
-   - Iterate all aliases (minimum 3 characters to avoid false positives)
-   - Word-boundary regex prevents partial matches ("AI" won't match "RAID")
-   - First alias match for each entity stops further searching (deduplication)
+1. **别名匹配**（最高置信度）：
+- 迭代所有别名（至少 3 个字符以避免误报）
+- 字边界正则表达式防止部分匹配（“AI”不会匹配“RAID”）
+- 每个实体的第一个别名匹配停止进一步搜索（重复数据删除）
 
-2. **Keyword matching** (medium confidence):
-   - Simple substring check (faster than regex)
-   - Multiple entities may match same keyword
-   - Lower confidence (70%) than alias matches (95%)
+2. **关键词匹配**（中等置信度）：
+- 简单的子字符串检查（比正则表达式更快）
+- 多个实体可能匹配相同的关键字
+- 置信度 (70%) 低于别名匹配 (95%)
 
-3. **Related entity expansion**:
-   - If entity has `related` field, those entities are also checked
-   - Example: AVGO move also searches for NVDA, INTC, AMD news
+3. **相关实体扩展**：
+- 如果实体具有 `related` 字段，则还会检查这些实体
+- 示例：AVGO move 还搜索 NVDA、INTC、AMD 新闻
 
-**Performance**:
-- Index builds once on first access (cached singleton)
-- Alias map has ~300 entries for 100+ entities
-- Keyword map has ~400 entries
-- Full news scan: O(aliases × clusters) ≈ 300 × 50 = 15,000 comparisons
+**表现**：
+- 索引在第一次访问时构建一次（缓存单例）
+- Alias 地图包含 100 多个实体的约 300 个条目
+- 关键字图有约 400 个条目
+- 完整新闻扫描：O(别名 × 簇) ≈ 300 × 50 = 15,000 次比较
 
-### Baseline Deviation (Z-Score)
+### 基线偏差（Z 分数）
 
-The system maintains rolling baselines for news volume per topic:
+系统维护每个主题的新闻量滚动基线：
 
-- **7-day average** and **30-day average** stored in IndexedDB
-- Standard deviation calculated from historical counts
-- **Z-score** = (current - mean) / stddev
+- **7 天平均值** 和 **30 天平均值** 存储在 IndexedDB 中
+- 根据历史计数计算的标准偏差
+- **Z 分数** =（当前 - 平均值）/ stddev
 
-Deviation levels:
-- **Spike**: Z > 2.5 (statistically rare increase)
-- **Elevated**: Z > 1.5
-- **Normal**: -2 < Z < 1.5
-- **Quiet**: Z < -2 (unusually low activity)
+偏差水平：
+- **尖峰**：Z > 2.5（统计上罕见的增加）
+- **升高**：Z > 1.5
+- **正常**：-2 < Z < 1.5
+- **安静**：Z < -2（活动异常低）
 
-This enables detection of anomalous activity even when absolute numbers seem normal.
+即使绝对数量看起来正常，这也能够检测到异常活动。
 
 ---
 
-## Dynamic Hotspot Activity
+## 动态热点活动
 
-Hotspots on the map are **not static threat levels**. Activity is calculated in real-time based on news correlation.
+地图上的热点**不是静态威胁级别**。活动是根据新闻相关性实时计算的。
 
-Each hotspot defines keywords:
+每个热点定义关键字：
 ```typescript
 {
   id: 'dc',
@@ -787,32 +787,32 @@ Each hotspot defines keywords:
 }
 ```
 
-The system counts matching news articles in the current feed, applies velocity analysis, and assigns activity levels:
+系统对当前提要中匹配的新闻文章进行计数，应用速度分析并分配活动级别：
 
-| Level | Criteria | Visual |
+|水平|标准|视觉 |
 |-------|----------|--------|
-| **Low** | <3 matches, normal velocity | Gray marker |
-| **Elevated** | 3-6 matches OR elevated velocity | Yellow pulse |
-| **High** | >6 matches OR spike velocity | Red pulse |
+| **低** | <3 场比赛，正常速度 |灰色记号笔|
+| **提升** | 3-6 场比赛或提高速度 |黄脉|
+| **高** | >6 场比赛或尖峰速度 |红色脉冲|
 
-This creates a dynamic "heat map" of global attention based on live news flow.
+这创建了基于实时新闻流的全球关注的动态“热图”。
 
-### Hotspot Escalation Signals
+### 热点升级信号
 
-Beyond visual activity levels, the system generates **escalation signals** when hotspots show significant changes across multiple dimensions. This multi-component approach reduces false positives by requiring corroboration from independent data streams.
+除了视觉活动水平之外，当热点在多个维度上显示出显着变化时，系统还会生成**升级信号**。这种多组件方法通过需要独立数据流的证实来减少误报。
 
-**Escalation Components**
+**升级组件**
 
-Each hotspot's escalation score blends four weighted components:
+每个热点的升级分数混合了四个加权成分：
 
-| Component | Weight | Data Source | What It Measures |
+|组件|重量 |数据来源|它测量什么 |
 |-----------|--------|-------------|------------------|
-| **News Activity** | 35% | RSS feeds | Matching news count, breaking flags, velocity |
-| **CII Contribution** | 25% | Country Instability Index | Instability score of associated country |
-| **Geographic Convergence** | 25% | Multi-source events | Event type diversity in geographic cell |
-| **Military Activity** | 15% | OpenSky/AIS | Flights and vessels within 200km |
+| **新闻活动** | 35% | RSS 提要 |匹配新闻数、打破旗帜、速度 |
+| **CII 贡献** | 25% |国家不稳定指数|相关国家的不稳定得分 |
+| **地理融合** | 25% |多源事件 |地理单元中的事件类型多样性|
+| **军事活动** | 15% |开放天空/AIS | 200公里范围内的航班和船只 |
 
-**Score Calculation**
+**分数计算**
 
 ```
 static_baseline = hotspot.baselineRisk  // 1-5 per hotspot
@@ -827,112 +827,112 @@ proximity_boost = hotspot_proximity_multiplier  // 1.0-2.0
 final_score = (static_baseline × 0.30 + dynamic_score × 0.70) × proximity_boost
 ```
 
-**Trend Detection**
+**趋势检测**
 
-The system maintains 48-point history (24 hours at 30-minute intervals) per hotspot:
-- **Linear regression** calculates slope of recent scores
-- **Rising**: Slope > +0.1 points per interval
-- **Falling**: Slope < -0.1 points per interval
-- **Stable**: Slope within ±0.1
+系统为每个热点维护 48 点历史记录（24 小时，每 30 分钟一次）：
+- **线性回归**计算最近分数的斜率
+- **上升**：斜率 > +0.1 点/间隔
+- **下降**：斜率 < -0.1 点/间隔
+- **稳定**：斜率在±0.1以内
 
-**Signal Generation**
+**信号生成**
 
-Escalation signals (`hotspot_escalation`) are emitted when:
-1. Final score exceeds threshold (typically 60)
-2. At least 2 hours since last signal for this hotspot (cooldown)
-3. Trend is rising or score is critical (>80)
+在以下情况下会发出升级信号 (`hotspot_escalation`)：
+1. 最终分数超过阈值（通常为 60）
+2. 自该热点上次发出信号以来至少 2 小时（冷却时间）
+3. 趋势上升或分数很关键（>80）
 
-**Signal Context**
+**信号上下文**
 
-| Field | Content |
+|领域|内容 |
 |-------|---------|
-| **Why It Matters** | "Geopolitical hotspot showing significant escalation based on news activity, country instability, geographic convergence, and military presence" |
-| **Actionable Insight** | "Increase monitoring priority; assess downstream impacts on infrastructure, markets, and regional stability" |
-| **Confidence Note** | "Weighted by multiple data sources—news (35%), CII (25%), geo-convergence (25%), military (15%)" |
+| **为什么重要** | “由于新闻活动、国家不稳定、地理融合和军事存在，地缘政治热点显着升级”|
+| **可行的见解** | “提高监测优先级；评估下游对基础设施、市场和区域稳定的影响” |
+| **信心说明** | “按多个数据源加权——新闻 (35%)、CII (25%)、地理融合 (25%)、军事 (15%)” |
 
-This multi-signal approach means a hotspot escalation signal represents **corroborated evidence** across independent data streams—not just a spike in news mentions.
+这种多信号方法意味着热点升级信号代表独立数据流中的**确凿证据**，而不仅仅是新闻提及的激增。
 
 ---
 
-## Regional Focus Navigation
+## 区域重点导航
 
-The FOCUS selector in the header provides instant navigation to strategic regions. Each preset is calibrated to center on the region's geographic area with an appropriate zoom level.
+标题中的焦点选择器提供对战略区域的即时导航。每个预设都经过校准，以具有适当缩放级别的区域地理区域为中心。
 
-### Available Regions
+### 可用区域
 
-| Region | Coverage | Primary Use Cases |
+|地区 |覆盖范围|主要用例 |
 |--------|----------|-------------------|
-| **Global** | Full world view | Overview, cross-regional comparison |
-| **Americas** | North America focus | US monitoring, NORAD activity |
-| **Europe** | EU + UK + Scandinavia + Western Russia | NATO activity, energy infrastructure |
-| **MENA** | Middle East + North Africa | Conflict zones, oil infrastructure |
-| **Asia** | East Asia + Southeast Asia | China-Taiwan, Korean peninsula |
-| **Latin America** | Central + South America | Regional instability, drug trafficking |
-| **Africa** | Sub-Saharan Africa | Conflict zones, resource extraction |
-| **Oceania** | Australia + Pacific | Indo-Pacific activity |
+| **全球** |完整的世界观 |概览、跨区域比较 |
+| **美洲** |北美聚焦|美国监测、北美防空司令部活动 |
+| **欧洲** |欧盟+英国+斯堪的纳维亚半岛+俄罗斯西部|北约活动、能源基础设施|
+| **中东和北非** |中东+北非|冲突地区、石油基础设施|
+| **亚洲** |东亚+东南亚|中国-台湾、朝鲜半岛|
+| **拉丁美洲** |中美洲+南美洲|地区不稳定、贩毒|
+| **非洲** |撒哈拉以南非洲|冲突地区、资源开采|
+| **大洋洲** |澳大利亚+太平洋|印度-太平洋活动|
 
-### Quick Navigation
+### 快速导航
 
-The FOCUS dropdown enables rapid context switching:
+FOCUS 下拉菜单可实现快速上下文切换：
 
-1. **Breaking news** - Jump to the affected region
-2. **Regional briefing** - Cycle through regions for situational awareness
-3. **Crisis monitoring** - Lock onto a specific theater
+1. **突发新闻** - 跳转至受影响地区
+2. **区域简报** - 循环浏览各区域以了解情况
+3. **危机监控** - 锁定特定战区
 
-Regional views are encoded in shareable URLs, enabling direct links to specific geographic contexts.
+区域视图被编码在可共享的 URL 中，从而可以直接链接到特定的地理环境。
 
 ---
 
-## Map Pinning
+## 地图固定
 
-By default, the map scrolls with the page, allowing you to scroll down to view panels below. The **pin button** (📌) in the map header toggles sticky behavior:
+默认情况下，地图随页面滚动，允许您向下滚动以查看下面的面板。地图标题中的 **固定按钮** (📌) 可切换粘性行为：
 
-| State | Behavior |
+|状态|行为 |
 |-------|----------|
-| **Unpinned** (default) | Map scrolls with page; scroll down to see panels |
-| **Pinned** | Map stays fixed at top; panels scroll beneath |
+| **取消固定**（默认）|地图随页面滚动；向下滚动查看面板 |
+| **固定** |地图固定在顶部；面板在下方滚动 |
 
-### When to Pin
+### 何时固定
 
-- **Active monitoring** - Keep the map visible while reading news panels
-- **Cross-referencing** - Compare map markers with panel data
-- **Presentation** - Show the map while discussing panel content
+- **主动监控** - 在阅读新闻面板时保持地图可见
+- **交叉引用** - 将地图标记与面板数据进行比较
+- **演示** - 在讨论面板内容时显示地图
 
-### When to Unpin
+### 何时取消固定
 
-- **Panel focus** - Read through panels without map taking screen space
-- **Mobile** - Pin is disabled on mobile for better space utilization
-- **Research** - Focus on data panels without geographic distraction
+- **面板焦点** - 通读面板，无需地图占用屏幕空间
+- **移动设备** - 在移动设备上禁用 Pin 图以提高空间利用率
+- **研究** - 专注于数据面板，不受地理干扰
 
-Pin state persists across sessions via localStorage.
+Pin 状态通过 localStorage 在会话之间保持不变。
 
 ---
 
-## Country Instability Index (CII)
+## 国家不稳定指数 (CII)
 
-The dashboard maintains a **real-time instability score** for 20 strategically significant countries. Rather than relying on static risk ratings, the CII dynamically reflects current conditions based on multiple input streams.
+该仪表板维护 20 个具有重要战略意义的国家的**实时不稳定评分**。 CII 不依赖静态风险评级，而是根据多个输入流动态反映当前状况。
 
-### Monitored Countries (Tier 1)
+### 受监控国家/地区（第 1 级）
 
-| Region | Countries |
+|地区 |国家 |
 |--------|-----------|
-| **Americas** | United States, Venezuela |
-| **Europe** | Germany, France, United Kingdom, Poland |
-| **Eastern Europe** | Russia, Ukraine |
-| **Middle East** | Iran, Israel, Saudi Arabia, Turkey, Syria, Yemen |
-| **Asia-Pacific** | China, Taiwan, North Korea, India, Pakistan, Myanmar |
+| **美洲** |美国、委内瑞拉 |
+| **欧洲** |德国、法国、英国、波兰 |
+| **东欧** |俄罗斯、乌克兰 |
+| **中东** |伊朗、以色列、沙特阿拉伯、土耳其、叙利亚、也门 |
+| **亚太地区** |中国、台湾、朝鲜、印度、巴基斯坦、缅甸 |
 
-### Three Component Scores
+### 三部分分数
 
-Each country's CII is computed from three weighted components:
+每个国家的 CII 由三个加权部分计算得出：
 
-| Component | Weight | Data Sources | What It Measures |
+|组件|重量 |数据来源|它测量什么 |
 |-----------|--------|--------------|------------------|
-| **Unrest** | 40% | ACLED protests, GDELT events | Civil unrest intensity, fatalities, event severity |
-| **Security** | 30% | Military flights, naval vessels | Unusual military activity patterns |
-| **Information** | 30% | News velocity, alert clusters | Media attention intensity and acceleration |
+| **骚乱** | 40% | ACLED 抗议、GDELT 活动 |内乱强度、死亡人数、事件严重程度 |
+| **安全** | 30% |军用飞行、海军舰艇|不寻常的军事活动模式|
+| **信息** | 30% |新闻速度、警报集群 |媒体关注强度和加速度|
 
-### Scoring Algorithm
+### 评分算法
 
 ```
 Unrest Score:
@@ -955,13 +955,13 @@ Information Score:
 Final CII = round(unrest × 0.4 + security × 0.3 + information × 0.3)
 ```
 
-### Scoring Bias Prevention
+### 预防评分偏差
 
-Raw news volume creates a natural bias—English-language media generates far more coverage of the US, UK, and Western Europe than conflict zones. Without correction, stable democracies would consistently score higher than actual crisis regions.
+原始新闻量会产生一种自然的偏见——英语媒体对美国、英国和西欧的报道远多于对冲突地区的报道。如果不进行修正，稳定的民主国家的得分将始终高于实际的危机地区。
 
-**Log Scaling for High-Volume Countries**
+**高容量国家/地区的对数缩放**
 
-Countries with high media coverage receive logarithmic dampening on their unrest and information scores:
+媒体报道率高的国家的动荡和信息分数受到对数抑制：
 
 ```
 if (newsVolume > threshold):
@@ -969,91 +969,91 @@ if (newsVolume > threshold):
   score = rawScore × dampingFactor
 ```
 
-This ensures the US receiving 50 news mentions about routine political activity doesn't outscore Ukraine with 10 mentions about active combat.
+这确保了美国收到 50 条关于日常政治活动的新闻提及，不会超过乌克兰 10 条关于活跃战斗的提及。
 
-**Conflict Zone Floor Scores**
+**冲突区楼层分数**
 
-Active conflict zones have minimum score floors that prevent them from appearing stable during data gaps or low-coverage periods:
+活跃冲突区域具有最低分数下限，可防止它们在数据缺口或低覆盖率期间显得稳定：
 
-| Country | Floor | Rationale |
+|国家 |楼层|理由|
 |---------|-------|-----------|
-| Ukraine | 55 | Active war with Russia |
-| Syria | 50 | Ongoing civil war |
-| Yemen | 50 | Ongoing civil war |
-| Myanmar | 45 | Military coup, civil conflict |
-| Israel | 45 | Active Gaza conflict |
+|乌克兰 | 55 | 55与俄罗斯的积极战争|
+|叙利亚 | 50 | 50持续的内战|
+|也门 | 50 | 50持续的内战|
+|缅甸 | 45 | 45军事政变、内战|
+|以色列 | 45 | 45加沙冲突活跃 |
 
-The floor applies *after* the standard calculation—if the computed score exceeds the floor, the computed score is used. This prevents false "all clear" signals while preserving sensitivity to actual escalations.
+标准计算*之后*应用下限——如果计算出的分数超过下限，则使用计算出的分数。这可以防止错误的“全部清除”信号，同时保持对实际升级的敏感性。
 
-### Instability Levels
+### 不稳定程度
 
-| Level | Score Range | Visual | Meaning |
+|水平|分数范围|视觉 |意义|
 |-------|-------------|--------|---------|
-| **Critical** | 81-100 | Red | Active crisis or major escalation |
-| **High** | 66-80 | Orange | Significant instability requiring close monitoring |
-| **Elevated** | 51-65 | Yellow | Above-normal activity patterns |
-| **Normal** | 31-50 | Gray | Baseline geopolitical activity |
-| **Low** | 0-30 | Green | Unusually quiet period |
+| **关键** | 81-100 | 81-100红色|危机活跃或严重升级|
+| **高** | 66-80 | 66-80橙色|需要密切监测的显着不稳定|
+| **提升** | 51-65 | 51-65黄色|高于正常的活动模式|
+| **正常** | 31-50 | 31-50灰色|地缘政治活动基线|
+| **低** | 0-30 |绿色|异常安静的时期 |
 
-### Trend Detection
+### 趋势检测
 
-The CII tracks 24-hour changes to identify trajectory:
-- **Rising**: Score increased by ≥5 points (escalating situation)
-- **Stable**: Change within ±5 points (steady state)
-- **Falling**: Score decreased by ≥5 points (de-escalation)
+CII 跟踪 24 小时变化以确定轨迹：
+- **上升**：分数增加≥5分（情况不断升级）
+- **稳定**：变化在±5点以内（稳定状态）
+- **下降**：分数下降 ≥5 分（降级）
 
-### Contextual Score Boosts
+### 上下文分数提升
 
-Beyond the base component scores, several contextual factors can boost a country's CII score (up to a combined maximum of 23 additional points):
+除了基本成分分数外，几个背景因素可以提高一个国家/地区的 CII 分数（总计最多 23 分）：
 
-| Boost Type | Max Points | Condition | Purpose |
+|升压类型|最大积分 |状况 |目的|
 |------------|------------|-----------|---------|
-| **Hotspot Activity** | 10 | Events near defined hotspots | Captures localized escalation |
-| **News Urgency** | 5 | Information component ≥50 | High media attention indicator |
-| **Focal Point** | 8 | AI focal point detection on country | Multi-source convergence indicator |
+| **热点活动** | 10 | 10指定热点附近的事件 |捕获局部升级|
+| **新闻紧迫性** | 5 |信息分量≥50|高媒体关注度指标|
+| **焦点** | 8 | AI 国家焦点检测 |多源融合指标|
 
-**Hotspot Boost Calculation**:
-- Hotspot activity (0-100) scaled by 1.5× then capped at 10
-- Zero boost for countries with no associated hotspot activity
+**热点提升计算**：
+- 热点活动 (0-100) 按 1.5 倍缩放，然后上限为 10
+- 对没有相关热点活动的国家进行零提升
 
-**News Urgency Boost Tiers**:
-- Information ≥70: +5 points
-- Information ≥50: +3 points
-- Information <50: +0 points
+**新闻紧急度提升等级**：
+- 信息≥70：+5分
+- 信息≥50：+3分
+- 信息<50：+0分
 
-**Focal Point Boost Tiers**:
-- Critical urgency: +8 points
-- Elevated urgency: +4 points
-- Normal urgency: +0 points
+**焦点提升等级**：
+- 紧急程度：+8分
+- 紧急程度提高：+4 分
+- 正常紧急程度：+0分
 
-These boosts are designed to elevate scores only when corroborating evidence exists—a country must have both high base scores AND contextual signals to reach extreme levels.
+这些提升旨在仅在存在确凿证据的情况下提高分数——一个国家必须同时拥有高基础分数和背景信号才能达到极端水平。
 
-### Server-Side Pre-Computation
+### 服务器端预计算
 
-To eliminate the "cold start" problem where new users would see blank data during the Learning Mode warmup, CII scores are **pre-computed server-side** via the `/api/risk-scores` endpoint. See the [Server-Side Risk Score API](#server-side-risk-score-api) section for details.
+为了消除新用户在学习模式预热期间看到空白数据的“冷启动”问题，CII 分数是通过 `/api/risk-scores` 端点在服务器端**预先计算的。有关详细信息，请参阅 [Server-Side Risk Score API](#server-side-risk-score-api) 部分。
 
-### Learning Mode (15-Minute Warmup)
+### 学习模式（15 分钟热身）
 
-On dashboard startup, the CII system enters **Learning Mode**—a 15-minute calibration period where scores are calculated but alerts are suppressed. This prevents the flood of false-positive alerts that would otherwise occur as the system establishes baseline values.
+仪表板启动时，CII 系统进入**学习模式** - 一个 15 分钟的校准期，在此期间计算分数但抑制警报。这可以防止系统建立基线值时出现大量误报警报。
 
-**Note**: Server-side pre-computation now provides immediate scores to new users—Learning Mode primarily affects client-side dynamic adjustments and alert generation rather than initial score display.
+**注意**：服务器端预计算现在为新用户提供即时分数——学习模式主要影响客户端动态调整和警报生成，而不是初始分数显示。
 
-**Why 15 minutes?** Real-world testing showed that CII scores stabilize after approximately 10-20 minutes of data collection. The 15-minute window provides sufficient time for:
-- Multiple refresh cycles across all data sources
-- Trend detection to establish direction (rising/stable/falling)
-- Cross-source correlation to normalize bias
+**为什么是 15 分钟？** 实际测试表明，CII 分数在大约 10-20 分钟的数据收集后稳定下来。 15 分钟的窗口期提供了足够的时间：
+- 跨所有数据源的多个刷新周期
+- 趋势检测以确定方向（上升/稳定/下降）
+- 跨源相关性以标准化偏差
 
-**Visual Indicators**
+**视觉指示器**
 
-During Learning Mode, the dashboard provides clear visual feedback:
+在学习模式期间，仪表板提供清晰的视觉反馈：
 
-| Location | Indicator |
+|地点 |指标|
 |----------|-----------|
-| **CII Panel** | Yellow banner with progress bar and countdown timer |
-| **Strategic Risk Overview** | "Learning Mode - Xm until reliable" status |
-| **Score Display** | Scores shown at 60% opacity (dimmed) |
+| **CII 面板** |带有进度条和倒计时器的黄色横幅|
+| **战略风险概述** | “学习模式 - Xm 直到可靠”状态 |
+| **分数显示** |分数以 60% 不透明度显示（变暗）|
 
-**Behavior**
+**行为**
 
 ```
 Minutes 0-15: Learning Mode Active
@@ -1068,37 +1068,37 @@ After 15 minutes: Learning Complete
   - "All data sources active" status shown
 ```
 
-This ensures users understand that early scores are provisional while preventing alert fatigue during the calibration period.
+这可确保用户了解早期分数是临时的，同时防止校准期间出现警报疲劳。
 
-### Keyword Attribution
+### 关键字归因
 
-Countries are matched to data via keyword lists:
-- **Russia**: `russia`, `moscow`, `kremlin`, `putin`
-- **China**: `china`, `beijing`, `xi jinping`, `prc`
-- **Taiwan**: `taiwan`, `taipei`
+国家/地区通过关键字列表与数据进行匹配：
+- **俄罗斯**：`russia`、`moscow`、`kremlin`、`putin`
+- **中国**：`china`、`beijing`、`xi jinping`、`prc`
+- **台湾**：`taiwan`、`taipei`
 
-This enables attribution of news and events to specific countries even when formal country codes aren't present in the source data.
+即使源数据中不存在正式的国家/地区代码，这也可以将新闻和事件归因于特定国家/地区。
 
 ---
 
-## Geographic Convergence Detection
+## 地理融合检测
 
-One of the most valuable intelligence signals is when **multiple independent data streams converge on the same geographic area**. This often precedes significant events.
+最有价值的情报信号之一是**多个独立数据流汇聚到同一地理区域**。这通常发生在重大事件之前。
 
-### How It Works
+### 它是如何运作的
 
-The system maintains a real-time grid of geographic cells (1° × 1° resolution). Each cell tracks four event types:
+该系统维护地理单元的实时网格（1°×1°分辨率）。每个单元跟踪四种事件类型：
 
-| Event Type | Source | Detection Method |
+|事件类型 |来源 |检测方法|
 |------------|--------|-----------------|
-| **Protests** | ACLED/GDELT | Direct geolocation |
-| **Military Flights** | OpenSky | ADS-B position |
-| **Naval Vessels** | AIS stream | Ship position |
-| **Earthquakes** | USGS | Epicenter location |
+| **抗议** | ACLED/GDELT |直接地理定位 |
+| **军事航班** |开放天空 | ADS-B 位置 |
+| **海军舰艇** | AIS 流 |船舶位置|
+| **地震** |美国地质勘探局|震中位置|
 
-When **3 or more different event types** occur within the same cell during a 24-hour window, a **convergence alert** is generated.
+当 24 小时窗口内同一单元内发生**3 种或更多不同的事件类型**时，会生成**收敛警报**。
 
-### Convergence Scoring
+### 收敛评分
 
 ```
 type_score = event_types × 25      # Max 100 (4 types)
@@ -1106,53 +1106,53 @@ count_boost = min(25, total_events × 2)
 convergence_score = min(100, type_score + count_boost)
 ```
 
-### Alert Thresholds
+### 警报阈值
 
-| Types Converging | Score Range | Alert Level |
+|类型趋同 |分数范围|警报级别|
 |-----------------|-------------|-------------|
-| **4 types** | 80-100 | Critical |
-| **3 types** | 60-80 | High |
-| **3 types** (low count) | 40-60 | Medium |
+| **4 种** | 80-100 |关键|
+| **3 种** | 60-80 | 60-80高|
+| **3 种**（低计数）| 40-60 | 40-60中等|
 
-### Example Scenarios
+### 示例场景
 
-**Taiwan Strait Buildup**
-- Cell: `25°N, 121°E`
-- Events: Military flights (3), Naval vessels (2), Protests (1)
-- Score: 75 + 12 = 87 (Critical)
-- Signal: "Geographic Convergence (3 types) - military flights, naval vessels, protests"
+**台湾海峡建设**
+- 手机：`25°N, 121°E`
+- 活动：军事飞行 (3)、海军舰艇 (2)、抗议 (1)
+- 分数：75 + 12 = 87（严重）
+- 信号：“地理融合（3种）-军事飞行、海军舰艇、抗议”
 
-**Middle East Flashpoint**
-- Cell: `32°N, 35°E`
-- Events: Military flights (5), Protests (8), Earthquake (1)
-- Score: 75 + 25 = 100 (Critical)
-- Signal: Multiple activity streams converging on region
+**中东闪点**
+- 手机：`32°N, 35°E`
+- 事件：军事飞行 (5)、抗议 (8)、地震 (1)
+- 分数：75 + 25 = 100（严重）
+- 信号：多个活动流汇聚到区域
 
-### Why This Matters
+### 为什么这很重要
 
-Individual data points are often noise. But when **protests break out, military assets reposition, and seismic monitors detect anomalies** in the same location simultaneously, it warrants attention—regardless of whether any single source is reporting a crisis.
+单个数据点通常是噪音。但是，当**抗议爆发、军事资产重新部署以及地震监测器在同一地点同时检测到异常**时，无论是否有任何单一来源报告危机，都值得关注。
 
 ---
 
-## Infrastructure Cascade Analysis
+## 基础设施级联分析
 
-Critical infrastructure is interdependent. A cable cut doesn't just affect connectivity—it creates cascading effects across dependent countries and systems. The cascade analysis system visualizes these dependencies.
+关键基础设施是相互依存的。电缆切断不仅会影响连通性，还会在相关国家和系统之间产生连锁效应。级联分析系统将这些依赖性可视化。
 
-### Dependency Graph
+### 依赖图
 
-The system builds a graph of **279 infrastructure nodes** and **280 dependency edges**:
+系统构建了 **279 个基础设施节点**和 **280 个依赖边**的图：
 
-| Node Type | Count | Examples |
+|节点类型 |计数|示例 |
 |-----------|-------|----------|
-| **Undersea Cables** | 18 | MAREA, FLAG Europe-Asia, SEA-ME-WE 6 |
-| **Pipelines** | 88 | Nord Stream, Trans-Siberian, Keystone |
-| **Ports** | 61 | Singapore, Rotterdam, Shenzhen |
-| **Chokepoints** | 8 | Suez, Hormuz, Malacca |
-| **Countries** | 105 | End nodes representing national impact |
+| **海底电缆** | 18 | 18 MAREA，欧洲-亚洲旗帜，SEA-ME-WE 6 |
+| **管道** | 88 | 88北溪，横贯西伯利亚，基斯通 |
+| **端口** | 61 | 61新加坡、鹿特丹、深圳 |
+| **瓶颈** | 8 |苏伊士运河、霍尔木兹海峡、马六甲 |
+| **国家** | 105 | 105代表国家影响力的终端节点 |
 
-### Cascade Calculation
+### 级联计算
 
-When a user selects an infrastructure asset for analysis, a **breadth-first cascade** propagates through the graph:
+当用户选择基础设施资产进行分析时，**广度优先级联**将通过图表传播：
 
 ```
 1. Start at source node (e.g., "cable:marea")
@@ -1166,16 +1166,16 @@ When a user selects an infrastructure asset for analysis, a **breadth-first casc
 4. Recurse to depth 3 (prevent infinite loops)
 ```
 
-### Redundancy Modeling
+### 冗余建模
 
-The system accounts for alternative routes:
-- Cables with high redundancy show reduced impact
-- Countries with multiple cable landings show lower vulnerability
-- Alternative routes are displayed with capacity percentages
+系统考虑替代路线：
+- 具有高冗余度的电缆显示出较小的影响
+- 拥有多个电缆着陆点的国家的脆弱性较低
+- 替代路线以容量百分比显示
 
-### Example Analysis
+### 实例分析
 
-**MAREA Cable Disruption**:
+**MAREA 电缆中断**：
 ```
 Source: MAREA (US ↔ Spain, 200 Tbps)
 Countries Affected: 4
@@ -1186,7 +1186,7 @@ Countries Affected: 4
 Alternative Routes: TAT-14 (35%), Hibernia (22%), AEConnect (18%)
 ```
 
-**FLAG Europe-Asia Disruption**:
+**标记欧洲-亚洲中断**：
 ```
 Source: FLAG Europe-Asia (UK ↔ Japan)
 Countries Affected: 7
@@ -1196,95 +1196,95 @@ Countries Affected: 7
 Alternative Routes: SEA-ME-WE 6 (11%), 2Africa (8%), Falcon (8%)
 ```
 
-### Use Cases
+### 用例
 
-- **Pre-positioning**: Understand which countries are most vulnerable to specific infrastructure failures
-- **Risk Assessment**: Evaluate supply chain exposure to chokepoint disruptions
-- **Incident Response**: Quickly identify downstream effects of reported cable cuts or pipeline damage
+- **预先定位**：了解哪些国家最容易受到特定基础设施故障的影响
+- **风险评估**：评估供应链面临的阻塞点中断风险
+- **事件响应**：快速识别报告的电缆切断或管道损坏的下游影响
 
 ---
 
-## Undersea Cable Activity Monitoring
+## 海底电缆活动监测
 
-The dashboard monitors real-time cable operations and advisories from official maritime warning systems, providing early warning of potential connectivity disruptions.
+仪表板监控实时电缆操作和官方海事预警系统的建议，提供潜在连接中断的早期预警。
 
-### Data Sources
+### 数据源
 
-| Source | Coverage | Data Type |
+|来源 |覆盖范围|数据类型|
 |--------|----------|-----------|
-| **NGA Warnings** | Global | NAVAREA maritime warnings |
-| **Cable Operators** | Route-specific | Maintenance advisories |
+| **NGA 警告** |全球| NAVAREA 海上警告 |
+| **有线运营商** |特定路线 |维护咨询|
 
-### How It Works
+### 它是如何运作的
 
-The system parses NGA (National Geospatial-Intelligence Agency) maritime warnings for cable-related activity:
+该系统解析 NGA（国家地理空间情报局）针对电缆相关活动的海上警报：
 
-1. **Keyword filtering**: Warnings containing "CABLE", "CABLESHIP", "SUBMARINE CABLE", "FIBER OPTIC" are extracted
-2. **Coordinate parsing**: DMS and decimal coordinates are extracted from warning text
-3. **Cable matching**: Coordinates are matched to nearest cable routes within 5° radius
-4. **Severity classification**: Keywords like "FAULT", "BREAK", "DAMAGE" indicate faults; others indicate maintenance
+1. **关键字过滤**：提取包含“CABLE”、“CABLESHIP”、“SUBMARINE CABLE”、“FIBER OPTIC”的警告
+2. **坐标解析**：从警告文本中提取DMS和十进制坐标
+3. **电缆匹配**：坐标与5°半径内最近的电缆路线匹配
+4. **严重程度分类**：“FAULT”、“BREAK”、“DAMAGE”等关键字表示故障；其他表示维护
 
-### Alert Types
+### 警报类型
 
-| Type | Trigger | Map Display |
+|类型 |触发|地图显示|
 |------|---------|-------------|
-| **Cable Advisory** | Any cable-related NAVAREA warning | ⚠ Yellow marker at location |
-| **Repair Ship** | Cableship name detected in warning | 🚢 Ship icon with status |
+| **有线咨询** |任何与电缆相关的 NAVARE 警告 | ⚠ 位置处有黄色标记 |
+| **修理船** |警告中检测到电缆船名称 | 🚢 带有状态的船舶图标 |
 
-### Repair Ship Tracking
+### 修理船追踪
 
-When a cableship is mentioned in warnings, the system extracts:
-- **Vessel name**: CS Reliance, Cable Innovator, etc.
-- **Status**: "En route" or "On station"
-- **Location**: Current working area
-- **Associated cable**: Nearest cable route
+当警告中提到电缆船时，系统会提取：
+- **船只名称**：CS Reliance、Cable Innovator 等。
+- **状态**：“途中”或“在站”
+- **位置**：当前工作区域
+- **关联电缆**：最近的电缆路线
 
-This enables monitoring of ongoing repair operations before official carrier announcements.
+这样可以在运营商正式发布公告之前监控正在进行的维修操作。
 
-### Why This Matters
+### 为什么这很重要
 
-Undersea cables carry 95% of intercontinental data traffic. A cable cut can:
-- Cause regional internet outages
-- Disrupt financial transactions
-- Impact military communications
-- Create economic cascading effects
+海底电缆承载着 95% 的洲际数据流量。电缆切断可以：
+- 导致区域互联网中断
+- 扰乱金融交易
+- 影响军事通信
+- 创造经济连锁效应
 
-Early visibility into cable operations—even maintenance windows—provides advance warning for contingency planning.
+尽早了解电缆运行情况（甚至维护时段）可以为应急计划提供提前警告。
 
 ---
 
-## Strategic Risk Overview
+## 战略风险概述
 
-The Strategic Risk Overview provides a **composite dashboard** that synthesizes all intelligence modules into a single risk assessment.
+战略风险概述提供了一个**复合仪表板**，将所有情报模块综合为单个风险评估。
 
-### Composite Score (0-100)
+### 综合分数（0-100）
 
-The strategic risk score combines three components:
+战略风险评分由三个组成部分组成：
 
-| Component | Weight | Calculation |
+|组件|重量 |计算|
 |-----------|--------|-------------|
-| **Convergence** | 40% | `min(100, convergence_zones × 20)` |
-| **CII Deviation** | 35% | `min(100, avg_deviation × 2)` |
-| **Infrastructure** | 25% | `min(100, incidents × 25)` |
+| **收敛** | 40% | `min(100, convergence_zones × 20)` |
+| **CII 偏差** | 35% | `min(100, avg_deviation × 2)` |
+| **基础设施** | 25% | `min(100, incidents × 25)` |
 
-### Risk Levels
+### 风险级别
 
-| Score | Level | Trend Icon | Meaning |
+|分数 |水平|趋势图标|意义|
 |-------|-------|------------|---------|
-| 70-100 | **Critical** | 📈 Escalating | Multiple converging crises |
-| 50-69 | **Elevated** | ➡️ Stable | Heightened global tension |
-| 30-49 | **Moderate** | ➡️ Stable | Normal fluctuation |
-| 0-29 | **Low** | 📉 De-escalating | Unusually quiet period |
+| 70-100 | **关键** | 📈 不断升级 |多重危机汇聚 |
+| 50-69 | 50-69 **提升** | ➡️稳定|全球紧张局势加剧|
+| 30-49 | 30-49 **中等** | ➡️稳定|正常波动|
+| 0-29 | **低** | 📉 降级 |异常安静的时期 |
 
-### Unified Alert System
+### 统一警报系统
 
-Alerts from all modules are merged using **temporal and spatial deduplication**:
+使用**时间和空间重复数据删除**合并来自所有模块的警报：
 
-- **Time window**: Alerts within 2 hours may be merged
-- **Distance threshold**: Alerts within 200km may be merged
-- **Same country**: Alerts affecting the same country may be merged
+- **时间窗口**：2小时内的警报可能会被合并
+- **距离阈值**：200公里内的警报可能会合并
+- **同一国家**：影响同一国家/地区的警报可能会合并
 
-When alerts merge, they become **composite alerts** that show the full picture:
+当警报合并时，它们将成为显示完整情况的**复合警报**：
 
 ```
 Type: Composite Alert
@@ -1296,388 +1296,388 @@ Components:
 Priority: Critical
 ```
 
-### Alert Priority
+### 警报优先级
 
-| Priority | Criteria |
+|优先|标准|
 |----------|----------|
-| **Critical** | CII critical level, convergence score ≥80, cascade critical impact |
-| **High** | CII high level, convergence score ≥60, cascade affecting ≥5 countries |
-| **Medium** | CII change ≥10 points, convergence score ≥40 |
-| **Low** | Minor changes and low-impact events |
+| **关键** | CII临界水平，收敛分数≥80，级联临界影响|
+| **高** | CII高水平，收敛分数≥60，级联影响≥5个国家 |
+| **中** | CII变化≥10分，收敛分≥40 |
+| **低** |微小变化和低影响事件 |
 
-### Trend Detection
+### 趋势检测
 
-The system tracks the composite score over time:
-- First measurement establishes baseline (shows "Stable")
-- Subsequent changes of ±5 points trigger trend changes
-- This prevents false "escalating" signals on initialization
+系统跟踪一段时间内的综合得分：
+- 第一次测量建立基线（显示“稳定”）
+- 随后±5点的变化触发趋势变化
+- 这可以防止初始化时出现错误的“升级”信号
 
 ---
 
-## Pentagon Pizza Index (PizzINT)
+## 五角大楼披萨指数 (PizzINT)
 
-The dashboard integrates real-time foot traffic data from strategic locations near government and military facilities. This "Pizza Index" concept—tracking late-night activity spikes at restaurants near the Pentagon, Langley, and other facilities—provides an unconventional indicator of crisis activity.
+该仪表板集成了政府和军事设施附近战略地点的实时人流量数据。这种“披萨指数”概念——追踪五角大楼、兰利和其他设施附近餐馆的深夜活动高峰——提供了危机活动的非传统指标。
 
-### How It Works
+### 它是如何运作的
 
-The system aggregates percentage-of-usual metrics from monitored locations:
+系统聚合来自受监控位置的正常指标百分比：
 
-1. **Locations**: Fast food, pizza shops, and convenience stores near Pentagon, CIA, NSA, State Dept, and other facilities
-2. **Aggregation**: Activity percentages are averaged, capped at 100%
-3. **Spike Detection**: Locations exceeding their baseline are flagged
+1. **地点**：五角大楼、中央情报局、国家安全局、国务院和其他设施附近的快餐店、披萨店和便利店
+2. **聚合**：对活动百分比进行平均，上限为 100%
+3. **尖峰检测**：标记超出基线的位置
 
-### DEFCON-Style Alerting
+### DEFCON 式警报
 
-Aggregate activity maps to a 5-level readiness scale:
+总体活动映射到 5 级准备程度：
 
-| Level | Threshold | Label | Meaning |
+|水平|门槛|标签|意义|
 |-------|-----------|-------|---------|
-| **DEFCON 1** | ≥90% | COCKED PISTOL | Maximum readiness; crisis response active |
-| **DEFCON 2** | ≥75% | FAST PACE | High activity; significant event underway |
-| **DEFCON 3** | ≥50% | ROUND HOUSE | Elevated; above-normal operations |
-| **DEFCON 4** | ≥25% | DOUBLE TAKE | Increased vigilance |
-| **DEFCON 5** | <25% | FADE OUT | Normal peacetime operations |
+| **DEFCON 1** | ≥90% |待击的手枪 |最大程度的准备；危机应对积极|
+| **DEFCON 2** | ≥75% |快节奏|高活性；重大事件正在进行中 |
+| **DEFCON 3** | ≥50% |圆屋|升高；高于正常运营 |
+| **DEFCON 4** | ≥25% |双摄 |提高警惕|
+| **DEFCON 5** | <25% |淡出|平时正常行动|
 
-### GDELT Tension Pairs
+### GDELT 张力对
 
-The indicator also displays geopolitical tension scores from GDELT (Global Database of Events, Language, and Tone):
+该指标还显示 GDELT（全球事件、语言和语气数据库）的地缘政治紧张局势得分：
 
-| Pair | Monitored Relationship |
+|配对|监控关系 |
 |------|----------------------|
-| USA ↔ Russia | Primary nuclear peer adversary |
-| USA ↔ China | Economic and military competition |
-| USA ↔ Iran | Middle East regional tensions |
-| Israel ↔ Iran | Direct conflict potential |
-| China ↔ Taiwan | Cross-strait relations |
-| Russia ↔ Ukraine | Active conflict zone |
+|美国 ↔ 俄罗斯 |主要核对手 |
+|美国 ↔ 中国 |经济与军事竞争|
+|美国 ↔ 伊朗 |中东地区紧张局势|
+|以色列 ↔ 伊朗 |潜在的直接冲突|
+|中国 ↔ 台湾 |两岸关系 |
+|俄罗斯 ↔ 乌克兰 |活跃冲突区 |
 
-Each pair shows:
-- **Current tension score** (GDELT's normalized metric)
-- **7-day trend** (rising, falling, stable)
-- **Percentage change** from previous period
+每对显示：
+- **当前紧张评分**（GDELT 的标准化指标）
+- **7天趋势**（上涨、下跌、稳定）
+- **与上一时期相比的百分比变化**
 
-This provides context for the activity levels—a spike at Pentagon locations during a rising China-Taiwan tension score carries different weight than during a quiet period.
+这为活动水平提供了背景——中台紧张局势升级期间五角大楼地点的峰值与平静时期相比具有不同的重要性。
 
 ---
 
-## Related Assets
+## 相关资产
 
-News clusters are automatically enriched with nearby critical infrastructure. When a story mentions a geographic region, the system identifies relevant assets within 600km, providing immediate operational context.
+新闻集群会通过附近的关键基础设施自动丰富。当故事提到某个地理区域时，系统会识别 600 公里范围内的相关资产，提供即时的操作背景。
 
-### Asset Types
+### 资产类型
 
-| Type | Source | Examples |
+|类型 |来源 |示例 |
 |------|--------|----------|
-| **Pipelines** | 88 global routes | Nord Stream, Keystone, Trans-Siberian |
-| **Undersea Cables** | 55 major cables | TAT-14, SEA-ME-WE, Pacific Crossing |
-| **AI Datacenters** | 111 clusters (≥10k GPUs) | Azure East US, GCP Council Bluffs |
-| **Military Bases** | 220+ installations | Ramstein, Diego Garcia, Guam |
-| **Nuclear Facilities** | 100+ sites | Power plants, weapons labs, enrichment |
+| **管道** | 88条全球航线|北溪，基斯通，跨西伯利亚 |
+| **海底电缆** | 55 条主要电缆 | TAT-14, SEA-ME-WE, Pacific Crossing |
+| **人工智能数据中心** | 111 个集群（≥10k GPU）| Azure 美国东部，GCP 康瑟尔布拉夫斯 |
+| **军事基地** |超过 220 次安装 | Ramstein, 迪戈加西亚岛, 关岛 |
+| **核设施** | 100 多个网站 |发电厂、武器实验室、浓缩|
 
-### Location Inference
+### 位置推断
 
-The system infers the geographic focus of news stories through:
+该系统通过以下方式推断新闻报道的地理焦点：
 
-1. **Keyword matching**: Headlines are scanned against hotspot keyword lists (e.g., "Taiwan" → Taiwan Strait hotspot)
-2. **Confidence scoring**: Multiple keyword matches increase location confidence
-3. **Fallback to conflicts**: If no hotspot matches, active conflict zones are checked
+1. **关键词匹配**：根据热点关键词列表扫描标题（例如“台湾”→台湾海峡热点）
+2. **置信度评分**：多个关键词匹配可提高位置置信度
+3. **回退到冲突**：如果没有热点匹配，则检查活动冲突区域
 
-### Distance Calculation
+### 距离计算
 
-Assets are ranked by Haversine distance from the inferred location:
+资产按照距推断位置的半正矢距离进行排名：
 
 ```
 d = 2r × arcsin(√(sin²(Δφ/2) + cos(φ₁) × cos(φ₂) × sin²(Δλ/2)))
 ```
 
-Up to 3 assets per type are displayed, sorted by proximity.
+每种类型最多显示 3 个资产，按邻近程度排序。
 
-### Example Context
+### 示例上下文
 
-A news cluster about "pipeline explosion in Germany" would show:
-- **Pipelines**: Nord Stream (23km), Yamal-Europe (156km)
-- **Cables**: TAT-14 landing (89km)
-- **Bases**: Ramstein (234km)
+有关“德国管道爆炸”的新闻集群将显示：
+- **管道**：北溪（23公里）、亚马尔-欧洲（156公里）
+- **电缆**：TAT-14 着陆（89 公里）
+- **基地**：拉姆施泰因（234 公里）
 
-Clicking an asset zooms the map to its location and displays detailed information.
-
----
-
-## Custom Monitors
-
-Create personalized keyword alerts that scan all incoming news:
-
-1. Enter comma-separated keywords (e.g., "nvidia, gpu, chip shortage")
-2. System assigns a unique color
-3. Matching articles are highlighted in the Monitor panel
-4. Matching articles in clusters inherit the monitor color
-
-Monitors persist across sessions via LocalStorage.
+单击资产会将地图缩放到其位置并显示详细信息。
 
 ---
 
-## Activity Tracking
+## 自定义监视器
 
-The dashboard highlights newly-arrived items so you can quickly identify what changed since your last look.
+创建扫描所有传入新闻的个性化关键字警报：
 
-### Visual Indicators
+1. 输入以逗号分隔的关键字（例如“nvidia、gpu、芯片短缺”）
+2.系统分配唯一的颜色
+3. 匹配的文章在监控面板中突出显示
+4. 集群中的匹配文章继承显示器颜色
 
-| Indicator | Duration | Purpose |
+监视器通过 LocalStorage 跨会话持续存在。
+
+---
+
+## 活动追踪
+
+仪表板突出显示新到达的项目，以便您可以快速识别自上次查看以来发生的变化。
+
+### 视觉指示器
+
+|指标|持续时间 |目的|
 |-----------|----------|---------|
-| **NEW tag** | 2 minutes | Badge on items that just appeared |
-| **Glow highlight** | 30 seconds | Subtle animation drawing attention |
-| **Panel badge** | Until viewed | Count of new items in collapsed panels |
+| **新标签** | 2 分钟 |刚刚出现的物品上的徽章 |
+| **发光高光** | 30 秒 |微妙的动画吸引注意力|
+| **面板徽章** |直到查看 |折叠面板中的新项目计数 |
 
-### Automatic "Seen" Detection
+### 自动“看到”检测
 
-The system uses IntersectionObserver to detect when panels become visible:
+系统使用 IntersectionObserver 来检测面板何时可见：
 
-- When a panel is >50% visible for >500ms, items are marked as "seen"
-- Scrolling through a panel marks visible items progressively
-- Switching panels resets the "new" state appropriately
+- 当面板可见度 >50% 且持续时间 >500 毫秒时，项目将被标记为“已看到”
+- 滚动面板逐步标记可见项目
+- 切换面板适当地重置“新”状态
 
-### Panel-Specific Tracking
+### 面板特定跟踪
 
-Each panel maintains independent activity state:
+每个面板保持独立的活动状态：
 
-- **News**: New clusters since last view
-- **Markets**: Price changes exceeding thresholds
-- **Predictions**: Probability shifts >5%
-- **Natural Events**: New earthquakes and EONET events
+- **新闻**：自上次查看以来的新集群
+- **市场**：价格变化超过阈值
+- **预测**：概率变化 >5%
+- **自然事件**：新的地震和 EONET 事件
 
-This enables focused monitoring—you can collapse panels you've reviewed and see at a glance which have new activity.
-
----
-
-## Snapshot System
-
-The dashboard captures periodic snapshots for historical analysis:
-
-- **Automatic capture** every refresh cycle
-- **7-day retention** with automatic cleanup
-- **Stored data**: news clusters, market prices, prediction values, hotspot levels
-- **Playback**: Load historical snapshots to see past dashboard states
-
-Baselines (7-day and 30-day averages) are stored in IndexedDB for deviation analysis.
+这可以实现集中监控 - 您可以折叠已查看的面板并一目了然地看到有新活动。
 
 ---
 
-## Maritime Intelligence
+## 快照系统
 
-The Ships layer provides real-time vessel tracking and maritime domain awareness through AIS (Automatic Identification System) data.
+仪表板捕获定期快照以进行历史分析：
 
-### Chokepoint Monitoring
+- **自动捕获**每个刷新周期
+- **7天保留**并自动清理
+- **存储数据**：新闻集群、市场价格、预测值、热点级别
+- **回放**：加载历史快照以查看过去的仪表板状态
 
-The system monitors eight critical maritime chokepoints where disruptions could impact global trade:
+基线（7 天和 30 天平均值）存储在 IndexedDB 中以进行偏差分析。
 
-| Chokepoint | Strategic Importance |
+---
+
+## 海事情报
+
+船舶层通过 AIS（自动识别系统）数据提供实时船舶跟踪和海域感知。
+
+### 阻塞点监控
+
+该系统监控八个关键的海上阻塞点，这些阻塞点的中断可能会影响全球贸易：
+
+|阻塞点 |战略重要性|
 |------------|---------------------|
-| **Strait of Hormuz** | 20% of global oil transits; Iran control |
-| **Suez Canal** | Europe-Asia shipping; single point of failure |
-| **Strait of Malacca** | Primary Asia-Pacific oil route |
-| **Bab el-Mandeb** | Red Sea access; Yemen/Houthi activity |
-| **Panama Canal** | Americas east-west transit |
-| **Taiwan Strait** | Semiconductor supply chain; PLA activity |
-| **South China Sea** | Contested waters; island disputes |
-| **Black Sea** | Ukraine grain exports; Russian naval activity |
+| **霍尔木兹海峡** |全球石油运输量的20%；伊朗控制|
+| **苏伊士运河** |欧亚航运；单点故障|
+| **马六甲海峡** |亚太主要石油航线|
+| **曼德城门** |红海通道；也门/胡塞武装活动 |
+| **巴拿马运河** |美洲东西向过境|
+| **台湾海峡** |半导体供应链；解放军活动 |
+| **南海** |有争议的水域；岛屿争端|
+| **黑海** |乌克兰谷物出口；俄罗斯海军活动|
 
-### Density Analysis
+### 密度分析
 
-Vessel positions are aggregated into a 2° grid to calculate traffic density. Each cell tracks:
-- Current vessel count
-- Historical baseline (30-minute rolling window)
-- Change percentage from baseline
+船舶位置被聚合到 2° 网格中以计算交通密度。每个单元格跟踪：
+- 当前船只数量
+- 历史基线（30 分钟滚动窗口）
+- 相对于基线的变化百分比
 
-Density changes of ±30% trigger alerts, indicating potential congestion, diversions, or blockades.
+±30% 的密度变化会触发警报，表明潜在的拥堵、改道或封锁。
 
-### Dark Ship Detection
+### 暗船检测
 
-The system monitors for AIS gaps—vessels that stop transmitting their position. An AIS gap exceeding 60 minutes in monitored regions may indicate:
-- Sanctions evasion (ship-to-ship transfers)
-- Illegal fishing
-- Military activity
-- Equipment failure
+该系统监视 AIS 间隙，即停止传输其位置的船只。在受监控区域中 AIS 差距超过 60 分钟可能表明：
+- 逃避制裁（船对船转运）
+- 非法捕鱼
+- 军事活动
+- 设备故障
 
-Vessels reappearing after gaps are flagged for the duration of the session.
+在会话期间标记间隙后重新出现的船只。
 
-### WebSocket Architecture
+### WebSocket 架构
 
-AIS data flows through a WebSocket relay for real-time updates without polling:
+AIS 数据流经 WebSocket 中继进行实时更新，无需轮询：
 
 ```
 AISStream → WebSocket Relay → Browser
               (ws://relay)
 ```
 
-The connection automatically reconnects on disconnection with a 30-second backoff. When the Ships layer is disabled, the WebSocket disconnects to conserve resources.
+连接断开后会自动重新连接，并有 30 秒的退避时间。当 Ships 层被禁用时，WebSocket 会断开连接以节省资源。
 
-### Railway Relay Architecture
+### 铁路中继架构
 
-Some APIs block requests from cloud providers (Vercel, AWS, Cloudflare Workers). A Railway relay server provides authenticated access:
+某些 API 会阻止来自云提供商（Vercel、AWS、Cloudflare Workers）的请求。铁路中继服务器提供经过身份验证的访问：
 
 ```
 Browser → Railway Relay → External APIs
            (Node.js)      (AIS, OpenSky, RSS)
 ```
 
-**Relay Functions**:
+**继电器功能**：
 
-| Endpoint | Purpose | Authentication |
+|端点|目的|认证|
 |----------|---------|----------------|
-| `/` (WebSocket) | AIS vessel stream | AISStream API key |
-| `/opensky` | Military aircraft | OAuth2 Bearer token |
-| `/rss` | Blocked RSS feeds | None (user-agent spoofing) |
-| `/health` | Status check | None |
+| `/`（WebSocket）| AIS 船舶流 | AISStream API 密钥 |
+| `/opensky` |军用飞机| OAuth2 不记名令牌 |
+| `/rss` |阻止 RSS 提要 |无（用户代理欺骗）|
+| `/health` |状态检查 |无 |
 
-**Environment Variables** (Railway):
-- `AISSTREAM_API_KEY` - AIS data access
-- `OPENSKY_CLIENT_ID` - OAuth2 client ID
-- `OPENSKY_CLIENT_SECRET` - OAuth2 client secret
+**环境变量**（铁路）：
+- `AISSTREAM_API_KEY` - AIS 数据访问
+- `OPENSKY_CLIENT_ID` - OAuth2 客户端 ID
+- `OPENSKY_CLIENT_SECRET` - OAuth2 客户端密钥
 
-**Why Railway?**
-- Residential IP ranges (not blocked like cloud providers)
-- WebSocket support for persistent connections
-- Global edge deployment for low latency
-- Free tier sufficient for moderate traffic
+**为什么选择铁路？**
+- 住宅IP范围（不像云提供商那样被阻止）
+- WebSocket 支持持久连接
+- 全球边缘部署以实现低延迟
+- 免费套餐足以满足中等流量
 
-The relay is stateless—it simply authenticates and proxies requests. All caching and processing happens client-side or in Vercel Edge Functions.
+中继是无状态的——它只是验证和代理请求。所有缓存和处理都发生在客户端或 Vercel Edge Functions 中。
 
 ---
 
-## Military Tracking
+## 军事追踪
 
-The Military layer provides specialized tracking of military vessels and aircraft, identifying assets by their transponder characteristics and monitoring activity patterns.
+军事层提供对军用船只和飞机的专门跟踪，通过应答器特性识别资产并监控活动模式。
 
-### Military Vessel Identification
+### 军舰识别
 
-Vessels are identified as military through multiple methods:
+通过多种方法将船只识别为军用：
 
-**MMSI Analysis**: Maritime Mobile Service Identity numbers encode the vessel's flag state. The system maintains a mapping of 150+ country codes to identify naval vessels:
+**MMSI 分析**：海事移动服务识别号对船舶的船旗国进行编码。该系统维护 150 多个国家/地区代码的映射，以识别海军舰艇：
 
-| MID Range | Country | Notes |
+|中档 |国家 |笔记|
 |-----------|---------|-------|
-| 338-339 | USA | US Navy, Coast Guard |
-| 273 | Russia | Russian Navy |
-| 412-414 | China | PLAN vessels |
-| 232-235 | UK | Royal Navy |
-| 226-228 | France | Marine Nationale |
+| 338-339 | 338-339美国 |美国海军、海岸警卫队 |
+| 273 | 273俄罗斯 |俄罗斯海军|
+| 412-414 | 412-414中国 |海军舰艇 |
+| 232-235 | 232-235英国 |皇家海军|
+| 226-228 | 226-228法国 |国家海军 |
 
-**Known Vessel Database**: A curated database of 50+ named vessels enables positive identification when AIS transmits vessel names:
+**已知船舶数据库**：由 50 多艘命名船舶组成的精选数据库可在 AIS 传输船舶名称时进行积极识别：
 
-| Category | Tracked Vessels |
+|类别 |履带式船只|
 |----------|-----------------|
-| **US Carriers** | All 11 Nimitz/Ford-class (CVN-68 through CVN-78) |
-| **UK Carriers** | HMS Queen Elizabeth (R08), HMS Prince of Wales (R09) |
-| **Chinese Carriers** | Liaoning (16), Shandong (17), Fujian (18) |
-| **Russian Carrier** | Admiral Kuznetsov |
-| **Notable Destroyers** | USS Zumwalt (DDG-1000), HMS Defender (D36), HMS Duncan (D37) |
-| **Research/Intel** | USNS Victorious (T-AGOS-19), USNS Impeccable (T-AGOS-23), Yuan Wang |
+| **美国运营商** |所有 11 艘尼米兹/福特级（CVN-68 至 CVN-78）|
+| **英国运营商** |伊丽莎白女王号 (R08)、威尔士亲王号 (R09) |
+| **中国运营商** | Liaoning (16), Shandong (17), Fujian (18) |
+| **俄罗斯运营商** |库兹涅佐夫海军上将 |
+| **著名驱逐舰** | USS Zumwalt (DDG-1000)、HMS Defender (D36)、HMS Duncan (D37) |
+| **研究/英特尔** |胜利号 (T-AGOS-19)、无瑕号 (T-AGOS-23)、王远 |
 
-**Vessel Classification Algorithm**:
+**船舶分类算法**：
 
-1. Check vessel name against known database (hull numbers and ship names)
-2. Fall back to AIS ship type code if name match fails
-3. Apply MMSI pattern matching for country/operator identification
-4. For naval-prefix vessels (USS, HMS, HMCS, HMAS, INS, JS, ROKS, TCG), infer military status
+1.根据已知数据库检查船名（船体号和船名）
+2. 如果名称匹配失败，则回退至 AIS 船舶类型代码
+3. 应用 MMSI 模式匹配来识别国家/运营商
+4. 对于海军前缀舰艇（USS、HMS、HMCS、HMAS、INS、JS、ROKS、TCG），推断军事状态
 
-**Callsign Patterns**: Known military callsign prefixes (NAVY, GUARD, etc.) provide secondary identification.
+**呼号模式**：已知的军事呼号前缀（NAVY、GUARD 等）提供辅助识别。
 
-### Naval Chokepoint Monitoring
+### 海军阻塞点监控
 
-The system monitors 12 critical maritime chokepoints with configurable detection radii:
+该系统通过可配置的检测半径监控 12 个关键的海上阻塞点：
 
-| Chokepoint | Strategic Significance |
+|阻塞点 |战略意义 |
 |------------|----------------------|
-| Strait of Hormuz | Persian Gulf access, oil transit |
-| Suez Canal | Mediterranean-Red Sea link |
-| Strait of Malacca | Pacific-Indian Ocean route |
-| Taiwan Strait | Cross-strait tensions |
-| Bosphorus | Black Sea access |
-| GIUK Gap | North Atlantic submarine route |
+|霍尔木兹海峡 |波斯湾通道、石油运输|
+|苏伊士运河 |地中海-红海航线 |
+|马六甲海峡 |太平洋-印度洋航线|
+|台湾海峡|海峡两岸紧张局势 |
+|博斯普鲁斯海峡 |黑海通道 |
+| GIUK 差距 |北大西洋海底航线|
 
-When military vessels enter these zones, proximity alerts are generated.
+当军舰进入这些区域时，就会产生接近警报。
 
-### Naval Base Proximity
+### 海军基地邻近度
 
-Activity near 12 major naval installations is tracked:
+追踪 12 个主要海军设施附近的活动：
 
-- **Norfolk** (USA) - Atlantic Fleet headquarters
-- **Pearl Harbor** (USA) - Pacific Fleet base
-- **Sevastopol** (Russia) - Black Sea Fleet
-- **Qingdao** (China) - North Sea Fleet
-- **Yokosuka** (Japan) - US 7th Fleet
+- **诺福克**（美国）- 大西洋舰队总部
+- **珍珠港**（美国）- 太平洋舰队基地
+- **塞瓦斯托波尔**（俄罗斯） - 黑海舰队
+- **青岛**（中国）- 北海舰队
+- **横须贺**（日本） - 美国第七舰队
 
-Vessels within 50km of these bases are flagged, enabling detection of unusual activity patterns.
+这些基地 50 公里范围内的船只都会被标记，从而能够检测到异常活动模式。
 
-### Aircraft Tracking (OpenSky)
+### 飞机跟踪 (OpenSky)
 
-Military aircraft are tracked via the OpenSky Network using ADS-B data. OpenSky blocks unauthenticated requests from cloud provider IPs (Vercel, Railway, AWS), so aircraft tracking requires a relay server with credentials.
+军用飞机通过 OpenSky 网络使用 ADS-B 数据进行跟踪。 OpenSky 会阻止来自云提供商 IP（Vercel、Railway、AWS）的未经身份验证的请求，因此飞机跟踪需要具有凭据的中继服务器。
 
-**Authentication**:
-- Register for a free account at [opensky-network.org](https://opensky-network.org)
-- Create an API client in account settings to get `OPENSKY_CLIENT_ID` and `OPENSKY_CLIENT_SECRET`
-- The relay uses **OAuth2 client credentials flow** to obtain Bearer tokens
-- Tokens are cached (30-minute expiry) and automatically refreshed
+**验证**：
+- 在 [opensky-network.org](https://opensky-network.org) 注册免费帐户
+- 在帐户设置中创建 API 客户端以获取 `OPENSKY_CLIENT_ID` 和 `OPENSKY_CLIENT_SECRET`
+- 中继使用**OAuth2客户端凭证流**来获取承载令牌
+- 令牌被缓存（30 分钟到期）并自动刷新
 
-**Identification Methods**:
-- **Callsign matching**: Known military callsign patterns (RCH, REACH, DUKE, etc.)
-- **ICAO hex ranges**: Military aircraft use assigned hex code blocks by country
-- **Altitude/speed profiles**: Unusual flight characteristics
+**识别方法**：
+- **呼号匹配**：已知的军事呼号模式（RCH、REACH、DUKE 等）
+- **ICAO 十六进制范围**：军用飞机使用按国家分配的十六进制代码块
+- **高度/速度曲线**：不寻常的飞行特性
 
-**Tracked Metrics**:
-- Position history (20-point trails over 5-minute windows)
-- Altitude and ground speed
-- Heading and track
+**跟踪指标**：
+- 持仓历史记录（5 分钟窗口内 20 点轨迹）
+- 高度和地面速度
+- 标题和轨迹
 
-**Activity Detection**:
-- Formations (multiple military aircraft in proximity)
-- Unusual patterns (holding, reconnaissance orbits)
-- Chokepoint transits
+**活动检测**：
+- 编队（附近有多架军用飞机）
+- 不寻常的模式（等待、侦察轨道）
+- 阻塞点过境
 
-### Vessel Position History
+### 船舶位置历史记录
 
-The system maintains position trails for tracked vessels:
+系统维护跟踪船只的位置轨迹：
 
-- **30-point history** per MMSI
-- **10-minute cleanup interval** for stale data
-- **Trail visualization** on map for recent movement
+- **每个 MMSI 30 点历史记录**
+- **过时数据的清理间隔**为 10 分钟
+- **轨迹可视化**在地图上显示最近的移动
 
-This enables detection of loitering, circling, or other anomalous behavior patterns.
+这使得能够检测徘徊、盘旋或其他异常行为模式。
 
-### Military Surge Detection
+### 军事激增检测
 
-The system continuously monitors military aircraft activity to detect **surge events**—significant increases above normal operational baselines that may indicate mobilization, exercises, or crisis response.
+该系统持续监控军用飞机活动，以检测**激增事件**——超出正常运行基线的显着增加，这可能表明动员、演习或危机应对。
 
-**Theater Classification**
+**剧场分类**
 
-Military activity is analyzed across five geographic theaters:
+对五个地理战区的军事活动进行了分析：
 
-| Theater | Coverage | Key Areas |
+|剧院 |覆盖范围|重点领域 |
 |---------|----------|-----------|
-| **Middle East** | Persian Gulf, Levant, Arabian Peninsula | US CENTCOM activity, Iranian airspace |
-| **Eastern Europe** | Ukraine, Baltics, Black Sea | NATO-Russia border activity |
-| **Western Europe** | Central Europe, North Sea | NATO exercises, air policing |
-| **Pacific** | East Asia, Southeast Asia | Taiwan Strait, Korean Peninsula |
-| **Horn of Africa** | Red Sea, East Africa | Counter-piracy, Houthi activity |
+| **中东** |波斯湾、黎凡特、阿拉伯半岛 |美国中央司令部在伊朗领空的活动|
+| **东欧** |乌克兰、波罗的海、黑海 |北约-俄罗斯边境活动|
+| **西欧** |中欧、北海 |北约演习、空中警务|
+| **太平洋** |东亚、东南亚|台湾海峡、朝鲜半岛|
+| **非洲之角** |东非红海 |反海盗、胡塞武装活动|
 
-**Aircraft Classification**
+**飞机分类**
 
-Aircraft are categorized by callsign pattern matching:
+飞机按呼号模式匹配进行分类：
 
-| Type | Callsign Patterns | Significance |
+|类型 |呼号模式|意义 |
 |------|-------------------|--------------|
-| **Transport** | RCH, REACH, MOOSE, HERKY, EVAC, DUSTOFF | Airlift operations, troop movement |
-| **Fighter** | VIPER, EAGLE, RAPTOR, STRIKE | Combat air patrol, interception |
-| **Reconnaissance** | SIGNT, COBRA, RIVET, JSTARS | Intelligence gathering |
+| **交通** | RCH、REACH、MOOSE、HERKY、EVAC、DUSTOFF |空运行动、部队调动|
+| **战斗机** |毒蛇、老鹰、猛禽、攻击 |战斗空中巡逻、拦截|
+| **侦察** | SIGNT、COBRA、RIVET、JSTARS |情报收集|
 
-**Baseline Calculation**
+**基线计算**
 
-The system maintains rolling 48-hour activity baselines per theater:
-- Minimum 6 data samples required for reliable baseline
-- Default baselines when data insufficient: 3 transport, 2 fighter, 1 reconnaissance
-- Activity below 50% of baseline indicates stand-down
+系统维护每个剧院的 48 小时滚动活动基线：
+- 可靠基线至少需要 6 个数据样本
+- 数据不足时的默认基线：3架运输机、2架战斗机、1架侦察机
+- 活动低于基线的 50% 表示停止
 
-**Surge Detection Algorithm**
+**浪涌检测算法**
 
 ```
 surge_ratio = current_count / baseline
@@ -1688,352 +1688,352 @@ surge_triggered = (
 )
 ```
 
-**Surge Signal Output**
+**浪涌信号输出**
 
-When a surge is detected, the system generates a `military_surge` signal:
+当检测到浪涌时，系统会生成 `military_surge` 信号：
 
-| Field | Content |
+|领域|内容 |
 |-------|---------|
-| **Location** | Theater centroid coordinates |
-| **Message** | "Military Transport Surge in [Theater]: [X] aircraft (baseline: [Y])" |
-| **Details** | Aircraft types, nearby bases (150km radius), top callsigns |
-| **Confidence** | Based on surge ratio (0.6–0.9) |
+| **位置** |剧院质心坐标|
+| **留言** | “[战区]军事运输激增：[X]架飞机（基线：[Y]）”|
+| **详情** |飞机类型、附近基地（半径 150 公里）、主要呼号 |
+| **信心** |基于喘振比 (0.6–0.9) |
 
-### Foreign Military Presence Detection
+### 外国军事存在检测
 
-Beyond surge detection, the system monitors for **foreign military aircraft in sensitive regions**—situations where aircraft from one nation appear in geopolitically significant areas outside their normal operating range.
+除了激增检测之外，该系统还监视**敏感地区的外国军用飞机**，即来自一个国家的飞机出现在其正常运行范围之外的地缘政治重要区域的情况。
 
-**Sensitive Regions**
+**敏感区域**
 
-The system tracks 18 strategically significant geographic areas:
+该系统追踪 18 个具有战略意义的地理区域：
 
-| Region | Sensitivity | Monitored For |
+|地区 |灵敏度|监控 |
 |--------|-------------|---------------|
-| **Taiwan Strait** | Critical | PLAAF activity, US transits |
-| **Persian Gulf** | Critical | Iranian, US, Gulf state activity |
-| **Baltic Sea** | High | Russian activity near NATO |
-| **Black Sea** | High | NATO reconnaissance, Russian activity |
-| **South China Sea** | High | PLAAF patrols, US FONOPs |
-| **Korean Peninsula** | High | DPRK activity, US-ROK exercises |
-| **Eastern Mediterranean** | Medium | Russian naval aviation, NATO |
-| **Arctic** | Medium | Russian bomber patrols |
+| **台湾海峡** |关键|中国空军的活动，美国过境|
+| **波斯湾** |关键|伊朗、美国、海湾国家的活动|
+| **波罗的海** |高|俄罗斯在北约附近的活动|
+| **黑海** |高|北约侦察、俄罗斯活动|
+| **南海** |高|中国空军巡逻、美国航行自由行动 |
+| **朝鲜半岛** |高|朝鲜活动、美韩演习 |
+| **东地中海** |中等|俄罗斯海军航空兵、北约|
+| **北极** |中等|俄罗斯轰炸机巡逻|
 
-**Detection Logic**
+**检测逻辑**
 
-For each sensitive region, the system:
-1. Identifies all military aircraft within the region boundary
-2. Groups aircraft by operating nation
-3. Excludes "home region" operators (e.g., Russian VKS in Baltic excluded from alert)
-4. Applies concentration thresholds (typically 2-3 aircraft per operator)
+对于每个敏感区域，系统：
+1.识别区域边界内的所有军用飞机
+2. 按运营国家对飞机进行分组
+3. 排除“本土地区”运营商（例如，波罗的海的俄罗斯 VKS 被排除在警报之外）
+4. 应用浓度阈值（通常每个运营商 2-3 架飞机）
 
-**Critical Combinations**
+**关键组合**
 
-Certain operator-region combinations trigger **critical severity** alerts:
+某些运营商区域组合会触发**严重程度**警报：
 
-| Operator | Region | Rationale |
+|操作员|地区 |理由|
 |----------|--------|-----------|
-| PLAAF | Taiwan Strait | Potential invasion rehearsal |
-| Russian VKS | Arctic | Nuclear bomber patrols |
-| USAF | Persian Gulf | Potential strike package |
+|中国空军 |台湾海峡|潜在入侵演习|
+|俄罗斯 VKS |北极|核轰炸机巡逻|
+|美国空军 |波斯湾 |潜在的罢工计划|
 
-**Signal Output**
+**信号输出**
 
-Foreign presence detection generates a `foreign_military_presence` signal:
+异物存在检测会生成 `foreign_military_presence` 信号：
 
-| Field | Content |
+|领域|内容 |
 |-------|---------|
-| **Title** | "Foreign Military Presence: [Region]" |
-| **Details** | "[Operator] aircraft detected: [count] [types]" |
-| **Severity** | Critical/High/Medium based on combination |
-| **Confidence** | 0.7–0.95 based on aircraft count and type diversity |
+| **标题** | “外国军事存在：[地区]”|
+| **详情** | “[操作员] 检测到飞机：[计数] [类型]”|
+| **严重性** |基于组合的临界/高/中 |
+| **信心** | 0.7–0.95 基于飞机数量和类型多样性 |
 
 ---
 
-## Aircraft Enrichment
+## 飞机浓缩
 
-Military aircraft tracking is enhanced with **Wingbits** enrichment data, providing detailed aircraft information that goes beyond basic transponder data.
+**Wingbits** 丰富数据增强了军用飞机跟踪功能，提供了超出基本转发器数据的详细飞机信息。
 
-### What Wingbits Provides
+### Wingbits 提供什么
 
-When an aircraft is detected via OpenSky ADS-B, the system queries Wingbits for:
+当通过 OpenSky ADS-B 检测到飞机时，系统会查询 Wingbits：
 
-| Field | Description | Use Case |
+|领域|描述 |使用案例|
 |-------|-------------|----------|
-| **Registration** | Aircraft tail number (e.g., N12345) | Unique identification |
-| **Owner** | Legal owner of the aircraft | Military branch detection |
-| **Operator** | Operating entity | Distinguish military vs. contractor |
-| **Manufacturer** | Boeing, Lockheed Martin, etc. | Aircraft type classification |
-| **Model** | Specific aircraft model | Capability assessment |
-| **Built Year** | Year of manufacture | Fleet age analysis |
+| **注册** |飞机尾号（例如 N12345）|唯一标识|
+| **所有者** |飞机的合法拥有者 |军事部门检测|
+| **操作员** |经营实体|区分军队与承包商|
+| **制造商** |波音、洛克希德·马丁等|飞机型号分类 |
+| **型号** |具体机型|能力评估|
+| **建成年份** |制造年份 |机队年龄分析|
 
-### Military Classification Algorithm
+### 军事分类算法
 
-The enrichment service analyzes owner and operator fields against curated keyword lists:
+丰富服务根据策划的关键字列表分析所有者和运营商字段：
 
-**Confirmed Military** (owner/operator match):
-- Government: "United States Air Force", "Department of Defense", "Royal Air Force"
-- International: "NATO", "Ministry of Defence", "Bundeswehr"
+**确认的军事**（所有者/操作员匹配）：
+- 政府：“美国空军”、“国防部”、“皇家空军”
+- 国际：“北约”、“国防部”、“联邦国防军”
 
-**Likely Military** (operator ICAO codes):
-- `AIO` (Air Mobility Command), `RRR` (Royal Air Force), `GAF` (German Air Force)
-- `RCH` (REACH flights), `CNV` (Convoy flights), `DOD` (Department of Defense)
+**可能是军事**（运营商 ICAO 代码）：
+- `AIO`（空中机动司令部）、`RRR`（英国皇家空军）、`GAF`（德国空军）
+- `RCH`（REACH 航班）、`CNV`（护航航班）、`DOD`（国防部）
 
-**Possible Military** (defense contractors):
-- Northrop Grumman, Lockheed Martin, General Atomics, Raytheon, Boeing Defense, L3Harris
+**可能的军事**（国防承包商）：
+- 诺斯罗普·格鲁曼公司、洛克希德·马丁公司、通用原子公司、雷神公司、波音防务公司、L3Harris
 
-**Aircraft Type Matching**:
-- Transport: C-17, C-130, C-5, KC-135, KC-46
-- Reconnaissance: RC-135, U-2, RQ-4, E-3, E-8
-- Combat: F-15, F-16, F-22, F-35, B-52, B-2
-- European: Eurofighter, Typhoon, Rafale, Tornado, Gripen
+**机型匹配**：
+- 运输：C-17、C-130、C-5、KC-135、KC-46
+- 侦察：RC-135、U-2、RQ-4、E-3、E-8
+- 战斗：F-15、F-16、F-22、F-35、B-52、B-2
+- 欧洲：欧洲战斗机、台风、阵风、龙卷风、鹰狮
 
-### Confidence Levels
+### 置信度
 
-Each enriched aircraft receives a confidence classification:
+每架丰富的飞机都会收到一个置信度分类：
 
-| Level | Criteria | Display |
+|水平|标准|显示|
 |-------|----------|---------|
-| **Confirmed** | Direct military owner/operator match | Green badge |
-| **Likely** | Military ICAO code or aircraft type | Yellow badge |
-| **Possible** | Defense contractor ownership | Gray badge |
-| **Civilian** | No military indicators | No badge |
+| **已确认** |直接军事所有者/经营者匹配|绿色徽章|
+| **可能** |军用 ICAO 代码或飞机类型 |黄色徽章|
+| **可能** |国防承包商所有权|灰色徽章|
+| **民用** |没有军事指标|没有徽章 |
 
-### Caching Strategy
+### 缓存策略
 
-Aircraft details rarely change, so aggressive caching reduces API load:
+飞机细节很少改变，因此积极的缓存可以减少 API 负载：
 
-- **Server-side**: HTTP Cache-Control headers (24-hour max-age)
-- **Client-side**: 1-hour local cache per aircraft
-- **Batch optimization**: Up to 20 aircraft per API call
+- **服务器端**：HTTP 缓存控制标头（24 小时最大期限）
+- **客户端**：每架飞机 1 小时本地缓存
+- **批量优化**：每次 API 调用最多 20 架飞机
 
-This means an aircraft's details are fetched at most once per day, regardless of how many times it appears on the map.
+这意味着飞机的详细信息每天最多获取一次，无论它在地图上出现多少次。
 
 ---
 
-## Space Launch Infrastructure
+## 太空发射基础设施
 
-The Spaceports layer displays global launch facilities for monitoring space-related activity and supply chain implications.
+太空港图层显示用于监控太空相关活动和供应链影响的全球发射设施。
 
-### Tracked Launch Sites
+### 跟踪发射站点
 
-| Site | Country | Operator | Activity Level |
+|网站 |国家 |操作员|活动水平|
 |------|---------|----------|----------------|
-| **Kennedy Space Center** | USA | NASA/Space Force | High |
-| **Vandenberg SFB** | USA | US Space Force | Medium |
-| **Starbase** | USA | SpaceX | High |
-| **Baikonur Cosmodrome** | Kazakhstan | Roscosmos | Medium |
-| **Plesetsk Cosmodrome** | Russia | Roscosmos/Military | Medium |
-| **Vostochny Cosmodrome** | Russia | Roscosmos | Low |
-| **Jiuquan SLC** | China | CNSA | High |
-| **Xichang SLC** | China | CNSA | High |
-| **Wenchang SLC** | China | CNSA | Medium |
-| **Guiana Space Centre** | France | ESA/CNES | Medium |
-| **Satish Dhawan SC** | India | ISRO | Medium |
-| **Tanegashima SC** | Japan | JAXA | Low |
+| **肯尼迪航天中心** |美国 |美国宇航局/太空部队 |高|
+| **范登堡 SFB** |美国 |美国太空部队 |中等|
+| **星际基地** |美国 |太空探索技术公司 |高|
+| **拜科努尔航天发射场** |哈萨克斯坦 |俄罗斯航天局 |中等|
+| **普列谢茨克航天发射场** |俄罗斯 |俄罗斯航天局/军事 |中等|
+| **东方航天发射场** |俄罗斯 |俄罗斯航天局 |低|
+| **酒泉SLC** |中国 |国家航天局|高|
+| **西昌SLC** |中国 |国家航天局|高|
+| **文昌SLC** |中国 |国家航天局|中等|
+| **圭亚那航天中心** |法国 |欧空局/法国国家空间研究中心 |中等|
+| **萨蒂什·达万 SC** |印度 |印度空间研究组织|中等|
+| **种子岛SC** |日本 |日本宇宙航空研究开发机构 |低|
 
-### Why This Matters
+### 为什么这很重要
 
-Space launches are geopolitically significant:
-- **Military implications**: Many launches are dual-use (civilian/military)
-- **Technology competition**: Launch cadence indicates space program advancement
-- **Supply chain**: Satellite services affect communications, GPS, reconnaissance
-- **Incident correlation**: News about space debris, failed launches, or policy changes
+太空发射具有地缘政治意义：
+- **军事影响**：许多发射都是双重用途的（民用/军用）
+- **技术竞赛**：发射节奏表明太空计划的进展
+- **供应链**：卫星服务影响通信、GPS、侦察
+- **事件关联**：有关空间碎片、发射失败或政策变化的新闻
 
 ---
 
-## Critical Mineral Deposits
+## 关键矿藏
 
-The Minerals layer displays strategic mineral extraction sites essential for modern technology and defense supply chains.
+矿物图层显示对现代技术和国防供应链至关重要的战略矿物开采地点。
 
-### Tracked Resources
+### 跟踪资源
 
-| Mineral | Strategic Importance | Major Producers |
+|矿物 |战略重要性|主要生产商|
 |---------|---------------------|-----------------|
-| **Lithium** | EV batteries, energy storage | Australia, Chile, China |
-| **Cobalt** | Battery cathodes, superalloys | DRC (60%+ global), Australia |
-| **Rare Earths** | Magnets, electronics, defense | China (60%+ global), Australia, USA |
+| **锂** |电动汽车电池、储能 |澳大利亚、智利、中国 |
+| **钴** |电池阴极、超级合金|刚果民主共和国（全球 60% 以上）、澳大利亚 |
+| **稀土** |磁铁、电子、国防 |中国（全球 60% 以上）、澳大利亚、美国 |
 
-### Key Sites
+### 关键站点
 
-| Site | Mineral | Country | Significance |
+|网站 |矿物 |国家 |意义 |
 |------|---------|---------|--------------|
-| Greenbushes | Lithium | Australia | World's largest hard-rock lithium mine |
-| Salar de Atacama | Lithium | Chile | Largest brine lithium source |
-| Mutanda | Cobalt | DRC | World's largest cobalt mine |
-| Tenke Fungurume | Cobalt | DRC | Major Chinese-owned cobalt source |
-| Bayan Obo | Rare Earths | China | 45% of global REE production |
-| Mountain Pass | Rare Earths | USA | Only active US rare earth mine |
+|绿色灌木 |锂|澳大利亚 |世界最大硬岩锂矿|
+|阿塔卡马盐沼|锂|智利 |最大的卤水锂源|
+|穆坦达 |钴 |刚果民主共和国 |世界最大钴矿|
+| Tenke Fungurume |钴 |刚果民主共和国 |中资主要钴产地|
+|白云鄂博|稀土 |中国 |占全球 REE 产量的 45% |
+|山口 |稀土 |美国 |美国唯一活跃的稀土矿 |
 
-### Supply Chain Risks
+### 供应链风险
 
-Critical minerals are geopolitically concentrated:
-- **Cobalt**: 70% from DRC, significant artisanal mining concerns
-- **Rare Earths**: 60% from China, processing nearly monopolized
-- **Lithium**: Expanding production but demand outpacing supply
+关键矿物在地缘政治上集中：
+- **钴**：70% 来自刚果民主共和国，手工采矿存在重大问题
+- **稀土**：60%来自中国，加工几乎被垄断
+- **锂**：产量扩大但需求超过供应
 
-News about these regions or mining companies can signal supply disruptions affecting technology and defense sectors.
+有关这些地区或矿业公司的消息可能预示着影响技术和国防部门的供应中断。
 
 ---
 
-## Cyber Threat Actors (APT Groups)
+## 网络威胁参与者（APT 组织）
 
-The map displays geographic attribution markers for major state-sponsored Advanced Persistent Threat (APT) groups. These markers show the approximate operational centers of known threat actors.
+该地图显示了主要国家资助的高级持续威胁 (APT) 组织的地理归因标记。这些标记显示了已知威胁行为者的大致行动中心。
 
-### Tracked Groups
+### 跟踪组
 
-| Group | Aliases | Sponsor | Notable Activity |
+|集团|别名 |赞助商 |值得注意的活动 |
 |-------|---------|---------|-----------------|
-| **APT28/29** | Fancy Bear, Cozy Bear | Russia (GRU/FSB) | Election interference, government espionage |
-| **APT41** | Double Dragon | China (MSS) | Supply chain attacks, intellectual property theft |
-| **Lazarus** | Hidden Cobra | North Korea (RGB) | Financial theft, cryptocurrency heists |
-| **APT33/35** | Elfin, Charming Kitten | Iran (IRGC) | Critical infrastructure, aerospace targeting |
+| **APT28/29** |花哨的小熊，舒适的小熊|俄罗斯（GRU/FSB）|选举干扰、政府间谍活动 |
+| **APT41** |双龙|中国（MSS）|供应链攻击、知识产权盗窃|
+| **拉撒路** |隐藏的眼镜蛇 |朝鲜 (RGB) |金融盗窃、加密货币抢劫 |
+| **APT33/35** |小精灵，迷人的小猫 |伊朗 (IRGC) |关键基础设施，航空航天瞄准|
 
-### Why This Matters
+### 为什么这很重要
 
-Cyber operations often correlate with geopolitical tensions. When news reports reference Russian cyber activity during a Ukraine escalation, or Iranian hacking during Middle East tensions, these markers provide geographic context for the threat landscape.
+网络行动通常与地缘政治紧张局势相关。当新闻报道提到乌克兰升级期间的俄罗斯网络活动或中东紧张局势期间伊朗的黑客活动时，这些标记为威胁形势提供了地理背景。
 
-### Visual Indicators
+### 视觉指示器
 
-APT markers appear as warning triangles (⚠) with distinct styling. Clicking a marker shows:
-- **Official designation** and common aliases
-- **State sponsor** and intelligence agency
-- **Primary targeting sectors**
+APT 标记显示为具有独特样式的警告三角形 (⚠)。单击标记会显示：
+- **官方名称**和常见别名
+- **国家赞助商**和情报机构
+- **主要目标行业**
 
 ---
 
-## Social Unrest Tracking
+## 社会动荡追踪
 
-The Protests layer aggregates civil unrest data from two independent sources, providing corroboration and global coverage.
+抗议层汇总了来自两个独立来源的内乱数据，提供佐证和全球覆盖。
 
-### ACLED (Armed Conflict Location & Event Data)
+### ACLED（武装冲突地点和事件数据）
 
-Academic-grade conflict data with human-verified events:
-- **Coverage**: Global, 30-day rolling window
-- **Event types**: Protests, riots, strikes, demonstrations
-- **Metadata**: Actors involved, fatalities, detailed notes
-- **Confidence**: High (human-curated)
+学术级冲突数据与经过人工验证的事件：
+- **覆盖范围**：全球、30 天滚动窗口
+- **事件类型**：抗议、骚乱、罢工、示威
+- **元数据**：涉及的演员、死亡人数、详细说明
+- **置信度**：高（人工策划）
 
-### GDELT (Global Database of Events, Language, and Tone)
+### GDELT（全球事件、语言和语气数据库）
 
-Real-time news-derived event data:
-- **Coverage**: Global, 7-day rolling window
-- **Event types**: Geocoded protest mentions from news
-- **Volume**: Reports per location (signal strength)
-- **Confidence**: Medium (algorithmic extraction)
+实时新闻衍生事件数据：
+- **覆盖范围**：全球、7 天滚动窗口
+- **事件类型**：对新闻中提及的抗议进行地理编码
+- **音量**：每个位置的报告（信号强度）
+- **置信度**：中等（算法提取）
 
-### Multi-Source Corroboration
+### 多源证实
 
-Events from both sources are deduplicated using a 0.5° spatial grid and date matching. When both ACLED and GDELT report events in the same area:
-- Confidence is elevated to "high"
-- ACLED data takes precedence (higher accuracy)
-- Source list shows corroboration
+使用 0.5° 空间网格和日期匹配对两个来源的事件进行重复数据删除。当 ACLED 和 GDELT 报告同一区域的事件时：
+- 信心提升至“高”
+- ACLED数据优先（精度更高）
+- 来源列表显示佐证
 
-### Severity Classification
+### 严重程度分类
 
-| Severity | Criteria |
+|严重程度 |标准|
 |----------|----------|
-| **High** | Fatalities reported, riots, or clashes |
-| **Medium** | Large demonstrations, strikes |
-| **Low** | Smaller protests, localized events |
+| **高** |据报道死亡、骚乱或冲突|
+| **中** |大型示威、罢工|
+| **低** |规模较小的抗议活动，局部事件|
 
-Events near intelligence hotspots are cross-referenced to provide geopolitical context.
+情报热点附近的事件被交叉引用以提供地缘政治背景。
 
-### Map Display Filtering
+### 地图显示过滤
 
-To reduce visual clutter and focus attention on significant events, the map displays only **high-severity protests and riots**:
+为了减少视觉混乱并将注意力集中在重大事件上，地图仅显示**严重程度的抗议和骚乱**：
 
-| Displayed | Event Type | Visual |
+|显示 |事件类型 |视觉 |
 |-----------|------------|--------|
-| ✅ Yes | Riot | Bright red marker |
-| ✅ Yes | High-severity protest | Red marker |
-| ❌ No | Medium/low-severity protest | Not shown on map |
+| ✅ 是的 |暴动|亮红色标记|
+| ✅ 是的 |高度严重的抗议|红色标记|
+| ❌ 否 |中度/低度抗议 |地图上未显示|
 
-Lower-severity events are still tracked for CII scoring and data exports—they simply don't create map markers. This filtering prevents dense urban areas (which naturally generate more low-severity demonstrations) from overwhelming the map display.
+仍会跟踪严重程度较低的事件以进行 CII 评分和数据导出——它们只是不创建地图标记。这种过滤可以防止密集的城市地区（自然会产生更多低严重程度的示威活动）淹没地图显示。
 
 ---
 
-## Aviation Monitoring
+## 航空监控
 
-The Flights layer tracks airport delays and ground stops at major US airports using FAA NASSTATUS data.
+航班图层使用 FAA NASSTATUS 数据跟踪美国主要机场的机场延误和地面停留。
 
-### Delay Types
+### 延迟类型
 
-| Type | Description |
+|类型 |描述 |
 |------|-------------|
-| **Ground Stop** | No departures permitted; severe disruption |
-| **Ground Delay** | Departures held; arrival rate limiting |
-| **Arrival Delay** | Inbound traffic backed up |
-| **Departure Delay** | Outbound traffic delayed |
+| **地面站** |不允许出发；严重扰乱|
+| **地面延误** |出发；到达率限制 |
+| **抵达延误** |入站流量备份 |
+| **出发延误** |出境交通延误 |
 
-### Severity Thresholds
+### 严重性阈值
 
-| Severity | Average Delay | Visual |
+|严重程度 |平均延误|视觉 |
 |----------|--------------|--------|
-| **Severe** | ≥60 minutes | Red |
-| **Major** | 45-59 minutes | Orange |
-| **Moderate** | 25-44 minutes | Yellow |
-| **Minor** | 15-24 minutes | Gray |
+| **严重** | ≥60分钟|红色|
+| **专业** | 45-59 分钟 |橙色|
+| **中等** | 25-44 分钟 |黄色|
+| **轻微** | 15-24 分钟 |灰色|
 
-### Monitored Airports
+### 受监控的机场
 
-The 30 largest US airports are tracked:
-- Major hubs: JFK, LAX, ORD, ATL, DFW, DEN, SFO
-- International gateways with high traffic volume
-- Airports frequently affected by weather or congestion
+追踪美国 30 个最大的机场：
+- 主要枢纽：JFK、LAX、ORD、ATL、DFW、DEN、SFO
+- 高人流量的国际门户
+- 经常受天气或拥堵影响的机场
 
-Ground stops are particularly significant—they indicate severe disruption (weather, security, or infrastructure failure) and can cascade across the network.
+地面停留尤其重要——它们表明严重的破坏（天气、安全或基础设施故障），并且可能会在整个网络中级联。
 
 ---
 
-## Security & Input Validation
+## 安全和输入验证
 
-The dashboard handles untrusted data from dozens of external sources. Defense-in-depth measures prevent injection attacks and API abuse.
+仪表板处理来自数十个外部来源的不受信任的数据。深度防御措施可防止注入攻击和 API 滥用。
 
-### XSS Prevention
+### XSS预防
 
-All user-visible content is sanitized before DOM insertion:
+所有用户可见的内容在 DOM 插入之前都会被清理：
 
 ```typescript
 escapeHtml(str)  // Encodes & < > " ' as HTML entities
 sanitizeUrl(url) // Allows only http/https protocols
 ```
 
-This applies to:
-- News headlines and sources (RSS feeds)
-- Search results and highlights
-- Monitor keywords (user input)
-- Map popup content
-- Tension pair labels
+这适用于：
+- 新闻标题和来源（RSS 提要）
+- 搜索结果和亮点
+- 监控关键字（用户输入）
+- 地图弹出内容
+- 张力对标签
 
-The `<mark>` highlighting in search escapes text *before* wrapping matches, preventing injection via crafted search queries.
+搜索中突出显示的 `<mark>` 在换行匹配之前转义文本，从而防止通过精心设计的搜索查询进行注入。
 
-### Proxy Endpoint Validation
+### 代理端点验证
 
-Serverless proxy functions validate and clamp all parameters:
+无服务器代理函数验证并限制所有参数：
 
-| Endpoint | Validation |
+|端点|验证 |
 |----------|------------|
-| `/api/yahoo-finance` | Symbol format `[A-Za-z0-9.^=-]`, max 20 chars |
-| `/api/coingecko` | Coin IDs alphanumeric+hyphen, max 20 IDs |
-| `/api/polymarket` | Order field allowlist, limit clamped 1-100 |
+| `/api/yahoo-finance` |符号格式 `[A-Za-z0-9.^=-]`，最多 20 个字符 |
+| `/api/coingecko` |硬币 ID 字母数字+连字符，最多 20 个 ID |
+| `/api/polymarket` |订单字段白名单，限制为 1-100 |
 
-This prevents upstream API abuse and rate limit exhaustion from malformed requests.
+这可以防止上游 API 滥用和格式错误请求导致的速率限制耗尽。
 
-### Content Security
+### 内容安全
 
-- URLs are validated via `URL()` constructor—only `http:` and `https:` protocols are permitted
-- External links use `rel="noopener"` to prevent reverse tabnapping
-- No inline scripts or `eval()`—all code is bundled at build time
+- URL 通过 `URL()` 构造函数进行验证 - 仅允许 `http:` 和 `https:` 协议
+- 外部链接使用 `rel="noopener"` 来防止反向 tabnapping
+- 没有内联脚本或 `eval()` — 所有代码都在构建时捆绑
 
 ---
 
-## Fault Tolerance
+## 容错
 
-External APIs are unreliable. Rate limits, outages, and network errors are inevitable. The system implements **circuit breaker** patterns to maintain availability.
+外部 API 不可靠。速率限制、中断和网络错误是不可避免的。系统实施**断路器**模式来保持可用性。
 
-### Circuit Breaker Pattern
+### 断路器模式
 
-Each external service is wrapped in a circuit breaker that tracks failures:
+每个外部服务都包含在一个跟踪故障的断路器中：
 
 ```
 Normal → Failure #1 → Failure #2 → OPEN (cooldown)
@@ -2043,147 +2043,147 @@ Normal → Failure #1 → Failure #2 → OPEN (cooldown)
                                    CLOSED
 ```
 
-**Behavior during cooldown:**
-- New requests return cached data (if available)
-- UI shows "temporarily unavailable" status
-- No API calls are made (prevents hammering)
+**冷却期间的行为：**
+- 新请求返回缓存数据（如果可用）
+- UI 显示“暂时不可用”状态
+- 不进行 API 调用（防止锤击）
 
-### Protected Services
+### 受保护的服务
 
-| Service | Cooldown | Cache TTL |
+|服务 |冷却时间|缓存 TTL |
 |---------|----------|-----------|
-| Yahoo Finance | 5 min | 10 min |
-| Polymarket | 5 min | 10 min |
-| USGS Earthquakes | 5 min | 10 min |
-| NWS Weather | 5 min | 10 min |
-| FRED Economic | 5 min | 10 min |
-| Cloudflare Radar | 5 min | 10 min |
-| ACLED | 5 min | 10 min |
-| GDELT | 5 min | 10 min |
-| FAA Status | 5 min | 5 min |
-| RSS Feeds | 5 min per feed | 10 min |
+|雅虎财经 | 5 分钟 | 10 分钟 |
+|综合市场 | 5 分钟 | 10 分钟 |
+|美国地质调查局地震 | 5 分钟 | 10 分钟 |
+| NWS 天气 | 5 分钟 | 10 分钟 |
+| FRED经济| 5 分钟 | 10 分钟 |
+| Cloudflare 雷达 | 5 分钟 | 10 分钟 |
+| ACLED | 5 分钟 | 10 分钟 |
+| GDELT | 5 分钟 | 10 分钟 |
+|美国联邦航空局状态 | 5 分钟 | 5 分钟 |
+| RSS 源 |每次喂食 5 分钟 | 10 分钟 |
 
-RSS feeds use per-feed circuit breakers—one failing feed doesn't affect others.
+RSS 提要使用每个提要断路器 — 一个失败的提要不会影响其他提要。
 
-### Graceful Degradation
+### 优雅的降级
 
-When a service enters cooldown:
-1. Cached data continues to display (stale but available)
-2. Status panel shows service health
-3. Automatic recovery when cooldown expires
-4. No user intervention required
+当服务进入冷却时：
+1. 缓存数据继续显示（陈旧但可用）
+2.状态面板显示服务健康状况
+3.冷却时间结束自动恢复
+4. 无需用户干预
 
 ---
 
-## System Health Monitoring
+## 系统健康监控
 
-The status panel (accessed via the health indicator in the header) provides real-time visibility into data source status and system health.
+状态面板（通过标题中的运行状况指示器访问）提供数据源状态和系统运行状况的实时可见性。
 
-### Health Indicator
+### 健康指标
 
-The header displays a system health badge:
+标题显示系统运行状况徽章：
 
-| State | Visual | Meaning |
+|状态|视觉 |意义|
 |-------|--------|---------|
-| **Healthy** | Green dot | All data sources operational |
-| **Degraded** | Yellow dot | Some sources in cooldown |
-| **Unhealthy** | Red dot | Multiple sources failing |
+| **健康** |绿点|所有数据源均可运行 |
+| **降级** |黄点|一些资源处于冷却状态|
+| **不健康** |红点|多个来源失败 |
 
-Click the indicator to expand the full status panel.
+单击该指示器可展开完整的状态面板。
 
-### Data Source Status
+### 数据源状态
 
-The status panel lists all data feeds with their current state:
+状态面板列出了所有数据源及其当前状态：
 
-| Status | Icon | Description |
+|状态 |图标|描述 |
 |--------|------|-------------|
-| **Active** | ● Green | Fetching data normally |
-| **Cooldown** | ● Yellow | Temporarily paused (circuit breaker) |
-| **Disabled** | ○ Gray | Layer not enabled |
-| **Error** | ● Red | Persistent failure |
+| **活跃** | ●绿色|正常获取数据 |
+| **冷却** | ● 黄色|暂时暂停（断路器）|
+| **已禁用** | ○ 灰色 |图层未启用 |
+| **错误** | ● 红色|持续失败|
 
-### Per-Feed Information
+### 每次提要信息
 
-Each feed entry shows:
-- **Source name** - The data provider
-- **Last update** - Time since last successful fetch
-- **Next refresh** - Countdown to next scheduled fetch
-- **Cooldown remaining** - Time until circuit breaker resets (if in cooldown)
+每个提要条目显示：
+- **来源名称** - 数据提供者
+- **上次更新** - 自上次成功获取以来的时间
+- **下一次刷新** - 下一次计划获取的倒计时
+- **剩余冷却时间** - 断路器重置之前的时间（如果处于冷却时间）
 
-### Why This Matters
+### 为什么这很重要
 
-External APIs are unreliable. The status panel helps you understand:
-- **Data freshness** - Is the news feed current or stale?
-- **Coverage gaps** - Which sources are currently unavailable?
-- **Recovery timeline** - When will failed sources retry?
+外部 API 不可靠。状态面板可帮助您了解：
+- **数据新鲜度** - 新闻源是最新的还是过时的？
+- **覆盖范围差距** - 哪些来源目前不可用？
+- **恢复时间表** - 失败的源何时重试？
 
-This transparency enables informed interpretation of the dashboard data.
+这种透明度使得仪表板数据能够得到明智的解释。
 
 ---
 
-## Data Freshness Tracking
+## 数据新鲜度跟踪
 
-Beyond simple "online/offline" status, the system tracks fine-grained freshness for each data source to indicate data reliability and staleness.
+除了简单的“在线/离线”状态之外，系统还跟踪每个数据源的细粒度新鲜度，以指示数据的可靠性和陈旧性。
 
-### Freshness Levels
+### 新鲜度
 
-| Status | Color | Criteria | Meaning |
+|状态 |颜色 |标准|意义|
 |--------|-------|----------|---------|
-| **Fresh** | Green | Updated within expected interval | Data is current |
-| **Aging** | Yellow | 1-2× expected interval elapsed | Data may be slightly stale |
-| **Stale** | Orange | 2-4× expected interval elapsed | Data is outdated |
-| **Critical** | Red | >4× expected interval elapsed | Data unreliable |
-| **Disabled** | Gray | Layer toggled off | Not fetching |
+| **新鲜** |绿色|在预期间隔内更新 |数据为最新数据 |
+| **老化** |黄色| 1-2× 预期间隔已过 |数据可能有点陈旧 |
+| **陈旧** |橙色| 2-4× 预期间隔已过 |数据已过时 |
+| **关键** |红色| >4× 预期间隔已过 |数据不可靠 |
+| **已禁用** |灰色|图层已关闭 |不抓取|
 
-### Source-Specific Thresholds
+### 源特定阈值
 
-Each data source has calibrated freshness expectations:
+每个数据源都有校准的新鲜度期望：
 
-| Source | Expected Interval | "Fresh" Threshold |
+|来源 |预期间隔 | “新鲜”门槛|
 |--------|------------------|-------------------|
-| News feeds | 5 minutes | <10 minutes |
-| Stock quotes | 1 minute | <5 minutes |
-| Earthquakes | 5 minutes | <15 minutes |
-| Weather | 10 minutes | <30 minutes |
-| Flight delays | 10 minutes | <20 minutes |
-| AIS vessels | Real-time | <1 minute |
+|新闻提要 | 5 分钟 | <10 分钟 |
+|股票行情| 1 分钟 | <5 分钟 |
+|地震 | 5 分钟 | <15 分钟 |
+|天气 | 10 分钟 | <30 分钟 |
+|航班延误 | 10 分钟 | <20 分钟 |
+| AIS 船舶 |实时 | <1 分钟 |
 
-### Visual Indicators
+### 视觉指示器
 
-The status panel displays freshness for each source:
-- **Colored dot** indicates freshness level
-- **Time since update** shows exact staleness
-- **Next refresh countdown** shows when data will update
+状态面板显示每个源的新鲜度：
+- **彩色点**表示新鲜度
+- **自更新以来的时间**显示确切的陈旧性
+- **下次刷新倒计时**显示数据何时更新
 
-### Why This Matters
+### 为什么这很重要
 
-Understanding data freshness is critical for decision-making:
-- A "fresh" earthquake feed means recent events are displayed
-- A "stale" news feed means you may be missing breaking stories
-- A "critical" AIS stream means vessel positions are unreliable
+了解数据新鲜度对于决策至关重要：
+- “新鲜”地震源意味着显示最近的事件
+- “陈旧”的新闻源意味着您可能会错过重大新闻
+- “关键”AIS 流意味着船舶位置不可靠
 
-This visibility enables appropriate confidence calibration when interpreting the dashboard.
+这种可见性可以在解释仪表板时进行适当的置信度校准。
 
-### Core vs. Optional Sources
+### 核心源与可选源
 
-Data sources are classified by their importance to risk assessment:
+数据源根据其对风险评估的重要性进行分类：
 
-| Classification | Sources | Impact |
+|分类|来源 |影响 |
 |----------------|---------|--------|
-| **Core** | GDELT, RSS feeds | Required for meaningful risk scores |
-| **Optional** | ACLED, Military, AIS, Weather, Economic | Enhance but not required |
+| **核心** | GDELT、RSS 提要 |需要有意义的风险评分 |
+| **可选** | ACLED、军事、AIS、天气、经济 |增强但不是必需的 |
 
-The Strategic Risk Overview panel adapts its display based on core source availability:
+战略风险概述面板根据核心源可用性调整其显示：
 
-| Status | Display Mode | Behavior |
+|状态 |显示模式 |行为 |
 |--------|--------------|----------|
-| **Sufficient** | Full data view | All metrics shown with confidence |
-| **Limited** | Limited data view | Shows "Limited Data" warning banner |
-| **Insufficient** | Insufficient data view | "Insufficient Data" message, no risk score |
+| **足够** |完整数据查看 |所有指标均充满信心 |
+| **有限** |有限的数据查看|显示“有限数据”警告横幅 |
+| **不足** |数据视图不足 | “数据不足”消息，无风险评分 |
 
-### Freshness-Aware Risk Assessment
+### 新鲜度风险评估
 
-The composite risk score is adjusted based on data freshness:
+综合风险评分根据数据新鲜度进行调整：
 
 ```
 If core sources fresh:
@@ -2199,289 +2199,289 @@ If core sources unavailable:
   → No score displayed
 ```
 
-This prevents false "all clear" signals when the system actually lacks data to make that determination.
+当系统实际上缺乏数据来做出决定时，这可以防止出现错误的“全部清除”信号。
 
 ---
 
-## Conditional Data Loading
+## 条件数据加载
 
-API calls are expensive. The system only fetches data for **enabled layers**, reducing unnecessary network traffic and rate limit consumption.
+API 调用的成本很高。系统仅获取**启用层**的数据，减少不必要的网络流量和速率限制消耗。
 
-### Layer-Aware Loading
+### 层感知加载
 
-When a layer is toggled OFF:
-- No API calls for that data source
-- No refresh interval scheduled
-- WebSocket connections closed (for AIS)
+当图层关闭时：
+- 没有对该数据源的 API 调用
+- 没有安排刷新间隔
+- WebSocket 连接关闭（对于 AIS）
 
-When a layer is toggled ON:
-- Data is fetched immediately
-- Refresh interval begins
-- Loading indicator shown on toggle button
+当图层打开时：
+- 立即获取数据
+- 刷新间隔开始
+- 切换按钮上显示加载指示器
 
-### Unconfigured Services
+### 未配置的服务
 
-Some data sources require API keys (AIS relay, Cloudflare Radar). If credentials are not configured:
-- The layer toggle is hidden entirely
-- No failed requests pollute the console
-- Users see only functional layers
+某些数据源需要 API 密钥（AIS 中继、Cloudflare Radar）。如果未配置凭据：
+- 图层切换完全隐藏
+- 没有失败的请求污染控制台
+- 用户只能看到功能层
 
-This prevents confusion when deploying without full API access.
+这可以防止在没有完整 API 访问权限的情况下进行部署时出现混乱。
 
 ---
 
-## Performance Optimizations
+## 性能优化
 
-The dashboard processes thousands of data points in real-time. Several techniques keep the UI responsive even with heavy data loads.
+仪表板实时处理数千个数据点。即使在数据负载很重的情况下，也有多种技术可以使 UI 保持响应。
 
-### Web Worker for Analysis
+### 用于分析的 Web Worker
 
-CPU-intensive operations run in a dedicated Web Worker to avoid blocking the main thread:
+CPU 密集型操作在专用 Web Worker 中运行，以避免阻塞主线程：
 
-| Operation | Complexity | Worker? |
+|运营|复杂性 |工人？ |
 |-----------|------------|---------|
-| News clustering (Jaccard) | O(n²) | ✅ Yes |
-| Correlation detection | O(n × m) | ✅ Yes |
-| DOM rendering | O(n) | ❌ Main thread |
+|新闻聚类（Jaccard） | O(n²) | ✅ 是的 |
+|相关性检测| O(n × m) | ✅ 是的 |
+| DOM 渲染 | O(n) | ❌ 主线程 |
 
-The worker manager implements:
-- **Lazy initialization**: Worker spawns on first use
-- **10-second ready timeout**: Rejects if worker fails to initialize
-- **30-second request timeout**: Prevents hanging on stuck operations
-- **Automatic cleanup**: Terminates worker on fatal errors
+工人经理实施：
+- **延迟初始化**：Worker 在第一次使用时生成
+- **10秒就绪超时**：如果worker初始化失败则拒绝
+- **30 秒请求超时**：防止卡住操作时挂起
+- **自动清理**：因致命错误而终止工作人员
 
-### Virtual Scrolling
+### 虚拟滚动
 
-Large lists (100+ news items) use virtualized rendering:
+大型列表（100 多个新闻项）使用虚拟化渲染：
 
-**Fixed-Height Mode** (VirtualList):
-- Only renders items visible in viewport + 3-item overscan buffer
-- Element pooling—reuses DOM nodes rather than creating new ones
-- Invisible spacers maintain scroll position without rendering all items
+**固定高度模式**（虚拟列表）：
+- 仅渲染视口中可见的项目 + 3 项目过扫描缓冲区
+- 元素池——重用 DOM 节点而不是创建新节点
+- 不可见的间隔保持滚动位置而不渲染所有项目
 
-**Variable-Height Mode** (WindowedList):
-- Chunk-based rendering (10 items per chunk)
-- Renders chunks on-scroll with 1-chunk buffer
-- CSS containment for performance isolation
+**可变高度模式**（WindowedList）：
+- 基于块的渲染（每个块 10 个项目）
+- 使用 1 块缓冲区渲染滚动块
+- 用于性能隔离的 CSS 遏制
 
-This reduces DOM node count from thousands to ~30, dramatically improving scroll performance.
+这将 DOM 节点数量从数千减少到约 30，从而显着提高了滚动性能。
 
-### Request Deduplication
+### 请求重复数据删除
 
-Identical requests within a short window are deduplicated:
-- Market quotes batch multiple symbols into single API call
-- Concurrent layer toggles don't spawn duplicate fetches
-- `Promise.allSettled` ensures one failing request doesn't block others
+短窗口内的相同请求将被删除重复：
+- 市场报价将多个交易品种批处理为单个 API 调用
+- 并发层切换不会产生重复的提取
+- `Promise.allSettled` 确保一个失败的请求不会阻止其他请求
 
-### Efficient Data Updates
+### 高效的数据更新
 
-When refreshing data:
-- **Incremental updates**: Only changed items trigger re-renders
-- **Stale-while-revalidate**: Old data displays while fetch completes
-- **Delta compression**: Baselines store 7-day/30-day deltas, not raw history
-
----
-
-## Prediction Market Filtering
-
-The Prediction Markets panel focuses on **geopolitically relevant** markets, filtering out sports and entertainment.
-
-### Inclusion Keywords
-
-Markets matching these topics are displayed:
-- **Conflicts**: war, military, invasion, ceasefire, NATO, nuclear
-- **Countries**: Russia, Ukraine, China, Taiwan, Iran, Israel, Gaza
-- **Leaders**: Putin, Zelensky, Trump, Biden, Xi Jinping, Netanyahu
-- **Economics**: Fed, interest rate, inflation, recession, tariffs, sanctions
-- **Global**: UN, EU, treaties, summits, coups, refugees
-
-### Exclusion Keywords
-
-Markets matching these are filtered out:
-- **Sports**: NBA, NFL, FIFA, World Cup, championships, playoffs
-- **Entertainment**: Oscars, movies, celebrities, TikTok, streaming
-
-This ensures the panel shows markets like "Will Russia withdraw from Ukraine?" rather than "Will the Lakers win the championship?"
+刷新数据时：
+- **增量更新**：只有更改的项目才会触发重新渲染
+- **重新验证时陈旧**：获取完成时显示旧数据
+- **增量压缩**：基线存储 7 天/30 天的增量，而不是原始历史记录
 
 ---
 
-## Panel Management
+## 预测市场过滤
 
-The dashboard organizes data into **draggable, collapsible panels** that persist user preferences across sessions.
+预测市场小组专注于**地缘政治相关**市场，过滤掉体育和娱乐。
 
-### Drag-to-Reorder
+### 包含关键字
 
-Panels can be reorganized by dragging:
+显示与这些主题匹配的市场：
+- **冲突**：战争、军事、入侵、停火、北约、核
+- **国家**：俄罗斯、乌克兰、中国、台湾、伊朗、以色列、加沙
+- **领导人**：普京、泽伦斯基、特朗普、拜登、习近平、内塔尼亚胡
+- **经济**：美联储、利率、通货膨胀、衰退、关税、制裁
+- **全球**：联合国、欧盟、条约、峰会、政变、难民
 
-1. Grab the panel header (grip icon appears on hover)
-2. Drag to desired position
-3. Drop to reorder
-4. New order saves automatically to LocalStorage
+### 排除关键字
 
-This enables personalized layouts—put your most-watched panels at the top.
+与这些匹配的市场被过滤掉：
+- **体育**：NBA、NFL、FIFA、世界杯、锦标赛、季后赛
+- **娱乐**：奥斯卡、电影、名人、TikTok、流媒体
 
-### Panel Visibility
+这确保了该小组向市场展示“俄罗斯会从乌克兰撤军吗？”之类的内容。而不是“湖人会夺冠吗？”
 
-Toggle panels on/off via the Settings menu (⚙):
+---
 
-- **Hidden panels**: Don't render, don't fetch data
-- **Visible panels**: Full functionality
-- **Collapsed panels**: Header only, data still refreshes
+## 面板管理
 
-Hiding a panel is different from disabling a layer—the panel itself doesn't appear in the interface.
+仪表板将数据组织到**可拖动、可折叠的面板**中，以在会话中保留用户首选项。
 
-### Default Panel Order
+### 拖动重新排序
 
-Panels are organized by intelligence priority:
+可以通过拖动来重新组织面板：
 
-| Priority | Panels | Purpose |
+1. 抓住面板标题（悬停时出现抓握图标）
+2. 拖至所需位置
+3. 下拉重新排序
+4.新订单自动保存到LocalStorage
+
+这可以实现个性化布局——将最受关注的面板放在顶部。
+
+### 面板可见性
+
+通过“设置”菜单 (⚙) 打开/关闭面板：
+
+- **隐藏面板**：不渲染，不获取数据
+- **可见面板**：完整功能
+- **折叠面板**：仅标题，数据仍然刷新
+
+隐藏面板与禁用图层不同 - 面板本身不会出现在界面中。
+
+### 默认面板顺序
+
+小组按情报优先级组织：
+
+|优先|面板|目的|
 |----------|--------|---------|
-| **Critical** | Strategic Risk, Live Intel | Immediate situational awareness |
-| **Primary** | News, CII, Markets | Core monitoring data |
-| **Supporting** | Predictions, Economic, Monitor | Supplementary analysis |
-| **Reference** | Live News Video | Background context |
+| **关键** |战略风险，实时英特尔|即时态势感知 |
+| **小学** |新闻、CII、市场 |核心监测数据|
+| **支持** |预测、经济、监测|补充分析|
+| **参考** |现场新闻视频|背景语境|
 
-### Persistence
+### 坚持
 
-Panel state survives browser restarts:
+面板状态在浏览器重新启动后仍然存在：
 
-- **LocalStorage**: Panel order, visibility, collapsed state
-- **Automatic save**: Changes persist immediately
-- **Per-device**: Settings are browser-specific (not synced)
+- **LocalStorage**：面板顺序、可见性、折叠状态
+- **自动保存**：更改立即保留
+- **每设备**：设置特定于浏览器（不同步）
 
 ---
 
-## Mobile Experience
+## 移动体验
 
-The dashboard is optimized for mobile devices with a streamlined interface that prioritizes usability on smaller screens.
+仪表板针对移动设备进行了优化，具有简化的界面，优先考虑小屏幕上的可用性。
 
-### First-Time Mobile Welcome
+### 首次使用移动设备欢迎
 
-When accessing the dashboard on a mobile device for the first time, a welcome modal explains the mobile-optimized experience:
+首次在移动设备上访问仪表板时，欢迎模式会解释移动优化的体验：
 
-- **Simplified view notice** - Informs users they're seeing a curated mobile version
-- **Navigation tip** - Explains regional view buttons and marker interaction
-- **"Don't show again" option** - Checkbox to skip on future visits (persisted to localStorage)
+- **简化的视图通知** - 通知用户他们正在看到精选的移动版本
+- **导航提示** - 解释区域视图按钮和标记交互
+- **“不再显示”选项** - 未来访问时跳过的复选框（保留到本地存储）
 
-### Mobile-First Design
+### 移动优先设计
 
-On screens narrower than 768px or touch devices:
+在窄于 768px 的屏幕或触摸设备上：
 
-- **Compact map** - Reduced height (40vh) to show more panels
-- **Single-column layout** - Panels stack vertically for easy scrolling
-- **Hidden map labels** - All marker labels are hidden to reduce visual clutter
-- **Fixed layer set** - Layer toggle buttons are hidden; a curated set of layers is enabled by default
-- **Simplified controls** - Map resize handle and pin button are hidden
-- **Touch-optimized markers** - Expanded touch targets (44px) for easy tapping
-- **Hidden DEFCON indicator** - Pentagon Pizza Index hidden to reduce header clutter
-- **Hidden FOCUS selector** - Regional focus buttons hidden (use preset views instead)
-- **Compact header** - Social link shows X logo instead of username text
+- **紧凑地图** - 降低高度 (40vh) 以显示更多面板
+- **单列布局** - 面板垂直堆叠以便于滚动
+- **隐藏地图标签** - 所有标记标签都被隐藏以减少视觉混乱
+- **固定图层集** - 隐藏图层切换按钮；默认情况下启用一组精选的图层
+- **简化的控制** - 地图调整大小手柄和图钉按钮被隐藏
+- **触摸优化标记** - 扩展触摸目标 (44 像素)，方便点击
+- **隐藏 DEFCON 指示器** - 隐藏五角大楼披萨索引以减少标题混乱
+- **隐藏焦点选择器** - 隐藏区域焦点按钮（改为使用预设视图）
+- **紧凑标题** - 社交链接显示 X 徽标而不是用户名文本
 
-### Mobile Default Layers
+### 移动默认图层
 
-The mobile experience focuses on the most essential intelligence layers:
+移动体验侧重于最基本的智能层：
 
-| Layer | Purpose |
+|层 |目的|
 |-------|---------|
-| **Conflicts** | Active conflict zones |
-| **Hotspots** | Intelligence hotspots with activity levels |
-| **Sanctions** | Countries under economic sanctions |
-| **Outages** | Network disruptions |
-| **Natural** | Earthquakes, storms, wildfires |
-| **Weather** | Severe weather warnings |
+| **冲突** |活跃的冲突地区|
+| **热点** |具有活动水平的情报热点|
+| **制裁** |受到经济制裁的国家|
+| **停电** |网络中断 |
+| **自然** |地震、风暴、野火|
+| **天气** |恶劣天气警告|
 
-Layers disabled by default on mobile (but available on desktop):
-- Military bases, nuclear facilities, spaceports, minerals
-- Undersea cables, pipelines, datacenters
-- AIS vessels, military flights
-- Protests, economic centers
+默认情况下，移动设备上禁用图层（但在桌面上可用）：
+- 军事基地、核设施、航天发射场、矿产
+- 海底电缆、管道、数据中心
+- AIS 船舶、军用航班
+- 抗议、经济中心
 
-This curated set provides situational awareness without overwhelming the interface or consuming excessive data/battery.
+这个精选集提供了态势感知，而不会压垮界面或消耗过多的数据/电池。
 
-### Touch Gestures
+### 触摸手势
 
-Map navigation supports:
+地图导航支持：
 
-- **Pinch zoom** - Two-finger zoom in/out
-- **Drag pan** - Single-finger map movement
-- **Tap markers** - Show popup (replaces hover)
-- **Double-tap** - Quick zoom
+- **双指缩放** - 两指放大/缩小
+- **拖动平移** - 单指地图移动
+- **点击标记** - 显示弹出窗口（取代悬停）
+- **双击** - 快速缩放
 
-### Performance Considerations
+### 性能考虑因素
 
-Mobile optimizations reduce resource consumption:
+移动优化减少资源消耗：
 
-| Optimization | Benefit |
+|优化|效益 |
 |--------------|---------|
-| Fewer layers | Reduced API calls, lower battery usage |
-| No labels | Faster rendering, cleaner interface |
-| Hidden controls | More screen space for content |
-| Simplified header | Reduced visual processing |
+|更少的层数 |减少 API 调用，降低电池使用量 |
+|没有标签|更快的渲染，更干净的界面 |
+|隐藏控件|更多的屏幕空间用于内容 |
+|简化标题 |减少视觉处理|
 
-### Desktop Experience
+### 桌面体验
 
-On larger screens, the full feature set is available:
+在较大的屏幕上，可以使用完整的功能集：
 
-- Multi-column responsive panel grid
-- All layer toggles accessible
-- Map labels visible at appropriate zoom levels
-- Resizable map section
-- Pinnable map (keeps map visible while scrolling panels)
-- Full DEFCON indicator with tension pairs
-- FOCUS regional selector for rapid navigation
+- 多列响应式面板网格
+- 所有图层均可切换
+- 地图标签在适当的缩放级别可见
+- 可调整大小的地图部分
+- 可固定地图（滚动面板时保持地图可见）
+- 带张力对的完整 DEFCON 指示器
+- FOCUS 区域选择器用于快速导航
 
 ---
 
-## Energy Flow Detection
+## 能量流检测
 
-The correlation engine detects signals related to energy infrastructure and commodity markets.
+关联引擎检测与能源基础设施和商品市场相关的信号。
 
-### Pipeline Keywords
+### 管道关键字
 
-The system monitors news for pipeline-related events:
+系统监视与管道相关事件的新闻：
 
-**Infrastructure terms**: pipeline, pipeline explosion, pipeline leak, pipeline attack, pipeline sabotage, pipeline disruption, nord stream, keystone, druzhba
+**基础设施术语**：管道、管道爆炸、管道泄漏、管道攻击、管道破坏、管道中断、nord Stream、keystone、druzhba
 
-**Flow indicators**: gas flow, oil flow, supply disruption, transit halt, capacity reduction
+**流量指标**：天然气流量、石油流量、供应中断、运输停止、产能减少
 
-### Flow Drop Signals
+### 流量下降信号
 
-When news mentions flow disruptions, two signal types may trigger:
+当新闻提到流量中断时，可能会触发两种信号类型：
 
-| Signal | Criteria | Meaning |
+|信号|标准|意义|
 |--------|----------|---------|
-| **Flow Drop** | Pipeline keywords + disruption terms | Potential supply interruption |
-| **Flow-Price Divergence** | Flow drop news + oil price stable (< $1.50 move) | Markets not yet pricing in disruption |
+| **流量下降** |管道关键词+颠覆术语|潜在的供应中断|
+| **流量价格背离** |流量下降消息 + 油价稳定（< 1.50 美元变动） |市场尚未消化颠覆的影响
 
-### Why This Matters
+### 为什么这很重要
 
-Energy supply disruptions create cascading effects:
+能源供应中断会产生连锁效应：
 
-1. **Immediate**: Spot price volatility
-2. **Short-term**: Industrial production impacts
-3. **Long-term**: Geopolitical leverage shifts
+1. **即时**：现货价格波动
+2. **短期**：工业生产影响
+3. **长期**：地缘政治杠杆变化
 
-Early detection of flow drops—especially when markets haven't reacted—provides an information edge.
+及早发现流量下降（尤其是在市场尚未做出反应时）可提供信息优势。
 
 ---
 
-## Signal Aggregator
+## 信号聚合器
 
-The Signal Aggregator is the central nervous system that collects, groups, and summarizes intelligence signals from all data sources.
+信号聚合器是收集、分组和汇总来自所有数据源的情报信号的中枢神经系统。
 
-### What It Aggregates
+### 它聚合了什么
 
-| Signal Type | Source | Frequency |
+|信号类型|来源 |频率|
 |-------------|--------|-----------|
-| `military_flight` | OpenSky ADS-B | Real-time |
-| `military_vessel` | AIS WebSocket | Real-time |
-| `protest` | ACLED + GDELT | Hourly |
-| `internet_outage` | Cloudflare Radar | 5 min |
-| `ais_disruption` | AIS analysis | Real-time |
+| `military_flight` | OpenSky ADS-B |实时 |
+| `military_vessel` | AIS WebSocket |实时 |
+| `protest` | ACLED + GDELT |每小时 |
+| `internet_outage` | Cloudflare 雷达 | 5 分钟 |
+| `ais_disruption` | AIS分析|实时 |
 
-### Country-Level Grouping
+### 国家/地区级别分组
 
-All signals are grouped by country code, creating a unified view:
+所有信号均按国家代码分组，创建统一视图：
 
 ```typescript
 {
@@ -2494,19 +2494,19 @@ All signals are grouped by country code, creating a unified view:
 }
 ```
 
-### Regional Convergence Detection
+### 区域收敛检测
 
-The aggregator identifies geographic convergence—when multiple signal types cluster in the same region:
+当多种信号类型聚集在同一区域时，聚合器会识别地理融合：
 
-| Convergence Level | Criteria | Alert Priority |
+|收敛水平|标准|警报优先级 |
 |-------------------|----------|----------------|
-| **Critical** | 4+ signal types within 200km | Immediate |
-| **High** | 3 signal types within 200km | High |
-| **Medium** | 2 signal types within 200km | Normal |
+| **关键** | 200公里内4+信号类型 |立即 |
+| **高** | 200公里内3种信号类型 |高|
+| **中** | 200公里内2种信号类型 |正常 |
 
-### Summary Output
+### 摘要输出
 
-The aggregator provides a real-time summary for dashboards and AI context:
+聚合器提供仪表板和 AI 上下文的实时摘要：
 
 ```
 [SIGNAL SUMMARY]
@@ -2519,20 +2519,20 @@ Total Signals: 47
 
 ---
 
-## Browser-Based Machine Learning
+## 基于浏览器的机器学习
 
-For offline resilience and reduced API costs, the system includes browser-based ML capabilities using ONNX Runtime Web.
+为了实现离线弹性和降低 API 成本，该系统包括使用 ONNX Runtime Web 的基于浏览器的 ML 功能。
 
-### Available Models
+### 可用型号
 
-| Model | Task | Size | Use Case |
+|型号|任务|尺寸|使用案例|
 |-------|------|------|----------|
-| **T5-small** | Text summarization | ~60MB | Offline briefing generation |
-| **DistilBERT** | Sentiment analysis | ~67MB | News tone classification |
+| **T5-小号** |文字摘要| 〜60MB |离线简报生成|
+| **DistillBERT** |情感分析| ~67MB |新闻语气分类|
 
-### Fallback Strategy
+### 后备策略
 
-Browser ML serves as the final fallback when cloud APIs are unavailable:
+当云 API 不可用时，浏览器 ML 可以作为最终的后备方案：
 
 ```
 User requests summary
@@ -2544,40 +2544,40 @@ User requests summary
 3. Use Browser T5 (offline, always available)
 ```
 
-### Lazy Loading
+### 延迟加载
 
-Models are loaded on-demand to minimize initial page load:
-- Models download only when first needed
-- Progress indicator shows download status
-- Once cached, models load instantly from IndexedDB
+模型按需加载，以最大限度地减少初始页面加载：
+- 仅在第一次需要时下载模型
+- 进度指示器显示下载状态
+- 缓存后，模型立即从 IndexedDB 加载
 
-### Worker Isolation
+### 工人隔离
 
-All ML inference runs in a dedicated Web Worker:
-- Main thread remains responsive during inference
-- 30-second timeout prevents hanging
-- Automatic cleanup on errors
+所有 ML 推理都在专用的 Web Worker 中运行：
+- 主线程在推理期间保持响应
+- 30 秒超时可防止挂起
+- 自动清除错误
 
-### Limitations
+### 限制
 
-Browser ML has constraints compared to cloud models:
+与云模型相比，浏览器机器学习有一些限制：
 
-| Aspect | Cloud (Llama 3.3) | Browser (T5) |
+|方面|云（Llama 3.3）|浏览器（T5）|
 |--------|-------------------|--------------|
-| Context window | 128K tokens | 512 tokens |
-| Output quality | High | Moderate |
-| Inference speed | 2-3 seconds | 5-10 seconds |
-| Offline support | No | Yes |
+|上下文窗口 | 128K 代币 | 512 代币 |
+|输出质量|高|中等|
+|推理速度 | 2-3 秒 | 5-10 秒 |
+|离线支持 |没有 |是的 |
 
-Browser summarization is intentionally limited to 6 headlines × 80 characters to stay within model constraints.
+浏览器摘要有意限制为 6 个标题 × 80 个字符，以保持在模型限制范围内。
 
 ---
 
-## Cross-Module Integration
+## 跨模块集成
 
-Intelligence modules don't operate in isolation. Data flows between systems to enable composite analysis.
+情报模块并不是孤立运行的。数据在系统之间流动以实现复合分析。
 
-### Data Flow Architecture
+### 数据流架构
 
 ```
 News Feeds → Clustering → Velocity Analysis → Hotspot Correlation
@@ -2595,49 +2595,49 @@ ACLED/GDELT → Protest Events ────────────────�
                 CII Unrest Score
 ```
 
-### Module Dependencies
+### 模块依赖关系
 
-| Consumer Module | Data Source | Integration |
+|消费模块|数据来源|整合|
 |----------------|-------------|-------------|
-| **CII Unrest Score** | ACLED, GDELT protests | Event count, fatalities |
-| **CII Security Score** | Military flights, vessels | Activity near hotspots |
-| **CII Information Score** | News clusters | Velocity, keyword matches |
-| **Strategic Risk** | CII, Convergence, Cascade | Composite scoring |
-| **Related Assets** | News location inference | Pipeline/cable proximity |
-| **Geographic Convergence** | All geo-located events | Multi-type clustering |
+| **CII 动荡评分** | ACLED、GDELT 抗议 |事件计数、死亡人数 |
+| **CII 安全评分** |军用航班、舰艇|热点附近的活动 |
+| **CII 信息评分** |新闻集群|速度、关键词匹配|
+| **战略风险** | CII、融合、级联 |综合评分|
+| **相关资产** |新闻地点推断 |管道/电缆邻近度 |
+| **地理融合** |所有地理定位事件 |多类型聚类|
 
-### Alert Propagation
+### 警报传播
 
-When a threshold is crossed:
+当超过阈值时：
 
-1. **Source module** generates alert (e.g., CII spike)
-2. **Alert merges** with related alerts (same country/region)
-3. **Strategic Risk** receives composite alert
-4. **UI updates** header badge and panel indicators
+1. **源模块**生成警报（例如，CII 尖峰）
+2. **警报与相关警报合并**（同一国家/地区）
+3. **战略风险**收到复合警报
+4. **UI 更新** 标题徽章和面板指示器
 
-This ensures a single escalation (e.g., Ukraine military flights + protests + news spike) surfaces as one coherent signal rather than three separate alerts.
+这确保了单一升级（例如，乌克兰军事飞行+抗议+新闻激增）作为一个连贯的信号而不是三个单独的警报而出现。
 
 ---
 
-## AI Insights Panel
+## AI 见解面板
 
-The Insights Panel provides AI-powered analysis of the current news landscape, transforming raw headlines into actionable intelligence briefings.
+洞察面板提供人工智能对当前新闻形势的分析，将原始头条新闻转化为可操作的情报简报。
 
-### World Brief Generation
+### 世界简报生成
 
-Every 2 minutes (with rate limiting), the system generates a concise situation brief using a multi-provider fallback chain:
+每 2 分钟（有速率限制），系统会使用多提供商后备链生成一份简明的情况简介：
 
-| Priority | Provider | Model | Latency | Use Case |
+|优先|供应商|型号|延迟 |使用案例|
 |----------|----------|-------|---------|----------|
-| 1 | Groq | Llama 3.3 70B | ~2s | Primary provider (fast inference) |
-| 2 | OpenRouter | Llama 3.3 70B | ~3s | Fallback when Groq rate-limited |
-| 3 | Browser | T5 (ONNX) | ~5s | Offline fallback (local ML) |
+| 1 |格罗克 |骆驼 3.3 70B | 〜2秒|主要提供者（快速推理）|
+| 2 |开放路由器 |骆驼 3.3 70B | 〜3秒| Groq 速率受限时的回退 |
+| 3 |浏览器 | T5（ONNX）| 〜5秒|离线后备（本地 ML）|
 
-**Caching Strategy**: Redis server-side caching prevents redundant API calls. When the same headline set has been summarized recently, the cached result is returned immediately.
+**缓存策略**：Redis 服务器端缓存可防止冗余的 API 调用。当最近对同一标题集进行汇总时，立即返回缓存结果。
 
-### Focal Point Detection
+### 焦点检测
 
-The AI receives enriched context about **focal points**—entities that appear in both news coverage AND map signals. This enables intelligence-grade analysis:
+人工智能接收有关**焦点**的丰富上下文——出现在新闻报道和地图信号中的实体。这可以实现情报级分析：
 
 ```
 [INTELLIGENCE SYNTHESIS]
@@ -2648,69 +2648,69 @@ FOCAL POINTS (entities across news + signals):
   KEY: "Taiwan tensions rise..." | SIGNALS: naval vessels detected
 ```
 
-### Headline Scoring Algorithm
+### 标题评分算法
 
-Not all news is equally important. Headlines are scored to identify the most significant stories for the briefing:
+并非所有新闻都同样重要。对标题进行评分是为了确定简报中最重要的故事：
 
-**Score Boosters** (high weight):
-- Military keywords: war, invasion, airstrike, missile, deployment, mobilization
-- Violence indicators: killed, casualties, clashes, massacre, crackdown
-- Civil unrest: protest, uprising, coup, riot, martial law
+**分数助推器**（高权重）：
+- 军事关键词：战争、入侵、空袭、导弹、部署、动员
+- 暴力指标：死亡、伤亡、冲突、屠杀、镇压
+- 内乱：抗议、起义、政变、骚乱、戒严
 
-**Geopolitical Multipliers**:
-- Flashpoint regions: Iran, Russia, China, Taiwan, Ukraine, North Korea, Gaza
-- Critical actors: NATO, Pentagon, Kremlin, Hezbollah, Hamas, Wagner
+**地缘政治乘数**：
+- 闪点地区：伊朗、俄罗斯、中国、台湾、乌克兰、朝鲜、加沙
+- 关键角色：北约、五角大楼、克里姆林宫、真主党、哈马斯、瓦格纳
 
-**Score Reducers** (demoted):
-- Business context: CEO, earnings, stock, revenue, startup, data center
-- Entertainment: celebrity, movie, streaming
+**减分者**（降级）：
+- 业务背景：首席执行官、收益、股票、收入、初创公司、数据中心
+- 娱乐：名人、电影、流媒体
 
-This ensures military conflicts and humanitarian crises surface above routine business news.
+这确保了军事冲突和人道主义危机高于常规商业新闻。
 
-### Sentiment Analysis
+### 情感分析
 
-Headlines are analyzed for overall sentiment distribution:
+分析标题的整体情绪分布：
 
-| Sentiment | Detection Method | Display |
+|感悟|检测方法|显示|
 |-----------|------------------|---------|
-| **Negative** | Crisis, conflict, death keywords | Red percentage |
-| **Positive** | Agreement, growth, peace keywords | Green percentage |
-| **Neutral** | Neither detected | Gray percentage |
+| **负面** |危机、冲突、死亡关键词|红色百分比|
+| **积极** |协议、增长、和平关键词|绿化率|
+| **中性** |均未检测到 |灰度百分比|
 
-The overall sentiment balance provides a quick read on whether the news cycle is trending toward escalation or de-escalation.
+整体情绪平衡可以让您快速了解新闻周期是趋于升级还是趋于降级。
 
-### Velocity Detection
+### 速度检测
 
-Fast-moving stories are flagged when the same topic appears in multiple recent headlines:
+当同一主题出现在多个最近的头条新闻中时，快速发展的故事就会被标记：
 
-- Headlines are grouped by shared keywords and entities
-- Topics with 3+ mentions in 6 hours are marked as "high velocity"
-- Displayed separately to highlight developing situations
+- 标题按共享关键字和实体分组
+- 6 小时内被提及 3 次以上的主题被标记为“高速”
+- 单独显示以突出​​发展情况
 
 ---
 
-## Focal Point Detector
+## 焦点探测器
 
-The Focal Point Detector is the intelligence synthesis layer that correlates news entities with map signals to identify "main characters" driving current events.
+焦点检测器是情报合成层，它将新闻实体与地图信号相关联，以识别推动当前事件的“主角”。
 
-### The Problem It Solves
+### 它解决的问题
 
-Without synthesis, intelligence streams operate in silos:
-- News feeds show 80+ sources with thousands of headlines
-- Map layers display military flights, protests, outages independently
-- No automated way to see that IRAN appears in news AND has military activity AND an internet outage
+如果没有综合，情报流就会在孤岛中运行：
+- 新闻源显示 80 多个来源和数千个标题
+- 地图图层独立显示军事航班、抗议、停电
+- 没有自动方式可以看到伊朗出现在新闻中、有军事活动以及互联网中断
 
-### How It Works
+### 它是如何运作的
 
-1. **Entity Extraction**: Extract countries, companies, and organizations from all news clusters using the entity registry (600+ entities with aliases)
+1. **实体提取**：使用实体注册表从所有新闻集群中提取国家、公司和组织（600+具有别名的实体）
 
-2. **Signal Aggregation**: Collect all map signals (military flights, protests, outages, vessels) and group by country
+2. **信号聚合**：收集所有地图信号（军事航班、抗议、停电、船只）并按国家分组
 
-3. **Cross-Reference**: Match news entities with signal countries
+3. **交叉引用**：将新闻实体与信号国家进行匹配
 
-4. **Score & Rank**: Calculate focal scores based on correlation strength
+4. **分数和排名**：根据相关强度计算焦点分数
 
-### Focal Point Scoring
+### 焦点评分
 
 ```
 FocalScore = NewsScore + SignalScore + CorrelationBonus
@@ -2731,166 +2731,166 @@ CorrelationBonus (0-20):
   +5 if related entities also have signals
 ```
 
-### Urgency Classification
+### 紧急程度分类
 
-| Urgency | Criteria | Visual |
+|紧急|标准|视觉 |
 |---------|----------|--------|
-| **Critical** | Score > 70 OR 3+ signal types | Red badge |
-| **Elevated** | Score > 50 OR 2+ signal types | Orange badge |
-| **Watch** | Default | Yellow badge |
+| **关键** |分数 > 70 或 3+ 信号类型 |红色徽章|
+| **提升** |分数 > 50 或 2+ 信号类型 |橙色徽章|
+| **观看** |默认 |黄色徽章|
 
-### Signal Type Icons
+### 信号类型图标
 
-Focal points display icons indicating which signal types are active:
+焦点显示图标指示哪些信号类型处于活动状态：
 
-| Icon | Signal Type | Meaning |
+|图标|信号类型|意义|
 |------|-------------|---------|
-| ✈️ | military_flight | Military aircraft detected nearby |
-| ⚓ | military_vessel | Naval vessels in waters |
-| 📢 | protest | Civil unrest events |
-| 🌐 | internet_outage | Network disruption |
-| 🚢 | ais_disruption | Shipping anomaly |
+| ✈️ |军事飞行 |附近发现军用飞机|
+| ⚡ |军舰 |水域中的海军舰艇 |
+| 📢 |抗议|内乱事件|
+| 🌐 |互联网中断 |网络中断 |
+| 🚢 | ais_中断 |出货异常|
 
-### Example Output
+### 输出示例
 
-A focal point for IRAN might show:
-- **Display**: "Iran [CRITICAL] ✈️📢🌐"
-- **News**: 12 mentions, velocity 0.5/hour
-- **Signals**: 5 military flights, 3 protests, 1 outage
-- **Narrative**: "12 news mentions | 5 military flights, 3 protests, 1 internet outage | 'Iran protests continue amid...'"
-- **Correlation Evidence**: "Iran appears in both news (12) and map signals (9)"
+伊朗的焦点可能会显示：
+- **显示**：“伊朗 [关键] ✈️📢🌐”
+- **新闻**：12 次提及，速度 0.5/小时
+- **信号**：5 次军事飞行、3 次抗议、1 次停电
+- **叙述**：“12 条新闻提及 | 5 次军事飞行、3 次抗议、1 次互联网中断 |‘伊朗抗议活动仍在继续......’”
+- **相关证据**：“伊朗出现在新闻 (12) 和地图信号 (9) 中”
 
-### Integration with CII
+### 与 CII 集成
 
-Focal point urgency levels feed into the Country Instability Index:
-- **Critical** focal point → CII score boost for that country
-- Ensures countries with multi-source convergence are properly flagged
-- Prevents "silent" instability when news alone wouldn't trigger alerts
+焦点紧急程度纳入国家不稳定指数：
+- **关键** 焦点 → 该国家/地区的 CII 分数提升
+- 确保多源融合的国家得到正确标记
+- 当新闻本身不会触发警报时，防止“无声”不稳定
 
 ---
 
-## Natural Disaster Tracking
+## 自然灾害追踪
 
-The Natural layer combines two authoritative sources for comprehensive disaster monitoring.
+自然层结合了两个权威来源进行综合灾害监测。
 
-### GDACS (Global Disaster Alert and Coordination System)
+### GDACS（全球灾害警报和协调系统）
 
-UN-backed disaster alert system providing official severity assessments:
+联合国支持的灾害警报系统提供官方严重程度评估：
 
-| Event Type | Code | Icon | Sources |
+|事件类型 |代码|图标|来源 |
 |------------|------|------|---------|
-| Earthquake | EQ | 🔴 | USGS, EMSC |
-| Flood | FL | 🌊 | Satellite imagery |
-| Tropical Cyclone | TC | 🌀 | NOAA, JMA |
-| Volcano | VO | 🌋 | Smithsonian GVP |
-| Wildfire | WF | 🔥 | MODIS, VIIRS |
-| Drought | DR | ☀️ | Multiple sources |
+|地震 |情商| 🔴 |美国地质调查局、紧急医疗服务中心 |
+|洪水|佛罗里达 | 🌊 |卫星图像|
+|热带气旋 | TC | 🌀 | NOAA、JMA |
+|火山|画外音 | 🌋 |史密森尼 GVP |
+|野火| WF | 🔥 | MODIS、VIIRS |
+|干旱|博士| ☀️ |多个来源 |
 
-**Alert Levels**:
-| Level | Color | Meaning |
+**警报级别**：
+|水平|颜色 |意义|
 |-------|-------|---------|
-| **Red** | Critical | Significant humanitarian impact expected |
-| **Orange** | Alert | Moderate impact, monitoring required |
-| **Green** | Advisory | Minor event, localized impact |
+| **红色** |关键|预计将产生重大人道主义影响|
+| **橙色** |警报 |中等影响，需要监控|
+| **绿色** |咨询 |小事件，局部影响 |
 
-### NASA EONET (Earth Observatory Natural Event Tracker)
+### NASA EONET（地球观测站自然事件跟踪器）
 
-Near-real-time natural event detection from satellite observation:
+通过卫星观测进行近实时自然事件检测：
 
-| Category | Detection Method | Typical Delay |
+|类别 |检测方法|典型延迟|
 |----------|------------------|---------------|
-| Severe Storms | GOES/Himawari imagery | Minutes |
-| Wildfires | MODIS thermal anomalies | 4-6 hours |
-| Volcanoes | Thermal + SO2 emissions | Hours |
-| Floods | SAR imagery + gauges | Hours to days |
-| Sea/Lake Ice | Passive microwave | Daily |
-| Dust/Haze | Aerosol optical depth | Hours |
+|猛烈风暴 | GOES/向日葵图像 |分钟 |
+|野火| MODIS 热异常 | 4-6 小时 |
+|火山 |热能 + SO2 排放 |营业时间 |
+|洪水 | SAR 图像 + 仪表 |几小时到几天 |
+|海/湖冰 |无源微波|每日 |
+|灰尘/雾霾 |气溶胶光学深度|营业时间 |
 
-### Multi-Source Deduplication
+### 多源重复数据删除
 
-When both GDACS and EONET report the same event:
-1. Events within 100km and 48 hours are considered duplicates
-2. GDACS severity takes precedence (human-verified)
-3. EONET geometry provides more precise coordinates
-4. Combined entry shows both source attributions
+当 GDACS 和 EONET 报告同一事件时：
+1. 100公里以内且48小时内的活动视为重复
+2. GDACS 严重性优先（人工验证）
+3. EONET几何提供更精确的坐标
+4. 组合条目显示两个来源属性
 
-### Filtering Logic
+### 过滤逻辑
 
-To prevent map clutter, natural events are filtered:
-- **Wildfires**: Only events < 48 hours old (older fires are either contained or well-known)
-- **Earthquakes**: M4.5+ globally, lower threshold for populated areas
-- **Storms**: Only named storms or those with warnings
+为了防止地图混乱，自然事件被过滤：
+- **野火**：仅发生 < 48 小时的事件（较早的火灾已得到控制或众所周知）
+- **地震**：全球 M4.5+，人口稠密地区的阈值较低
+- **风暴**：仅命名风暴或带有警告的风暴
 
 ---
 
-## Military Surge Detection
+## 军事浪涌检测
 
-The system detects unusual concentrations of military activity using two complementary algorithms.
+该系统使用两种互补的算法来检测异常集中的军事活动。
 
-### Baseline-Based Surge Detection
+### 基于基线的浪涌检测
 
-Surges are detected by comparing current aircraft counts to historical baselines within defined military theaters:
+通过将当前飞机数量与指定军事战区内的历史基线进行比较来检测激增：
 
-| Parameter | Value | Purpose |
+|参数|价值|目的|
 |-----------|-------|---------|
-| Surge threshold | 2.0× baseline | Minimum multiplier to trigger alert |
-| Baseline window | 48 hours | Historical data used for comparison |
-| Minimum samples | 6 observations | Required data points for valid baseline |
+|浪涌阈值| 2.0× 基线 |触发警报的最小乘数 |
+|基线窗口| 48小时|用于比较的历史数据|
+|最低样品 | 6 观察 |有效基线所需的数据点 |
 
-**Aircraft Categories Tracked**:
+**跟踪的飞机类别**：
 
-| Category | Examples | Minimum Count |
+|类别 |示例 |最小计数 |
 |----------|----------|---------------|
-| Transport/Airlift | C-17, C-130, KC-135, REACH flights | 5 aircraft |
-| Fighter | F-15, F-16, F-22, Typhoon | 4 aircraft |
-| Reconnaissance | RC-135, E-3 AWACS, U-2 | 3 aircraft |
+|运输/空运| C-17、C-130、KC-135、REACH 航班 | 5 架飞机 |
+|战斗机| F-15、F-16、F-22、台风 | 4 架飞机 |
+|侦察| RC-135、E-3 预警机、U-2 | 3 架飞机 |
 
-### Surge Severity
+### 浪涌严重程度
 
-| Severity | Criteria | Meaning |
+|严重程度 |标准|意义|
 |----------|----------|---------|
-| **Critical** | 4× baseline or higher | Major deployment |
-| **High** | 3× baseline | Significant increase |
-| **Medium** | 2× baseline | Elevated activity |
+| **关键** | 4× 基线或更高 |重大部署|
+| **高** | 3× 基线 |显着增加 |
+| **中** | 2× 基线 |活动增加 |
 
-### Military Theaters
+### 军事剧院
 
-Surge detection groups activity into strategic theaters:
+激增检测将活动分组到战略战区：
 
-| Theater | Center | Key Bases |
+|剧院 |中心|关键基地|
 |---------|--------|-----------|
-| Middle East | Persian Gulf | Al Udeid, Al Dhafra, Incirlik |
-| Eastern Europe | Poland | Ramstein, Spangdahlem, Łask |
-| Pacific | Guam/Japan | Andersen, Kadena, Yokota |
-| Horn of Africa | Djibouti | Camp Lemonnier |
+|中东 |波斯湾 |乌代德、达夫拉、因吉尔利克 |
+|东欧 |波兰 | Ramstein，Spandahlem，瓦斯克 |
+|太平洋 |关岛/日本 |安徒生、嘉手纳、横田 |
+|非洲之角|吉布提 |莱蒙尼尔营 |
 
-### Foreign Presence Detection
+### 异物存在检测
 
-A separate system monitors for military operators outside their normal operating areas:
+一个单独的系统监视正常操作区域之外的军事操作员：
 
-| Operator | Home Regions | Alert When Found In |
+|操作员|主页 地区 |发现时发出警报 |
 |----------|--------------|---------------------|
-| USAF/USN | Alaska ADIZ | Persian Gulf, Taiwan Strait |
-| Russian VKS | Kaliningrad, Arctic, Black Sea | Baltic Region, Alaska ADIZ |
-| PLAAF/PLAN | Taiwan Strait, South China Sea | (alerts when increased) |
-| Israeli IAF | Eastern Med | Iran border region |
+|美国空军/美国海军 |阿拉斯加防空识别区 |波斯湾、台湾海峡|
+|俄罗斯 VKS |加里宁格勒、北极、黑海|波罗的海地区，阿拉斯加防空识别区 |
+|中国空军/解放军海军 |台湾海峡、南海| （增加时发出警报）|
+|以色列空军 |东方医学|伊朗边境地区|
 
-**Example alert**:
+**警报示例**：
 ```
 FOREIGN MILITARY PRESENCE: Persian Gulf
 USAF: 3 aircraft detected (KC-135, RC-135W, E-3)
 Severity: HIGH - Operator outside normal home regions
 ```
 
-### News Correlation
+### 新闻相关
 
-Both surge and foreign presence alerts query the Focal Point Detector for context:
+激增和异物存在警报都会向焦点检测器查询上下文：
 
-1. Identify countries involved (aircraft operators, region countries)
-2. Check focal points for those countries
-3. If news correlation exists, attach headlines and evidence
+1. 确定所涉及的国家（飞机运营商、地区国家）
+2. 检查这些国家的联络点
+3. 如果存在新闻相关性，请附上标题和证据
 
-**Example with correlation**:
+**相关性示例**：
 ```
 MILITARY AIRLIFT SURGE: Middle East Theater
 Current: 8 transport aircraft (2.5× baseline)
@@ -2903,290 +2903,290 @@ Iran: "Iran protests continue amid military..."
 
 ---
 
-## Strategic Posture Analysis
+## 战略态势分析
 
-The AI Strategic Posture panel aggregates military aircraft and naval vessels across defined theaters, providing at-a-glance situational awareness of global force concentrations.
+人工智能战略态势面板汇集了指定战区的军用飞机和海军舰艇，提供全球兵力集中情况的一目了然的态势感知。
 
-### Strategic Theaters
+### 战略战区
 
-Nine geographic theaters are monitored continuously, each with custom thresholds based on typical peacetime activity levels:
+九个地理战区受到持续监控，每个战区都有基于典型和平时期活动水平的自定义阈值：
 
-| Theater | Bounds | Elevated Threshold | Critical Threshold |
+|剧院 |界限 |提高门槛|临界阈值|
 |---------|--------|--------------------|--------------------|
-| **Iran Theater** | Persian Gulf, Iraq, Syria (20°N–42°N, 30°E–65°E) | 50 aircraft | 100 aircraft |
-| **Taiwan Strait** | Taiwan, East China Sea (18°N–30°N, 115°E–130°E) | 30 aircraft | 60 aircraft |
-| **Korean Peninsula** | North/South Korea (33°N–43°N, 124°E–132°E) | 20 aircraft | 50 aircraft |
-| **Baltic Theater** | Baltics, Poland, Scandinavia (52°N–65°N, 10°E–32°E) | 20 aircraft | 40 aircraft |
-| **Black Sea** | Ukraine, Turkey, Romania (40°N–48°N, 26°E–42°E) | 15 aircraft | 30 aircraft |
-| **South China Sea** | Philippines, Vietnam (5°N–25°N, 105°E–121°E) | 25 aircraft | 50 aircraft |
-| **Eastern Mediterranean** | Syria, Cyprus, Lebanon (33°N–37°N, 25°E–37°E) | 15 aircraft | 30 aircraft |
-| **Israel/Gaza** | Israel, Gaza Strip (29°N–33°N, 33°E–36°E) | 10 aircraft | 25 aircraft |
-| **Yemen/Red Sea** | Bab el-Mandeb, Houthi areas (11°N–22°N, 32°E–54°E) | 15 aircraft | 30 aircraft |
+| **伊朗剧院** |波斯湾、伊拉克、叙利亚（20°N–42°N，30°E–65°E）| 50 架飞机 | 100 架飞机 |
+| **台湾海峡** |台湾、东海（18°N–30°N、115°E–130°E） | 30 架飞机 | 60 架飞机 |
+| **朝鲜半岛** |朝鲜/韩国（33°N–43°N，124°E–132°E）| 20 架飞机 | 50 架飞机 |
+| **波罗的海剧院** |波罗的海国家、波兰、斯堪的纳维亚半岛（52°N–65°N，10°E–32°E）| 20 架飞机 | 40 架飞机 |
+| **黑海** |乌克兰、土耳其、罗马尼亚（40°N–48°N、26°E–42°E）| 15 架飞机 | 30 架飞机 |
+| **南海** |菲律宾、越南（5°N–25°N，105°E–121°E）| 25 架飞机 | 50 架飞机 |
+| **东地中海** |叙利亚、塞浦路斯、黎巴嫩（33°N–37°N，25°E–37°E）| 15 架飞机 | 30 架飞机 |
+| **以色列/加沙** |以色列、加沙地带（北纬 29°–33°、东经 33°–36°）| 10 架飞机 | 25 架飞机 |
+| **也门/红海** | Bab el-Mandeb，胡塞武装地区（11°N–22°N，32°E–54°E）| 15 架飞机 | 30 架飞机 |
 
-### Strike Capability Assessment
+### 打击能力评估
 
-Beyond raw counts, the system assesses whether forces in a theater constitute an **offensive strike package**—the combination of assets required for sustained combat operations.
+除了原始计数之外，该系统还评估战区的部队是否构成**进攻性打击包**——持续作战行动所需的资产组合。
 
-**Strike-Capable Criteria**:
-- Aerial refueling tankers (KC-135, KC-10, A330 MRTT)
-- Airborne command and control (E-3 AWACS, E-7 Wedgetail)
-- Combat aircraft (fighters, strike aircraft)
+**打击能力标准**：
+- 空中加油机（KC-135、KC-10、A330 MRTT）
+- 机载指挥与控制（E-3 AWACS、E-7 Wedgetail）
+- 战斗机（战斗机、攻击机）
 
-Each theater has custom thresholds reflecting realistic strike package sizes:
+每个战区都有反映实际打击包尺寸的自定义阈值：
 
-| Theater | Min Tankers | Min AWACS | Min Fighters |
+|剧院 |最小油轮 |最小预警机 |敏战士 |
 |---------|-------------|-----------|--------------|
-| Iran Theater | 10 | 2 | 30 |
-| Taiwan Strait | 5 | 1 | 20 |
-| Korean Peninsula | 4 | 1 | 15 |
-| Baltic/Black Sea | 3-4 | 1 | 10-15 |
-| Israel/Gaza | 2 | 1 | 8 |
+|伊朗剧院| 10 | 10 2 | 30|
+|台湾海峡| 5 | 1 | 20 |
+|朝鲜半岛| 4 | 1 | 15 | 15
+|波罗的海/黑海 | 3-4 | 3-4 1 | 10-15 | 10-15
+|以色列/加沙 | 2 | 1 | 8 |
 
-When all three criteria are met, the theater is flagged as **STRIKE CAPABLE**, indicating forces sufficient for sustained offensive operations.
+当满足所有三个标准时，战区就会被标记为**打击能力**，表明部队足以进行持续的进攻行动。
 
-### Naval Vessel Integration
+### 海军舰艇整合
 
-The panel augments aircraft data with real-time naval vessel positions from AIS tracking. Vessels are classified into categories:
+该面板通过 AIS 跟踪的实时海军舰艇位置来增强飞机数据。船舶分为以下几类：
 
-| Category | Examples | Strategic Significance |
+|类别 |示例 |战略意义 |
 |----------|----------|------------------------|
-| **Carriers** | CVN, CV, LHD | Power projection, air superiority |
-| **Destroyers** | DDG, DDH | Air defense, cruise missile strike |
-| **Frigates** | FFG, FF | Multi-role escort, ASW |
-| **Submarines** | SSN, SSK, SSBN | Deterrence, ISR, strike |
-| **Patrol** | PC, PG | Coastal defense |
-| **Auxiliary** | T-AO, AOR | Fleet support, logistics |
+| **运营商** | CVN、CV、LHD |力量投射，空中优势|
+| **驱逐舰** | DDG、DDH |防空、巡航导弹打击|
+| **护卫舰** | FFG，FF |多角色护航、反潜战 |
+| **潜艇** | SSN、SSK、SSBN |威慑、情监侦、打击 |
+| **巡逻** |电脑、PG |海防|
+| **辅助** | T-AO、AOR |车队支持、物流|
 
-**Data Accumulation Note**: AIS vessel data arrives via WebSocket stream and accumulates gradually. The panel automatically re-checks vessel counts at 30, 60, 90, and 120 seconds after initial load to capture late-arriving data.
+**数据累积注意**：AIS 船舶数据通过 WebSocket 流到达并逐渐累积。面板会在初始装载后 30、60、90 和 120 秒自动重新检查船只计数，以捕获迟到的数据。
 
-### Posture Levels
+### 姿势级别
 
-| Level | Indicator | Criteria | Meaning |
+|水平|指标|标准|意义|
 |-------|-----------|----------|---------|
-| **Normal** | 🟢 NORM | Below elevated threshold | Routine peacetime activity |
-| **Elevated** | 🟡 ELEV | At or above elevated threshold | Increased activity, possible exercises |
-| **Critical** | 🔴 CRIT | At or above critical threshold | Major deployment, potential crisis |
+| **正常** | 🟢 规范 |低于升高阈值 |平时的日常活动|
+| **提升** | 🟡 电梯 |达到或高于升高的阈值 |增加活动，可能的锻炼|
+| **关键** | 🔴暴击 |达到或高于临界阈值 |重大部署，潜在危机|
 
-**Elevated + Strike Capable** is treated as a higher alert state than regular elevated status.
+**升高+可攻击**被视为比常规升高状态更高的警报状态。
 
-### Trend Detection
+### 趋势检测
 
-Activity trends are computed from rolling historical data:
+活动趋势是根据滚动历史数据计算得出的：
 
-- **Increasing** (↗): Current activity >10% higher than previous period
-- **Stable** (→): Activity within ±10% of previous period
-- **Decreasing** (↘): Current activity >10% lower than previous period
+- **增加** (↗)：当前活动比上一期高 >10%
+- **稳定** (→)：活动在前一时期的 ±10% 范围内
+- **减少** (↘)：当前活动比上一期减少 >10%
 
-### Server-Side Caching
+### 服务器端缓存
 
-Theater posture computations run on edge servers with Redis caching:
+战区态势计算在具有 Redis 缓存的边缘服务器上运行：
 
-| Cache Type | TTL | Purpose |
+|缓存类型 | TTL |目的|
 |------------|-----|---------|
-| **Active cache** | 5 minutes | Matches OpenSky refresh rate |
-| **Stale cache** | 1 hour | Fallback when upstream APIs fail |
+| **活动缓存** | 5 分钟 |匹配 OpenSky 刷新率 |
+| **过时的缓存** | 1小时|上游 API 失败时的回退 |
 
-This ensures consistent data across all users and minimizes redundant API calls to OpenSky Network.
+这可确保所有用户的数据一致，并最大限度地减少对 OpenSky 网络的冗余 API 调用。
 
 ---
 
-## Server-Side Risk Score API
+## 服务器端风险评分API
 
-Strategic risk and Country Instability Index (CII) scores are pre-computed server-side rather than calculated in the browser. This eliminates the "cold start" problem where new users would see no data while the system accumulated enough information to generate scores.
+战略风险和国家不稳定指数 (CII) 分数是在服务器端预先计算的，而不是在浏览器中计算的。这消除了“冷启动”问题，即新用户看不到数据，而系统积累了足够的信息来生成分数。
 
-### How It Works
+### 它是如何运作的
 
-The `/api/risk-scores` edge function:
+`/api/risk-scores` 边缘函数：
 
-1. Fetches recent protest/riot data from ACLED (7-day window)
-2. Computes CII scores for 20 Tier 1 countries
-3. Derives strategic risk from weighted top-5 CII scores
-4. Caches results in Redis (10-minute TTL)
+1. 从 ACLED 获取最近的抗议/骚乱数据（7 天窗口）
+2. 计算 20 个一级国家的 CII 分数
+3. 从加权前 5 名 CII 分数得出战略风险
+4. 在 Redis 中缓存结果（10 分钟 TTL）
 
-### CII Score Calculation
+### CII 分数计算
 
-Each country's score combines:
+每个国家的得分综合为：
 
-**Baseline Risk** (0–50 points): Static geopolitical risk based on historical instability, ongoing conflicts, and authoritarian governance.
+**基线风险**（0-50 分）：基于历史不稳定、持续冲突和独裁治理的静态地缘政治风险。
 
-| Country | Baseline | Rationale |
+|国家 |基线|理由|
 |---------|----------|-----------|
-| Syria, Ukraine, Yemen | 50 | Active conflict zones |
-| Myanmar, Venezuela, North Korea | 40-45 | Civil unrest, authoritarian |
-| Iran, Israel, Pakistan | 35-45 | Regional tensions |
-| Saudi Arabia, Turkey, India | 20-25 | Moderate instability |
-| Germany, UK, US | 5-10 | Stable democracies |
+|叙利亚、乌克兰、也门 | 50 | 50活跃的冲突地区|
+|缅甸、委内瑞拉、朝鲜 | 40-45 | 40-45内乱，独裁|
+|伊朗、以色列、巴基斯坦 | 35-45 | 35-45地区紧张局势|
+|沙特阿拉伯、土耳其、印度 | 20-25 | 20-25中度不稳定|
+|德国、英国、美国 | 5-10 |稳定的民主国家|
 
-**Unrest Component** (0–50 points): Recent protest and riot activity, weighted by event significance multiplier.
+**骚乱成分**（0-50 分）：最近的抗议和骚乱活动，按事件重要性乘数加权。
 
-**Information Component** (0–25 points): News coverage intensity (proxy for international attention).
+**信息成分**（0-25 分）：新闻报道强度（代表国际关注度）。
 
-**Security Component** (0–25 points): Baseline plus riot contribution.
+**安全部分**（0-25 分）：基线加上防暴贡献。
 
-### Event Significance Multipliers
+### 事件重要性乘数
 
-Events in some countries carry more global significance than others:
+一些国家发生的事件比其他国家更具全球意义：
 
-| Multiplier | Countries | Rationale |
+|乘数|国家 |理由|
 |------------|-----------|-----------|
-| 3.0× | North Korea | Any visible unrest is highly unusual |
-| 2.0-2.5× | China, Russia, Iran, Saudi Arabia | Authoritarian states suppress protests |
-| 1.5-1.8× | Taiwan, Pakistan, Myanmar, Venezuela | Regional flashpoints |
-| 0.5-0.8× | US, UK, France, Germany | Protests are routine in democracies |
+| 3.0× |朝鲜 |任何明显的骚乱都是极不寻常的|
+| 2.0-2.5× |中国、俄罗斯、伊朗、沙特阿拉伯 |独裁国家镇压抗议|
+| 1.5-1.8×|台湾、巴基斯坦、缅甸、委内瑞拉 |地区热点|
+| 0.5-0.8×|美国、英国、法国、德国 |抗议活动在民主国家已是家常便饭 |
 
-### Strategic Risk Derivation
+### 战略风险推导
 
-The composite strategic risk score is computed as a weighted average of the top 5 CII scores:
+综合战略风险评分按前 5 个 CII 评分的加权平均值计算：
 
 ```
 Weights: [1.0, 0.85, 0.70, 0.55, 0.40] (total: 3.5)
 Strategic Risk = (Σ CII[i] × weight[i]) / 3.5 × 0.7 + 15
 ```
 
-The top countries contribute most heavily, with diminishing influence for lower-ranked countries.
+排名靠前的国家贡献最大，排名较低的国家的影响力逐渐减弱。
 
-### Fallback Behavior
+### 后备行为
 
-When ACLED data is unavailable (API errors, rate limits, expired auth):
+当 ACLED 数据不可用时（API 错误、速率限制、授权过期）：
 
-1. **Stale cache** (1-hour TTL): Return recent scores with `stale: true` flag
-2. **Baseline fallback**: Return scores using only static baseline values with `baseline: true` flag
+1. **陈旧缓存**（1 小时 TTL）：使用 `stale: true` 标志返回最近的分数
+2. **基线回退**：仅使用带有 `baseline: true` 标志的静态基线值返回分数
 
-This ensures the dashboard always displays meaningful data even during upstream outages.
+这确保了仪表板即使在上游中断期间也始终显示有意义的数据。
 
 ---
 
-## Service Status Monitoring
+## 服务状态监控
 
-The Service Status panel tracks the operational health of external services that WorldMonitor users may depend on.
+服务状态面板跟踪 WorldMonitor 用户可能依赖的外部服务的运行状况。
 
-### Monitored Services
+### 受监控的服务
 
-| Service | Status Endpoint | Parser |
+|服务 |状态端点|解析器|
 |---------|-----------------|--------|
-| Anthropic (Claude) | status.claude.com | Statuspage.io |
-| OpenAI | status.openai.com | Statuspage.io |
-| Vercel | vercel-status.com | Statuspage.io |
-| Cloudflare | cloudflarestatus.com | Statuspage.io |
-| AWS | health.aws.amazon.com | Custom |
-| GitHub | githubstatus.com | Statuspage.io |
+|人择（克劳德）|克劳德.com |状态页.io |
+|开放人工智能 |状态.openai.com |状态页.io |
+|韦尔塞尔 | vercel-status.com |状态页.io |
+|云耀 | cloudflarestatus.com |状态页.io |
+|亚马逊AWS | health.aws.amazon.com |定制|
+| GitHub | githubstatus.com |状态页.io |
 
-### Status Levels
+### 状态级别
 
-| Status | Color | Meaning |
+|状态 |颜色 |意义|
 |--------|-------|---------|
-| **Operational** | Green | All systems functioning normally |
-| **Degraded** | Yellow | Partial outage or performance issues |
-| **Partial Outage** | Orange | Some components unavailable |
-| **Major Outage** | Red | Significant service disruption |
+| **运营** |绿色|所有系统运行正常|
+| **降级** |黄色|部分中断或性能问题 |
+| **部分停电** |橙色|某些组件不可用 |
+| **重大停电** |红色|严重的服务中断 |
 
-### Why This Matters
+### 为什么这很重要
 
-External service outages can affect:
-- AI summarization (Groq, OpenRouter outages)
-- Deployment pipelines (Vercel, GitHub outages)
-- API availability (Cloudflare, AWS outages)
+外部服务中断可能会影响：
+- AI 总结（Groq、OpenRouter 中断）
+- 部署管道（Vercel、GitHub 中断）
+- API 可用性（Cloudflare、AWS 中断）
 
-Monitoring these services provides context when dashboard features behave unexpectedly.
+当仪表板功能出现异常时，监视这些服务可以提供上下文。
 
 ---
 
-## Refresh Intervals
+## 刷新间隔
 
-Different data sources update at different frequencies based on volatility and API constraints.
+根据波动性和 API 限制，不同的数据源以不同的频率更新。
 
-### Polling Schedule
+### 投票时间表
 
-| Data Type | Interval | Rationale |
+|数据类型|间隔|理由|
 |-----------|----------|-----------|
-| **News feeds** | 5 min | Balance freshness vs. rate limits |
-| **Stock quotes** | 1 min | Market hours require near-real-time |
-| **Crypto prices** | 1 min | 24/7 markets, high volatility |
-| **Predictions** | 5 min | Probabilities shift slowly |
-| **Earthquakes** | 5 min | USGS updates every 5 min |
-| **Weather alerts** | 10 min | NWS alert frequency |
-| **Flight delays** | 10 min | FAA status update cadence |
-| **Internet outages** | 60 min | BGP events are rare |
-| **Economic data** | 30 min | FRED data rarely changes intraday |
-| **Military tracking** | 5 min | Activity patterns need timely updates |
-| **PizzINT** | 10 min | Foot traffic changes slowly |
+| **新闻提要** | 5 分钟 |平衡新鲜度与速率限制 |
+| **股票报价** | 1 分钟 |市场交易时间需要近乎实时|
+| **加密货币价格** | 1 分钟 | 24/7 市场，高波动性 |
+| **预测** | 5 分钟 |概率变化缓慢|
+| **地震** | 5 分钟 | USGS 每 5 分钟更新一次 |
+| **天气警报** | 10 分钟 | NWS 警报频率 |
+| **航班延误** | 10 分钟 | FAA 状态更新节奏 |
+| **网络中断** | 60 分钟 | BGP 事件很少见 |
+| **经济数据** | 30 分钟 | FRED 数据盘中很少变化 |
+| **军事追踪** | 5 分钟 |活动模式需要及时更新|
+| **PizzINT** | 10 分钟 |客流量变化缓慢|
 
-### Real-Time Streams
+### 实时流
 
-AIS vessel tracking uses WebSocket for true real-time:
+AIS 船舶跟踪使用 WebSocket 实现真正的实时：
 
-- **Connection**: Persistent WebSocket to Railway relay
-- **Messages**: Position updates as vessels transmit
-- **Reconnection**: Automatic with exponential backoff (5s → 10s → 20s)
+- **连接**：持久 WebSocket 到铁路中继
+- **消息**：船舶传输时位置更新
+- **重新连接**：自动带指数退避（5s → 10s → 20s）
 
-### User Control
+### 用户控制
 
-Time range selector affects displayed data, not fetch frequency:
+时间范围选择器影响显示的数据，而不是获取频率：
 
-| Selection | Effect |
+|选择|效果|
 |-----------|--------|
-| **1 hour** | Show only events from last 60 minutes |
-| **6 hours** | Show events from last 6 hours |
-| **24 hours** | Show events from last day |
-| **7 days** | Show all recent events |
+| **1 小时** |仅显示过去 60 分钟的事件 |
+| **6 小时** |显示过去 6 小时的活动 |
+| **24 小时** |显示昨天的活动 |
+| **7 天** |显示所有最近的事件 |
 
-Historical filtering is client-side—all data is fetched but filtered for display.
+历史过滤是在客户端进行的——所有数据都会被获取，但会被过滤以供显示。
 
 ---
 
-## Tech Stack
+## 技术堆栈
 
-| Layer | Technology | Purpose |
+|层 |技术 |目的|
 |-------|------------|---------|
-| **Language** | TypeScript 5.x | Type safety across 60+ source files |
-| **Build** | Vite | Fast HMR, optimized production builds |
-| **Map (Desktop)** | deck.gl + MapLibre GL | WebGL-accelerated rendering for large datasets |
-| **Map (Mobile)** | D3.js + TopoJSON | SVG fallback for battery efficiency |
-| **Concurrency** | Web Workers | Off-main-thread clustering and correlation |
-| **AI/ML** | ONNX Runtime Web | Browser-based inference for offline summarization |
-| **Networking** | WebSocket + REST | Real-time AIS stream, HTTP for other APIs |
-| **Storage** | IndexedDB | Snapshots, baselines (megabytes of state) |
-| **Preferences** | LocalStorage | User settings, monitors, panel order |
-| **Deployment** | Vercel Edge | Serverless proxies with global distribution |
+| **语言** | TypeScript 5.x | 60 多个源文件的类型安全 |
+| **构建** |维特 |快速 HMR、优化生产构建 |
+| **地图（桌面）** |甲板.gl + MapLibre GL |大型数据集的 WebGL 加速渲染 |
+| **地图（手机）** | D3.js + TopoJSON | SVG 电池效率后备方案 |
+| **并发** |网络工作者|非主线程聚类和关联|
+| **人工智能/机器学习** | ONNX 运行时网络 |基于浏览器的离线摘要推理 |
+| **网络** | WebSocket + REST |实时AIS流，其他API的HTTP |
+| **存储** |索引数据库 |快照、基线（兆字节状态）|
+| **偏好设置** |本地存储|用户设置、显示器、面板顺序 |
+| **部署** |维塞尔边缘 |全球分布的无服务器代理 |
 
-### Map Rendering Architecture
+### 地图渲染架构
 
-The map uses a hybrid rendering strategy optimized for each platform:
+该地图使用针对每个平台优化的混合渲染策略：
 
-**Desktop (deck.gl + MapLibre GL)**:
-- WebGL-accelerated layers handle thousands of markers smoothly
-- MapLibre GL provides base map tiles (OpenStreetMap)
-- GeoJSON, Scatterplot, Path, and Icon layers for different data types
-- GPU-based clustering and picking for responsive interaction
+**桌面（deck.gl + MapLibre GL）**：
+- WebGL 加速层可顺利处理数千个标记
+- MapLibre GL 提供底图图块 (OpenStreetMap)
+- 适用于不同数据类型的 GeoJSON、散点图、路径和图标层
+- 基于 GPU 的聚类和拣选，实现响应式交互
 
-**Mobile (D3.js + TopoJSON)**:
-- SVG rendering for battery efficiency
-- Reduced marker count and simplified layers
-- Touch-optimized interaction with larger hit targets
-- Automatic fallback when WebGL unavailable
+**移动（D3.js + TopoJSON）**：
+- SVG 渲染可提高电池效率
+- 减少标记数量并简化图层
+- 与较大命中目标的触摸优化交互
+- WebGL 不可用时自动回退
 
-### Key Libraries
+### 关键库
 
-- **deck.gl**: High-performance WebGL visualization layers
-- **MapLibre GL**: Open-source map rendering engine
-- **D3.js**: SVG map rendering, zoom behavior (mobile fallback)
-- **TopoJSON**: Efficient geographic data encoding
-- **ONNX Runtime**: Browser-based ML inference
-- **Custom HTML escaping**: XSS prevention (DOMPurify pattern)
+- **deck.gl**：高性能 WebGL 可视化层
+- **MapLibre GL**：开源地图渲染引擎
+- **D3.js**：SVG 地图渲染、缩放行为（移动回退）
+- **TopoJSON**：高效的地理数据编码
+- **ONNX 运行时**：基于浏览器的机器学习推理
+- **自定义 HTML 转义**：XSS 预防（DOMPurify 模式）
 
-### No External UI Frameworks
+### 无外部 UI 框架
 
-The entire UI is hand-crafted DOM manipulation—no React, Vue, or Angular. This keeps the bundle small (~250KB gzipped) and provides fine-grained control over rendering performance.
+整个 UI 都是手工制作的 DOM 操作——没有 React、Vue 或 Angular。这使得捆绑包很小（gzip 压缩后约 250KB），并提供对渲染性能的细粒度控制。
 
-### Build-Time Configuration
+### 构建时配置
 
-Vite injects configuration values at build time, enabling features like automatic version syncing:
+Vite 在构建时注入配置值，从而实现自动版本同步等功能：
 
-| Variable | Source | Purpose |
+|变量|来源 |目的|
 |----------|--------|---------|
-| `__APP_VERSION__` | `package.json` version field | Header displays current version |
+| `__APP_VERSION__` | `package.json` 版本字段 |标题显示当前版本 |
 
-This ensures the displayed version always matches the published package—no manual synchronization required.
+这可确保显示的版本始终与已发布的包匹配，无需手动同步。
 
 ```typescript
 // vite.config.ts
@@ -3217,52 +3217,52 @@ npm run dev
 npm run build
 ```
 
-## API Dependencies
+## API 依赖关系
 
-The dashboard fetches data from various public APIs and data sources:
+仪表板从各种公共 API 和数据源获取数据：
 
-| Service | Data | Auth Required |
+|服务 |数据|需要身份验证 |
 |---------|------|---------------|
-| RSS2JSON | News feed parsing | No |
-| Finnhub | Stock quotes (primary) | Yes (free) |
-| Yahoo Finance | Stock indices & commodities (backup) | No |
-| CoinGecko | Cryptocurrency prices | No |
-| USGS | Earthquake data | No |
-| NASA EONET | Natural events (storms, fires, volcanoes, floods) | No |
-| NWS | Weather alerts | No |
-| FRED | Economic indicators (Fed data) | No |
-| EIA | Oil analytics (prices, production, inventory) | Yes (free) |
-| USASpending.gov | Federal government contracts & awards | No |
-| Polymarket | Prediction markets | No |
-| ACLED | Armed conflict & protest data | Yes (free) |
-| GDELT Geo | News-derived event geolocation + tensions | No |
-| GDELT Doc | Topic-based intelligence feeds (cyber, military, nuclear) | No |
-| FAA NASSTATUS | Airport delay status | No |
-| Cloudflare Radar | Internet outage data | Yes (free) |
-| AISStream | Live vessel positions | Yes (relay) |
-| OpenSky Network | Military aircraft tracking | Yes (free) |
-| Wingbits | Aircraft enrichment (owner, operator) | Yes (free) |
-| PizzINT | Pentagon-area activity metrics | No |
+| RSS2JSON |新闻提要解析|没有 |
+|芬兰枢纽 |股票报价（主要）|是（免费）|
+|雅虎财经 |股票指数和商品（备份）|没有 |
+| CoinGecko |加密货币价格 |没有 |
+|美国地质勘探局|地震数据|没有 |
+|美国宇航局 EONET |自然事件（风暴、火灾、火山、洪水）|没有 |
+|新创建|天气警报 |没有 |
+|弗雷德 |经济指标（美联储数据）|没有 |
+|环评|石油分析（价格、产量、库存）|是（免费）|
+|美国支出网 | USASpending.gov联邦政府合同和奖项 |没有 |
+|综合市场 |预测市场|没有 |
+| ACLED |武装冲突和抗议数据|是（免费）|
+| GDELT 地理 |新闻衍生事件地理定位+紧张局势|没有 |
+| GDELT 文档 |基于主题的情报源（网络、军事、核）|没有 |
+|美国联邦航空局 (FAA) NAS 状态 |机场延误状况 |没有 |
+| Cloudflare 雷达 |网络中断数据|是（免费）|
+| AISStream |活船位置 |是（继电器）|
+|开放天空网络|军用飞机追踪|是（免费）|
+|翼钻 |飞机浓缩（所有者、运营商）|是（免费）|
+|皮兹INT |五角大楼区域活动指标|没有 |
 
-### Optional API Keys
+### 可选 API 密钥
 
-Some features require API credentials. Without them, the corresponding layer is hidden:
+某些功能需要 API 凭据。没有它们，相应的层将被隐藏：
 
-| Variable | Service | How to Get |
+|变量|服务 |如何获取 |
 |----------|---------|------------|
-| `FINNHUB_API_KEY` | Stock quotes (primary) | Free registration at [finnhub.io](https://finnhub.io/) |
-| `EIA_API_KEY` | Oil analytics | Free registration at [eia.gov/opendata](https://www.eia.gov/opendata/) |
-| `VITE_WS_RELAY_URL` | AIS vessel tracking | Deploy AIS relay or use hosted service |
-| `VITE_OPENSKY_RELAY_URL` | Military aircraft | Deploy relay with OpenSky credentials |
-| `OPENSKY_CLIENT_ID` | OpenSky auth (relay) | Free registration at [opensky-network.org](https://opensky-network.org) |
-| `OPENSKY_CLIENT_SECRET` | OpenSky auth (relay) | API key from OpenSky account settings |
-| `CLOUDFLARE_API_TOKEN` | Internet outages | Free Cloudflare account with Radar access |
-| `ACLED_ACCESS_TOKEN` | Protest data (server-side) | Free registration at acleddata.com |
-| `WINGBITS_API_KEY` | Aircraft enrichment | Contact [Wingbits](https://wingbits.com) for API access |
+| `FINNHUB_API_KEY` |股票报价（主要）|免费注册[finnhub.io](https://finnhub.io/) |
+| `EIA_API_KEY` |石油分析|免费注册[eia.gov/opendata](https://www.eia.gov/opendata/) |
+| `VITE_WS_RELAY_URL` | AIS 船舶追踪 |部署 AIS 中继或使用托管服务 |
+| `VITE_OPENSKY_RELAY_URL` |军用飞机|使用 OpenSky 凭证部署中继 |
+| `OPENSKY_CLIENT_ID` | OpenSky 身份验证（中继）|免费注册[opensky-network.org](https://opensky-network.org) |
+| `OPENSKY_CLIENT_SECRET` | OpenSky 身份验证（中继）| OpenSky 帐户设置中的 API 密钥 |
+| `CLOUDFLARE_API_TOKEN` |互联网中断 |具有 Radar 访问权限的免费 Cloudflare 帐户 |
+| `ACLED_ACCESS_TOKEN` |抗议数据（服务器端）|在 acleddata.com 免费注册 |
+| `WINGBITS_API_KEY` |飞机浓缩|联系 [Wingbits](https://wingbits.com) 获取 API 访问权限 |
 
-The dashboard functions fully without these keys—affected layers simply don't appear. Core functionality (news, markets, earthquakes, weather) requires no configuration.
+仪表板无需这些键即可完全运行 - 受影响的层根本不会出现。核心功能（新闻、市场、地震、天气）无需配置。
 
-## Project Structure
+## 项目结构
 
 ```
 src/
@@ -3374,242 +3374,242 @@ api/                          # Vercel Edge serverless proxies
 
 ## Usage
 
-### Keyboard Shortcuts
-- `⌘K` / `Ctrl+K` - Open search
-- `↑↓` - Navigate search results
-- `Enter` - Select result
-- `Esc` - Close modals
+### 键盘快捷键
+- `⌘K` / `Ctrl+K` - 打开搜索
+- `↑↓` - 导航搜索结果
+- `Enter` - 选择结果
+- `Esc` - 关闭模态
 
-### Map Controls
-- **Scroll** - Zoom in/out
-- **Drag** - Pan the map
-- **Click markers** - Show detailed popup with full context
-- **Hover markers** - Show tooltip with summary information
-- **Layer toggles** - Show/hide data layers
+### 地图控制
+- **滚动** - 放大/缩小
+- **拖动** - 平移地图
+- **点击标记** - 显示带有完整上下文的详细弹出窗口
+- **悬停标记** - 显示带有摘要信息的工具提示
+- **层切换** - 显示/隐藏数据层
 
-### Map Marker Design
+### 地图标记设计
 
-Infrastructure markers (nuclear facilities, economic centers, ports) display without labels to reduce visual clutter. Full information is available through interaction:
+基础设施标记（核设施、经济中心、港口）不带标签显示，以减少视觉混乱。完整信息可通过互动获得：
 
-| Layer | Label Behavior | Interaction |
+|层 |标签行为 |互动|
 |-------|---------------|-------------|
-| Nuclear facilities | Hidden | Click for popover with details |
-| Economic centers | Hidden | Click for popover with details |
-| Protests | Hidden | Hover for tooltip, click for details |
-| Military bases | Hidden | Click for popover with base info |
-| Hotspots | Visible | Color-coded activity levels |
-| Conflicts | Visible | Status and involved parties |
+|核设施|隐藏|点击查看包含详细信息的弹出窗口 |
+|经济中心|隐藏|点击查看包含详细信息的弹出窗口 |
+|抗议|隐藏|将鼠标悬停在工具提示上，单击查看详细信息 |
+|军事基地|隐藏|单击以获取包含基本信息的弹出窗口 |
+|热点|可见|颜色编码的活动水平 |
+|冲突|可见|现状及相关方 |
 
-This design prioritizes geographic awareness over label density—users can quickly scan for markers and then interact for context.
+这种设计优先考虑地理意识而不是标签密度——用户可以快速扫描标记，然后进行交互以获得上下文。
 
-### Panel Management
-- **Drag panels** - Reorder layout
-- **Settings (⚙)** - Toggle panel visibility
+### 面板管理
+- **拖动面板** - 重新排序布局
+- **设置 (⚙)** - 切换面板可见性
 
-### Shareable Links
+### 可共享链接
 
-The current view state is encoded in the URL, enabling:
-- **Bookmarking**: Save specific views for quick access
-- **Sharing**: Send colleagues a link to your exact map position and layer configuration
-- **Deep linking**: Link directly to a specific region or feature
+当前视图状态编码在 URL 中，从而能够：
+- **书签**：保存特定视图以便快速访问
+- **共享**：向同事发送指向您的确切地图位置和图层配置的链接
+- **深层链接**：直接链接到特定区域或功能
 
-**Encoded Parameters**:
-| Parameter | Description |
+**编码参数**：
+|参数|描述 |
 |-----------|-------------|
-| `lat`, `lon` | Map center coordinates |
-| `zoom` | Zoom level (1-10) |
-| `time` | Active time filter (1h, 6h, 24h, 7d) |
-| `view` | Preset view (global, us, mena) |
-| `layers` | Comma-separated enabled layer IDs |
+| `lat`、`lon` |地图中心坐标|
+| `zoom` |缩放级别（1-10）|
+| `time` |活动时间过滤器（1小时、6小时、24小时、7天）|
+| `view` |预设视图（全球、美国、中东）|
+| `layers` |以逗号分隔的启用层 ID |
 
-Example: `?lat=38.9&lon=-77&zoom=6&layers=bases,conflicts,hotspots`
+示例：`?lat=38.9&lon=-77&zoom=6&layers=bases,conflicts,hotspots`
 
-Values are validated and clamped to prevent invalid states.
+值经过验证和限制以防止无效状态。
 
-## Data Sources
+## 数据源
 
-### News Feeds
-Aggregates **70+ RSS feeds** from major news outlets, government sources, and specialty publications with source-tier prioritization. Categories include world news, MENA, Africa, Latin America, Asia-Pacific, energy, technology, AI/ML, finance, government releases, defense/intel, think tanks, and international crisis organizations.
+### 新闻源
+聚合来自主要新闻媒体、政府来源和专业出版物的 **70 多个 RSS 源**，并按源层优先顺序排列。类别包括世界新闻、中东和北非、非洲、拉丁美洲、亚太地区、能源、技术、人工智能/机器学习、金融、政府发布、国防/英特尔、智囊团和国际危机组织。
 
-### Geospatial Data
-- **Hotspots**: 30+ global intelligence hotspots with keyword correlation (including Sahel, Haiti, Horn of Africa)
-- **Conflicts**: 10+ active conflict zones with involved parties
-- **Military Bases**: 220+ installations from US, NATO, Russia, China, and allies
-- **Pipelines**: 88 operating oil/gas pipelines across all continents
-- **Undersea Cables**: 55 major submarine cable routes
-- **Nuclear**: 100+ power plants, weapons labs, enrichment facilities
-- **AI Infrastructure**: 111 major compute clusters (≥10k GPUs)
-- **Strategic Waterways**: 8 critical chokepoints
-- **Ports**: 61 strategic ports (container, oil/LNG, naval, chokepoint)
+### 地理空间数据
+- **热点**：30多个具有关键词相关性的全球情报热点（包括萨赫勒、海地、非洲之角）
+- **冲突**：10多个与相关方发生冲突的地区
+- **军事基地**：来自美国、北约、俄罗斯、中国和盟国的 220 多个基地
+- **管道**：遍布各大洲的 88 条正在运营的石油/天然气管道
+- **海底电缆**：55 条主要海底电缆路线
+- **核**：100 多个发电厂、武器实验室、浓缩设施
+- **人工智能基础设施**：111 个主要计算集群（≥10k GPU）
+- **战略水道**：8 个关键阻塞点
+- **港口**：61 个战略港口（集装箱、石油/液化天然气、海军、咽喉要道）
 
-### Live APIs
-- **USGS**: Earthquake feed (M4.5+ global)
-- **NASA EONET**: Natural events (storms, wildfires, volcanoes, floods)
-- **NWS**: Severe weather alerts (US)
-- **FAA**: Airport delays and ground stops
-- **Cloudflare Radar**: Internet outage detection
-- **AIS**: Real-time vessel positions
-- **ACLED/GDELT**: Protest and unrest events
-- **Yahoo Finance**: Stock quotes and indices
-- **CoinGecko**: Cryptocurrency prices
-- **FRED**: Federal Reserve economic data
-- **Polymarket**: Prediction market odds
+### 实时 API
+- **USGS**：地震源（M4.5+ 全球）
+- **NASA EONET**：自然事件（风暴、野火、火山、洪水）
+- **NWS**：恶劣天气警报（美国）
+- **FAA**：机场延误和地面停靠
+- **Cloudflare Radar**：互联网中断检测
+- **AIS**：实时船舶位置
+- **ACLED/GDELT**：抗议和骚乱事件
+- **雅虎财经**：股票报价和指数
+- **CoinGecko**：加密货币价格
+- **FRED**：美联储经济数据
+- **Polymarket**：预测市场赔率
 
-## Data Attribution
+## 数据归属
 
-This project uses data from the following sources. Please respect their terms of use.
+该项目使用以下来源的数据。请尊重他们的使用条款。
 
-### Aircraft Tracking
-Data provided by [The OpenSky Network](https://opensky-network.org). If you use this data in publications, please cite:
+### 飞机追踪
+数据由 [The OpenSky Network](https://opensky-network.org) 提供。如果您在出版物中使用此数据，请引用：
 
-> Matthias Schäfer, Martin Strohmeier, Vincent Lenders, Ivan Martinovic and Matthias Wilhelm. "Bringing Up OpenSky: A Large-scale ADS-B Sensor Network for Research". In *Proceedings of the 13th IEEE/ACM International Symposium on Information Processing in Sensor Networks (IPSN)*, pages 83-94, April 2014.
+> 马蒂亚斯·谢弗、马丁·斯特罗迈尔、文森特·伦德斯、伊万·马丁诺维奇和马蒂亚斯·威廉。 “提出 OpenSky：用于研究的大规模 ADS-B 传感器网络”。摘自*第 13 届 IEEE/ACM 国际传感器网络信息处理研讨会论文集 (IPSN)*，第 83-94 页，2014 年 4 月。
 
-### Conflict & Protest Data
-- **ACLED**: Armed Conflict Location & Event Data. Source: [ACLED](https://acleddata.com). Data must be attributed per their [Attribution Policy](https://acleddata.com/attributionpolicy/).
-- **GDELT**: Global Database of Events, Language, and Tone. Source: [The GDELT Project](https://www.gdeltproject.org/).
+### 冲突和抗议数据
+- **ACLED**：武装冲突地点和事件数据。来源：[ACLED](https://acleddata.com)。数据必须根据其 [Attribution Policy](https://acleddata.com/attributionpolicy/) 进行归属。
+- **GDELT**：全球事件、语言和语气数据库。来源：[The GDELT Project](https://www.gdeltproject.org/)。
 
-### Financial Data
-- **Stock Quotes**: Powered by [Finnhub](https://finnhub.io/) (primary), with [Yahoo Finance](https://finance.yahoo.com/) as backup for indices and commodities
-- **Cryptocurrency**: Powered by [CoinGecko API](https://www.coingecko.com/en/api)
-- **Economic Indicators**: Data from [FRED](https://fred.stlouisfed.org/), Federal Reserve Bank of St. Louis
+### 财务数据
+- **股票行情**：由 [Finnhub](https://finnhub.io/)（主要）提供支持，并以 [Yahoo Finance](https://finance.yahoo.com/) 作为指数和商品的备份
+- **加密货币**：由 [CoinGecko API](https://www.coingecko.com/en/api) 提供支持
+- **经济指标**：数据来自[FRED](https://fred.stlouisfed.org/)，圣路易斯联邦储备银行
 
-### Geophysical Data
-- **Earthquakes**: [U.S. Geological Survey](https://earthquake.usgs.gov/), ANSS Comprehensive Catalog
-- **Natural Events**: [NASA EONET](https://eonet.gsfc.nasa.gov/) - Earth Observatory Natural Event Tracker (storms, wildfires, volcanoes, floods)
-- **Weather Alerts**: [National Weather Service](https://www.weather.gov/) - Open data, free to use
+### 地球物理数据
+- **地震**：[U.S. Geological Survey](https://earthquake.usgs.gov/)，ANSS 综合目录
+- **自然事件**：[NASA EONET](https://eonet.gsfc.nasa.gov/) - 地球观测站自然事件跟踪器（风暴、野火、火山、洪水）
+- **天气警报**：[National Weather Service](https://www.weather.gov/) - 开放数据，免费使用
 
-### Infrastructure & Transport
-- **Airport Delays**: [FAA Air Traffic Control System Command Center](https://www.fly.faa.gov/)
-- **Vessel Tracking**: [AISstream](https://aisstream.io/) real-time AIS data
-- **Internet Outages**: [Cloudflare Radar](https://radar.cloudflare.com/) (CC BY-NC 4.0)
+### 基础设施和交通
+- **机场延误**：[FAA Air Traffic Control System Command Center](https://www.fly.faa.gov/)
+- **船舶跟踪**：[AISstream](https://aisstream.io/) 实时 AIS 数据
+- **互联网中断**：[Cloudflare Radar](https://radar.cloudflare.com/) (CC BY-NC 4.0)
 
-### Other Sources
-- **Prediction Markets**: [Polymarket](https://polymarket.com/)
+### 其他来源
+- **预测市场**：[Polymarket](https://polymarket.com/)
 
-## Acknowledgments
+## 致谢
 
-Original dashboard concept inspired by Reggie James ([@HipCityReg](https://x.com/HipCityReg/status/2009003048044220622)) - with thanks for the vision of a comprehensive situation awareness tool
+原始仪表板概念的灵感来自 Reggie James ([@HipCityReg](https://x.com/HipCityReg/status/2009003048044220622)) - 感谢您对综合态势感知工具的愿景
 
-Special thanks to **Yanal at [Wingbits](https://wingbits.com)** for providing API access for aircraft enrichment data, enabling military aircraft classification and ownership tracking
+特别感谢 [Wingbits](https://wingbits.com)** 的 **Yanal 为飞机浓缩数据提供 API 访问，从而实现军用飞机分类和所有权跟踪
 
-Thanks to **[@fai9al](https://github.com/fai9al)** for the inspiration and original PR that led to the Tech Monitor variant
-
----
-
-## Limitations & Caveats
-
-This project is a **proof of concept** demonstrating what's possible with publicly available data. While functional, there are important limitations:
-
-### Data Completeness
-
-Some data sources require paid accounts for full access:
-- **ACLED**: Free tier has API restrictions; Research tier required for programmatic access
-- **OpenSky Network**: Rate-limited; commercial tiers offer higher quotas
-- **Satellite AIS**: Global coverage requires commercial providers (Spire, Kpler, etc.)
-
-The dashboard works with free tiers but may have gaps in coverage or update frequency.
-
-### AIS Coverage Bias
-
-The Ships layer uses terrestrial AIS receivers via [AISStream.io](https://aisstream.io). This creates a **geographic bias**:
-- **Strong coverage**: European waters, Atlantic, major ports
-- **Weak coverage**: Middle East, open ocean, remote regions
-
-Terrestrial receivers only detect vessels within ~50km of shore. Satellite AIS (commercial) provides true global coverage but is not included in this free implementation.
-
-### Blocked Data Sources
-
-Some publishers block requests from cloud providers (Vercel, Railway, AWS):
-- RSS feeds from certain outlets may fail with 403 errors
-- This is a common anti-bot measure, not a bug in the dashboard
-- Affected feeds are automatically disabled via circuit breakers
-
-The system degrades gracefully—blocked sources are skipped while others continue functioning.
+感谢 **[@fai9al](https://github.com/fai9al)** 的灵感和原创公关，促成了 Tech Monitor 变体
 
 ---
 
-## Roadmap
+## 限制和注意事项
 
-See [ROADMAP.md](ROADMAP.md) for detailed planning. Recent intelligence enhancements:
+该项目是一个**概念验证**，展示了公开数据的可能性。虽然功能强大，但也有一些重要的限制：
+
+### 数据完整性
+
+某些数据源需要付费帐户才能完全访问：
+- **ACLED**：免费套餐有 API 限制；程序化访问所需的研究层
+- **OpenSky 网络**：速率限制；商业级别提供更高的配额
+- **卫星AIS**：全球覆盖需要商业提供商（Spire、Kpler 等）
+
+该仪表板适用于免费套餐，但覆盖范围或更新频率可能存在差距。
+
+### AIS 覆盖偏差
+
+船舶层通过 [AISStream.io](https://aisstream.io) 使用地面 AIS 接收器。这造成了**地理偏见**：
+- **强覆盖**：欧洲水域、大西洋、主要港口
+- **覆盖范围较弱**：中东、公海、偏远地区
+
+地面接收器仅检测距海岸约 50 公里范围内的船只。卫星 AIS（商业）提供真正的全球覆盖，但不包含在此免费实施中。
+
+### 被阻止的数据源
+
+一些发布商阻止来自云提供商（Vercel、Railway、AWS）的请求：
+- 某些渠道的 RSS 提要可能会失败并出现 403 错误
+- 这是常见的反机器人措施，而不是仪表板中的错误
+- 受影响的源会通过断路器自动禁用
+
+系统会正常降级——被阻止的源会被跳过，而其他源则继续运行。
+
+---
+
+## 路线图
+
+有关详细规划，请参阅 [ROADMAP.md](ROADMAP.md)。最近的情报增强：
 
 ### Completed
 
-- ✅ **Focal Point Detection** - Intelligence synthesis correlating news entities with map signals
-- ✅ **AI-Powered Briefings** - Groq/OpenRouter/Browser ML fallback chain for summarization
-- ✅ **Military Surge Detection** - Alerts when multiple operators converge on regions
-- ✅ **News-Signal Correlation** - Surge alerts include related focal point context
-- ✅ **GDACS Integration** - UN disaster alert system for earthquakes, floods, cyclones, volcanoes
-- ✅ **WebGL Map (deck.gl)** - High-performance rendering for desktop users
-- ✅ **Browser ML Fallback** - ONNX Runtime for offline summarization capability
-- ✅ **Multi-Signal Geographic Convergence** - Alerts when 3+ data types converge on same region within 24h
-- ✅ **Country Instability Index (CII)** - Real-time composite risk score for 20 Tier-1 countries
-- ✅ **Infrastructure Cascade Visualization** - Dependency graph showing downstream effects of disruptions
-- ✅ **Strategic Risk Overview** - Unified alert system with cross-module correlation and deduplication
-- ✅ **GDELT Topic Intelligence** - Categorized feeds for military, cyber, nuclear, and sanctions topics
-- ✅ **OpenSky Authentication** - OAuth2 credentials for military aircraft tracking via relay
-- ✅ **Human-Readable Locations** - Convergence alerts show place names instead of coordinates
-- ✅ **Data Freshness Tracking** - Status panel shows enabled/disabled state for all feeds
-- ✅ **CII Scoring Bias Prevention** - Log scaling and conflict zone floors prevent news volume bias
-- ✅ **Alert Warmup Period** - Suppresses false positives on dashboard startup
-- ✅ **Significant Protest Filtering** - Map shows only riots and high-severity protests
-- ✅ **Intelligence Findings Detail Modal** - Click any alert for full context and component breakdown
-- ✅ **Build-Time Version Sync** - Header version auto-syncs with package.json
-- ✅ **Tech Monitor Variant** - Dedicated technology sector dashboard with startup ecosystems, cloud regions, and tech events
-- ✅ **Smart Marker Clustering** - Geographic grouping of nearby markers with click-to-expand popups
-- ✅ **Variant Switcher UI** - Compact orbital navigation between World Monitor and Tech Monitor
-- ✅ **CII Learning Mode** - 15-minute calibration period with visual progress indicator
-- ✅ **Regional Tech Coverage** - Verified tech HQ data for MENA, Europe, Asia-Pacific hubs
-- ✅ **Service Status Panel** - External service health monitoring (AI providers, cloud platforms)
-- ✅ **AI Strategic Posture Panel** - Theater-level force aggregation with strike capability assessment
-- ✅ **Server-Side Risk Score API** - Pre-computed CII and strategic risk scores with Redis caching
-- ✅ **Naval Vessel Classification** - Known vessel database with hull number matching and AIS type inference
-- ✅ **Strike Capability Detection** - Assessment of offensive force packages (tankers + AWACS + fighters)
-- ✅ **Theater Posture Thresholds** - Custom elevated/critical thresholds for each strategic theater
+- ✅ **焦点检测** - 将新闻实体与地图信号相关联的情报合成
+- ✅ **AI 支持的简报** - Groq/OpenRouter/Browser ML 后备链进行摘要
+- ✅ **军事激增检测** - 当多个操作员聚集在区域时发出警报
+- ✅ **新闻信号相关性** - 浪涌警报包括相关的焦点上下文
+- ✅ **GDACS 集成** - 联合国地震、洪水、飓风、火山灾害警报系统
+- ✅ **WebGL 地图 (deck.gl)** - 为桌面用户提供高性能渲染
+- ✅ **浏览器 ML 回退** - ONNX 运行时用于离线汇总功能
+- ✅ **多信号地理汇聚** - 当 3 个以上数据类型在 24 小时内汇聚到同一区域时发出警报
+- ✅ **国家不稳定指数 (CII)** - 20 个一级国家的实时综合风险评分
+- ✅ **基础设施级联可视化** - 显示中断的下游影响的依赖关系图
+- ✅ **战略风险概述** - 具有跨模块关联和重复数据删除功能的统一警报系统
+- ✅ **GDELT 主题情报** - 军事、网络、核和制裁主题的分类源
+- ✅ **OpenSky 身份验证** - 通过中继跟踪军用飞机的 OAuth2 凭据
+- ✅ **人类可读位置** - 聚合警报显示地名而不是坐标
+- ✅ **数据新鲜度跟踪** - 状态面板显示所有源的启用/禁用状态
+- ✅ **CII 评分偏差预防** - 日志缩放和冲突区域下限可防止新闻量偏差
+- ✅ **警报预热期** - 抑制仪表板启动时的误报
+- ✅ **重大抗议过滤** - 地图仅显示骚乱和高度严重的抗议活动
+- ✅ **情报调查结果详细模式** - 单击任何警报以获取完整的上下文和组件细分
+- ✅ **构建时版本同步** - 标头版本与 package.json 自动同步
+- ✅ **技术监控变体** - 专用技术部门仪表板，包含初创生态系统、云区域和技术事件
+- ✅ **智能标记聚类** - 通过点击展开弹出窗口对附近标记进行地理分组
+- ✅ **变体切换器 UI** - World Monitor 和 Tech Monitor 之间的紧凑轨道导航
+- ✅ **CII 学习模式** - 15 分钟校准期，带有视觉进度指示器
+- ✅ **区域技术覆盖** - 经验证的中东和北非、欧洲、亚太中心的技术总部数据
+- ✅ **服务状态面板** - 外部服务健康监控（AI提供商、云平台）
+- ✅ **人工智能战略态势小组** - 战区级部队聚合与打击能力评估
+- ✅ **服务器端风险评分 API** - 使用 Redis 缓存预先计算 CII 和战略风险评分
+- ✅ **海军舰艇分类** - 已知舰艇数据库，具有船体号码匹配和 AIS 类型推断
+- ✅ **打击能力检测** - 进攻部队评估（加油机+预警机+战斗机）
+- ✅ **战区态势阈值** - 为每个战略战区定制升高/关键阈值
 
-### Planned
+### 计划中
 
-**High Priority:**
-- **Temporal Anomaly Detection** - Flag activity unusual for time of day/week/year (e.g., "military flights 3x normal for Tuesday")
-- **Trade Route Risk Scoring** - Real-time supply chain vulnerability for major shipping routes (Asia→Europe, Middle East→Europe, etc.)
+**高优先级：**
+- **时间异常检测** - 标记一天/一周/一年中不同时间的异常活动（例如，“周二的军事航班是正常情况的 3 倍”）
+- **贸易航线风险评分** - 主要航线的实时供应链脆弱性（亚洲→欧洲、中东→欧洲等）
 
-**Medium Priority:**
-- **Historical Playback** - Review past dashboard states with timeline scrubbing
-- **Election Calendar Integration** - Auto-boost sensitivity 30 days before major elections
-- **Choropleth CII Map Layer** - Country-colored overlay showing instability scores
+**中优先级：**
+- **历史回放** - 通过时间线清理查看过去的仪表板状态
+- **选举日历集成** - 在重大选举前 30 天自动提高敏感度
+- **Choropleth CII 地图图层** - 显示不稳定分数的国家/地区颜色叠加
 
-**Future Enhancements:**
-- **Alert Webhooks** - Push critical alerts to Slack, Discord, email
-- **Custom Country Watchlists** - User-defined Tier-2 country monitoring
-- **Additional Data Sources** - World Bank, IMF, OFAC sanctions, UNHCR refugee data, FAO food security
-- **Think Tank Feeds** - RUSI, Chatham House, ECFR, CFR, Wilson Center, CNAS, Arms Control Association
+**未来的增强功能：**
+- **警报 Webhooks** - 将关键警报推送到 Slack、Discord、电子邮件
+- **自定义国家/地区监视列表** - 用户定义的二级国家/地区监控
+- **其他数据源** - 世界银行、国际货币基金组织、OFAC 制裁、联合国难民署难民数据、粮农组织粮食安全
+- **智库提要** - RUSI、查塔姆研究所、ECFR、CFR、威尔逊中心、CNAS、军备控制协会
 
-The full [ROADMAP.md](ROADMAP.md) documents implementation details, API endpoints, and 30+ free data sources for future integration.
-
----
-
-## Design Philosophy
-
-**Information density over aesthetics.** Every pixel should convey signal. The dark interface minimizes eye strain during extended monitoring sessions. Panels are collapsible, draggable, and hideable—customize to show only what matters.
-
-**Authority matters.** Not all sources are equal. Wire services and official government channels are prioritized over aggregators and blogs. When multiple sources report the same story, the most authoritative source is displayed as primary.
-
-**Correlation over accumulation.** Raw news feeds are noise. The value is in clustering related stories, detecting velocity changes, and identifying cross-source patterns. A single "Broadcom +2.5% explained by AI chip news" signal is more valuable than showing both data points separately.
-
-**Signal, not noise.** Deduplication is aggressive. The same market move doesn't generate repeated alerts. Signals include confidence scores so you can prioritize attention. Alert fatigue is the enemy of situational awareness.
-
-**Knowledge-first matching.** Simple keyword matching produces false positives. The entity knowledge base understands that AVGO is Broadcom, that Broadcom competes with Nvidia, and that both are in semiconductors. This semantic layer transforms naive string matching into intelligent correlation.
-
-**Fail gracefully.** External APIs are unreliable. Circuit breakers prevent cascading failures. Cached data displays during outages. The status panel shows exactly what's working and what isn't—no silent failures.
-
-**Local-first.** No accounts, no cloud sync. All preferences and history stored locally. The only network traffic is fetching public data. Your monitoring configuration is yours alone.
-
-**Compute where it matters.** CPU-intensive operations (clustering, correlation) run in Web Workers to keep the UI responsive. The main thread handles only rendering and user interaction.
+完整的 [ROADMAP.md](ROADMAP.md) 记录了实现细节、API 端点和 30 多个免费数据源以供将来集成。
 
 ---
 
-## System Architecture
+## 设计理念
 
-### Data Flow Overview
+**信息密度高于美观。**每个像素都应该传达信号。深色界面可最大限度地减少长时间监控过程中的眼睛疲劳。面板可折叠、可拖动和可隐藏——可自定义以仅显示重要内容。
+
+**权威很重要。** 并非所有来源都是平等的。有线服务和官方政府渠道优先于聚合商和博客。当多个来源报道同一个故事时，最权威的来源将显示为主要来源。
+
+**积累的相关性。**原始新闻源是噪音。其价值在于对相关故事进行聚类、检测速度变化以及识别跨源模式。单个“Broadcom +2.5% 由 AI 芯片新闻解释”信号比单独显示两个数据点更有价值。
+
+**信号，而非噪音。** 重复数据删除具有积极性。相同的市场走势不会产生重复的警报。信号包括置信度分数，以便您可以优先考虑注意力。警觉疲劳是态势感知的敌人。
+
+**知识优先匹配。** 简单的关键字匹配会产生误报。实体知识库了解到 AVGO 是 Broadcom，Broadcom 与 Nvidia 竞争，而且两者都在半导体领域。该语义层将朴素的字符串匹配转变为智能关联。
+
+**优雅地失败。**外部 API 不可靠。断路器可防止级联故障。中断期间会显示缓存的数据。状态面板准确显示哪些内容正在工作，哪些内容不工作——没有无声的故障。
+
+**本地优先。** 没有帐户，没有云同步。所有首选项和历史记录都存储在本地。唯一的网络流量是获取公共数据。您的监控配置由您个人决定。
+
+**在重要的地方进行计算。** CPU 密集型操作（集群、关联）在 Web Workers 中运行，以保持 UI 响应。主线程仅处理渲染和用户交互。
+
+---
+
+## 系统架构
+
+### 数据流概述
 
 ```
                                     ┌─────────────────────────────────┐
@@ -3656,143 +3656,143 @@ The full [ROADMAP.md](ROADMAP.md) documents implementation details, API endpoint
                              └─────────────────────────────────┘
 ```
 
-### Update Cycles
+### 更新周期
 
-Different data types refresh at different intervals based on volatility and API limits:
+根据波动性和 API 限制，不同的数据类型以不同的时间间隔刷新：
 
-| Data Type | Refresh Interval | Rationale |
+|数据类型|刷新间隔|理由|
 |-----------|------------------|-----------|
-| **News Feeds** | 3 minutes | Balance between freshness and API politeness |
-| **Market Data** | 60 seconds | Real-time awareness with rate limit constraints |
-| **Military Tracking** | 30 seconds | High-priority for situational awareness |
-| **Weather Alerts** | 5 minutes | NWS update frequency |
-| **Earthquakes** | 5 minutes | USGS update cadence |
-| **Internet Outages** | 5 minutes | Cloudflare Radar update frequency |
-| **AIS Vessels** | Real-time | WebSocket streaming |
+| **新闻提要** | 3 分钟 |新鲜度与 API 礼貌之间的平衡 |
+| **市场数据** | 60 秒 |具有速率限制约束的实时感知 |
+| **军事追踪** | 30 秒 |态势感知的高优先级 |
+| **天气警报** | 5 分钟 | NWS 更新频率 |
+| **地震** | 5 分钟 |美国地质调查局更新节奏 |
+| **互联网中断** | 5 分钟 | Cloudflare Radar 更新频率 |
+| **AIS 船舶** |实时 | WebSocket 流 |
 
-### Error Handling Strategy
+### 错误处理策略
 
-The system implements defense-in-depth for external service failures:
+系统对外部服务故障实现深度防御：
 
-**Circuit Breakers**
-- Each external service has an independent circuit breaker
-- After 3 consecutive failures, the circuit opens for 60 seconds
-- Partial failures don't cascade to other services
-- Status panel shows exact failure states
+**断路器**
+- 每个外部服务都有独立的断路器
+- 连续3次失败后，电路断开60秒
+- 部分故障不会级联到其他服务
+- 状态面板显示确切的故障状态
 
-**Graceful Degradation**
-- Stale cached data displays during outages (with timestamp warning)
-- Failed services are automatically retried on next cycle
-- Critical data (news, markets) has backup sources
+**优雅的降级**
+- 停电期间显示陈旧的缓存数据（带有时间戳警告）
+- 失败的服务将在下一个周期自动重试
+- 关键数据（新闻、市场）有备份源
 
-**User Feedback**
-- Real-time status indicators in the header
-- Specific error messages in the status panel
-- No silent failures—every data source state is visible
+**用户反馈**
+- 标题中的实时状态指示器
+- 状态面板中的特定错误消息
+- 没有静默故障——每个数据源状态都是可见的
 
-### Build-Time Optimization
+### 构建时优化
 
-The project uses Vite for optimal production builds:
+该项目使用 Vite 来实现最佳生产构建：
 
-**Code Splitting**
-- Web Worker code is bundled separately
-- Config files (tech-geo.ts, pipelines.ts) are tree-shaken
-- Lazy-loaded panels reduce initial bundle size
+**代码分割**
+- Web Worker 代码单独捆绑
+- 配置文件（tech-geo.ts、pipelines.ts）经过tree-shaken
+- 延迟加载面板减少了初始包大小
 
-**Variant Builds**
-- `npm run build` - Standard geopolitical dashboard
-- `npm run build:tech` - Tech sector variant with different defaults
-- Both share the same codebase, configured via environment variables
+**变体构建**
+- `npm run build` - 标准地缘政治仪表板
+- `npm run build:tech` - 具有不同默认值的技术部门变体
+- 两者共享相同的代码库，通过环境变量配置
 
-**Asset Optimization**
-- TopoJSON geography data is pre-compressed
-- Static config data is inlined at build time
-- CSS is minified and autoprefixed
+**资产优化**
+- TopoJSON地理数据被预压缩
+- 静态配置数据在构建时内联
+- CSS 被缩小并自动添加前缀
 
-### Security Considerations
+### 安全考虑
 
-**Client-Side Security**
-- All user input is sanitized via `escapeHtml()` before rendering
-- URLs are validated via `sanitizeUrl()` before href assignment
-- No `innerHTML` with user-controllable content
+**客户端安全**
+- 所有用户输入在渲染之前都会通过 `escapeHtml()` 进行清理
+- URL 在 href 分配之前通过 `sanitizeUrl()` 进行验证
+- 没有 `innerHTML` 且用户可控制内容
 
-**API Security**
-- Sensitive API keys are stored server-side only
-- Proxy functions validate and sanitize parameters
-- Geographic coordinates are clamped to valid ranges
+**API安全**
+- 敏感 API 密钥仅存储在服务器端
+- 代理函数验证和清理参数
+- 地理坐标被限制在有效范围内
 
-**Privacy**
-- No user accounts or cloud storage
-- All preferences stored in localStorage
-- No telemetry beyond basic Vercel analytics (page views only)
+**隐私**
+- 没有用户帐户或云存储
+- 所有首选项都存储在 localStorage 中
+- 除了基本 Vercel 分析之外没有遥测（仅限页面浏览量）
 
 ---
 
-## Contributing
+## 贡献
 
-Contributions are welcome! Whether you're fixing bugs, adding features, improving documentation, or suggesting ideas, your help makes this project better.
+欢迎贡献！无论您是修复错误、添加功能、改进文档还是提出想法，您的帮助都会使这个项目变得更好。
 
 ### Getting Started
 
-1. **Fork the repository** on GitHub
-2. **Clone your fork** locally:
+1. **在 GitHub 上分叉存储库**
+2. **在本地克隆您的分叉**：
    ```bash
    git clone https://github.com/YOUR_USERNAME/worldmonitor.git
    cd worldmonitor
    ```
-3. **Install dependencies**:
+3. **安装依赖**：
    ```bash
    npm install
    ```
-4. **Create a feature branch**:
+4. **创建功能分支**：
    ```bash
    git checkout -b feature/your-feature-name
    ```
-5. **Start the development server**:
+5. **启动开发服务器**：
    ```bash
    npm run dev
    ```
 
-### Code Style & Conventions
+### 代码风格和约定
 
-This project follows specific patterns to maintain consistency:
+该项目遵循特定模式来保持一致性：
 
-**TypeScript**
-- Strict type checking enabled—avoid `any` where possible
-- Use interfaces for data structures, types for unions
-- Prefer `const` over `let`, never use `var`
+**打字稿**
+- 启用严格类型检查 - 尽可能避免 `any`
+- 使用接口作为数据结构，使用类型作为联合
+- 优先使用 `const` 而不是 `let`，切勿使用 `var`
 
-**Architecture**
-- Services (`src/services/`) handle data fetching and business logic
-- Components (`src/components/`) handle UI rendering
-- Config (`src/config/`) contains static data and constants
-- Utils (`src/utils/`) contain shared helper functions
+**建筑学**
+- 服务 (`src/services/`) 处理数据获取和业务逻辑
+- 组件 (`src/components/`) 处理 UI 渲染
+- 配置（`src/config/`）包含静态数据和常量
+- Utils (`src/utils/`) 包含共享辅助函数
 
-**Security**
-- Always use `escapeHtml()` when rendering user-controlled or external data
-- Use `sanitizeUrl()` for any URLs from external sources
-- Validate and clamp parameters in API proxy endpoints
+**安全**
+- 渲染用户控制或外部数据时始终使用 `escapeHtml()`
+- 对来自外部源的任何 URL 使用 `sanitizeUrl()`
+- 验证和限制 API 代理端点中的参数
 
-**Performance**
-- Expensive computations should run in the Web Worker
-- Use virtual scrolling for lists with 50+ items
-- Implement circuit breakers for external API calls
+**表现**
+- 昂贵的计算应该在 Web Worker 中运行
+- 对包含 50 多个项目的列表使用虚拟滚动
+- 为外部API调用实现断路器
 
-**No Comments Policy**
-- Code should be self-documenting through clear naming
-- Only add comments for non-obvious algorithms or workarounds
-- Never commit commented-out code
+**无评论政策**
+- 代码应该通过清晰的命名来自我记录
+- 只为不明显的算法或解决方法添加注释
+- 永远不要提交注释掉的代码
 
-### Submitting a Pull Request
+### 提交拉取请求
 
-1. **Ensure your code builds**:
+1. **确保您的代码能够构建**：
    ```bash
    npm run build
    ```
 
-2. **Test your changes** manually in the browser
+2. **在浏览器中手动测试您的更改**
 
-3. **Write a clear commit message**:
+3. **写一个明确的提交消息**：
    ```
    Add earthquake magnitude filtering to map layer
 
@@ -3801,96 +3801,96 @@ This project follows specific patterns to maintain consistency:
    - Updates URL state for shareable links
    ```
 
-4. **Push to your fork**:
+4. **推送到你的叉子**：
    ```bash
    git push origin feature/your-feature-name
    ```
 
-5. **Open a Pull Request** with:
-   - A clear title describing the change
-   - Description of what the PR does and why
-   - Screenshots for UI changes
-   - Any breaking changes or migration notes
+5. **打开拉取请求**：
+- 描述变更的清晰标题
+- 描述 PR 的作用及其原因
+- UI更改的屏幕截图
+- 任何重大更改或迁移说明
 
-### What Makes a Good PR
+### 怎样才是好的公关
 
-| Do | Don't |
+|做|不要|
 |----|-------|
-| Focus on one feature or fix | Bundle unrelated changes |
-| Follow existing code patterns | Introduce new frameworks without discussion |
-| Keep changes minimal and targeted | Refactor surrounding code unnecessarily |
-| Update README if adding features | Add features without documentation |
-| Test edge cases | Assume happy path only |
+|专注于一项功能或修复 |捆绑不相关的更改 |
+|遵循现有的代码模式 |无需讨论就引入新框架 |
+|保持最小化和有针对性的改变 |不必要地重构周围的代码 |
+|如果添加功能，请更新自述文件 |无需文档即可添加功能 |
+|测试边缘情况 |仅假设快乐路径 |
 
-### Types of Contributions
+### 贡献类型
 
-**🐛 Bug Fixes**
-- Found something broken? Fix it and submit a PR
-- Include steps to reproduce in the PR description
+**🐛错误修复**
+- 发现东西坏了？修复它并提交 PR
+- 在 PR 描述中包含重现步骤
 
-**✨ New Features**
-- New data layers (with public API sources)
-- UI/UX improvements
-- Performance optimizations
-- New signal detection algorithms
+**✨ 新功能**
+- 新的数据层（具有公共 API 源）
+- 用户界面/用户体验改进
+- 性能优化
+- 新的信号检测算法
 
-**📊 Data Sources**
-- Additional RSS feeds for news aggregation
-- New geospatial datasets (bases, infrastructure, etc.)
-- Alternative APIs for existing data
+**📊数据来源**
+- 用于新闻聚合的附加 RSS 提要
+- 新的地理空间数据集（基地、基础设施等）
+- 现有数据的替代 API
 
-**📝 Documentation**
-- Clarify existing documentation
-- Add examples and use cases
-- Fix typos and improve readability
+**📝 文档**
+- 澄清现有文档
+- 添加示例和用例
+- 修复拼写错误并提高可读性
 
-**🔒 Security**
-- Report vulnerabilities via GitHub Issues (non-critical) or email (critical)
-- XSS prevention improvements
-- Input validation enhancements
+**🔒安全**
+- 通过 GitHub Issues（非关键）或电子邮件（关键）报告漏洞
+- XSS 预防改进
+- 输入验证增强功能
 
-### Review Process
+### 审核流程
 
-1. **Automated checks** run on PR submission
-2. **Maintainer review** within a few days
-3. **Feedback addressed** through commits to the same branch
-4. **Merge** once approved
+1. **自动检查** 在 PR 提交时运行
+2. **几天内维护者审查**
+3. **通过提交到同一分支解决反馈**
+4. **合并** 一旦获得批准
 
-PRs that don't follow the code style or introduce security issues will be asked to revise.
+不遵循代码风格或引入安全问题的 PR 将被要求修改。
 
-### Development Tips
+### 开发技巧
 
-**Adding a New Data Layer**
+**添加新的数据层**
 
-1. Create service in `src/services/` for data fetching
-2. Add layer toggle in `src/components/Map.ts`
-3. Add rendering logic for map markers/overlays
-4. Add to help panel documentation
-5. Update README with layer description
+1. 在`src/services/`中创建服务用于获取数据
+2. 在`src/components/Map.ts`中添加图层切换
+3. 添加地图标记/叠加层的渲染逻辑
+4.添加帮助面板文档
+5. 使用层描述更新 README
 
-**Adding a New API Proxy**
+**添加新的 API 代理**
 
-1. Create handler in `api/` directory
-2. Implement input validation (see existing proxies)
-3. Add appropriate cache headers
-4. Document any required environment variables
+1. 在`api/`目录中创建处理程序
+2. 实现输入验证（参见现有代理）
+3.添加适当的缓存头
+4. 记录任何所需的环境变量
 
-**Debugging**
+**调试**
 
-- Browser DevTools → Network tab for API issues
-- Console logs prefixed with `[ServiceName]` for easy filtering
-- Circuit breaker status visible in browser console
+- 浏览器开发工具 → API 问题的网络选项卡
+- 控制台日志以 `[ServiceName]` 为前缀，以便于过滤
+- 断路器状态在浏览器控制台中可见
 
 ---
 
 ## License
 
-MIT
+麻省理工学院
 
 ## Author
 
-**Elie Habib**
+**埃利·哈比卜**
 
 ---
 
-*Built for situational awareness and open-source intelligence gathering.*
+*专为态势感知和开源情报收集而构建。*

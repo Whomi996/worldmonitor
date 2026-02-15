@@ -1,17 +1,17 @@
-# WorldMonitor Development Notes
+# WorldMonitor 开发笔记
 
-## 🤖 Model Preferences (Jan 30, 2026)
+## 🤖 模型偏好（2026 年 1 月 30 日）
 
-**For ALL coding tasks in WorldMonitor, ALWAYS use:**
+**对于 WorldMonitor 中的所有编码任务，始终使用：**
 
-| Task | Model | Alias |
+|任务|型号|别名 |
 |------|-------|-------|
-| **Coding** | `openrouter/anthropic/claude-sonnet-4-5` | `sonnet` |
-| **Coding** | `openai/gpt-5-2` | `codex` |
+| **编码** | `openrouter/anthropic/claude-sonnet-4-5` | `sonnet` |
+| **编码** | `openai/gpt-5-2` | `codex` |
 
-**Never default to MiniMax for coding tasks.**
+**永远不要默认使用 MiniMax 来执行编码任务。**
 
-**How to run with preferred model:**
+**如何使用首选模型运行：**
 ```bash
 # Sonnet for coding
 clawdbot --model openrouter/anthropic/claude-sonnet-4-5 "build me..."
@@ -20,33 +20,33 @@ clawdbot --model openrouter/anthropic/claude-sonnet-4-5 "build me..."
 clawdbot --model openai/gpt-5-2 "build me..."
 ```
 
-**Set as default:**
+**设置为默认值：**
 ```bash
 export CLAUDE_MODEL=openrouter/anthropic/claude-sonnet-4-5
 ```
 
-## CRITICAL: Git Branch Rules
+## 关键：Git 分支规则
 
-**NEVER merge or push to a different branch without explicit user permission.**
+**未经明确的用户许可，切勿合并或推送到不同的分支。**
 
-- If on `beta`, only push to `beta` - never merge to `main` without asking
-- If on `main`, stay on `main` - never switch branches and push without asking
-- NEVER merge branches without explicit request
-- Pushing to the CURRENT branch after commits is OK when continuing work
+- 如果在 `beta` 上，则仅推送到 `beta` - 切勿在没有询问的情况下合并到 `main`
+- 如果在 `main` 上，请留在 `main` 上 - 切勿在没有询问的情况下切换分支和推送
+- 切勿在没有明确请求的情况下合并分支
+- 继续工作时，提交后推送到当前分支是可以的
 
-## Critical: RSS Proxy Allowlist
+## 关键：RSS 代理白名单
 
-When adding new RSS feeds in `src/config/feeds.ts`, you **MUST** also add the feed domains to the allowlist in `api/rss-proxy.js`.
+在 `src/config/feeds.ts` 中添加新的 RSS 源时，您**必须**也将源域添加到 `api/rss-proxy.js` 中的允许列表中。
 
 ### Why
-The RSS proxy has a security allowlist (`ALLOWED_DOMAINS`) that blocks requests to domains not explicitly listed. Feeds from unlisted domains will return HTTP 403 "Domain not allowed" errors.
+RSS 代理具有安全允许列表 (`ALLOWED_DOMAINS`)，可阻止对未明确列出的域的请求。来自未列出域的源将返回 HTTP 403“域不允许”错误。
 
-### How to Add New Feeds
+### 如何添加新提要
 
-1. Add the feed to `src/config/feeds.ts`
-2. Extract the domain from the feed URL (e.g., `https://www.ycombinator.com/blog/rss/` → `www.ycombinator.com`)
-3. Add the domain to `ALLOWED_DOMAINS` array in `api/rss-proxy.js`
-4. Deploy changes to Vercel
+1. 将 feed 添加到 `src/config/feeds.ts`
+2. 从源 URL 中提取域（例如，`https://www.ycombinator.com/blog/rss/` → `www.ycombinator.com`）
+3. 将域添加到 `api/rss-proxy.js` 中的 `ALLOWED_DOMAINS` 数组
+4. 将更改部署到 Vercel
 
 ### Example
 ```javascript
@@ -57,20 +57,20 @@ const ALLOWED_DOMAINS = [
 ];
 ```
 
-### Debugging Feed Issues
-If a panel shows "No news available":
-1. Open browser DevTools → Console
-2. Look for `HTTP 403` or "Domain not allowed" errors
-3. Check if the domain is in `api/rss-proxy.js` allowlist
+### 调试提要问题
+如果面板显示“没有可用新闻”：
+1.打开浏览器DevTools→Console
+2. 查找 `HTTP 403` 或“域不允许”错误
+3. 检查域名是否在 `api/rss-proxy.js` 白名单中
 
-## Site Variants
+## 网站变体
 
-Two variants controlled by `VITE_VARIANT` environment variable:
+由 `VITE_VARIANT` 环境变量控制的两个变体：
 
-- `full` (default): Geopolitical focus - worldmonitor.app
-- `tech`: Tech/startup focus - startups.worldmonitor.app
+- `full`（默认）：地缘政治焦点 - worldmonitor.app
+- `tech`：技术/初创公司焦点 -startups.worldmonitor.app
 
-### Running Locally
+### 本地运行
 ```bash
 npm run dev        # Full variant
 npm run dev:tech   # Tech variant
@@ -82,25 +82,25 @@ npm run build:full  # Production build for worldmonitor.app
 npm run build:tech  # Production build for startups.worldmonitor.app
 ```
 
-## Custom Feed Scrapers
+## 定制饲料刮刀
 
-Some sources don't provide RSS feeds. Custom scrapers are in `/api/`:
+有些来源不提供 RSS 源。自定义刮刀位于 `/api/` 中：
 
-| Endpoint | Source | Notes |
+|端点|来源 |笔记|
 |----------|--------|-------|
-| `/api/fwdstart` | FwdStart Newsletter (Beehiiv) | Scrapes archive page, 30min cache |
+| `/api/fwdstart` | FwdStart 时事通讯 (Beehiiv) |抓取存档页面，30 分钟缓存 |
 
-### Adding New Scrapers
-1. Create `/api/source-name.js` edge function
-2. Scrape source, return RSS XML format
-3. Add to feeds.ts: `{ name: 'Source', url: '/api/source-name' }`
-4. No need to add to rss-proxy allowlist (direct API, not proxied)
+### 添加新的抓取工具
+1.创建`/api/source-name.js`边缘函数
+2.抓取源码，返回RSS XML格式
+3. 添加到 feeds.ts：`{ name: 'Source', url: '/api/source-name' }`
+4.无需添加到rss-proxy白名单（直接API，不代理）
 
-## AI Summarization & Caching
+## AI 总结和缓存
 
-The AI Insights panel uses a server-side Redis cache to deduplicate API calls across users.
+AI Insights 面板使用服务器端 Redis 缓存来消除用户之间的重复 API 调用。
 
-### Required Environment Variables
+### 所需的环境变量
 
 ```bash
 # Groq API (primary summarization)
@@ -114,58 +114,58 @@ UPSTASH_REDIS_REST_URL=https://xxx.upstash.io
 UPSTASH_REDIS_REST_TOKEN=xxx
 ```
 
-### How It Works
+### 它是如何运作的
 
-1. User visits → `/api/groq-summarize` receives headlines
-2. Server hashes headlines → checks Redis cache
-3. **Cache hit** → return immediately (no API call)
-4. **Cache miss** → call Groq API → store in Redis (24h TTL) → return
+1. 用户访问 → `/api/groq-summarize` 获得头条新闻
+2. 服务器哈希头条 → 检查 Redis 缓存
+3. **缓存命中** → 立即返回（无API调用）
+4. **缓存未命中** → 调用 Groq API → 存储在 Redis 中（24h TTL） → 返回
 
-### Model Selection
+### 型号选择
 
-- **llama-3.1-8b-instant**: 14,400 req/day (used for summaries)
-- **llama-3.3-70b-versatile**: 1,000 req/day (quality but limited)
+- **llama-3.1-8b-instant**：14,400 请求/天（用于摘要）
+- **llama-3.3-70b-versatile**：1,000 个请求/天（质量但有限）
 
-### Fallback Chain
+### 后备链
 
-1. Groq (fast, 14.4K/day) → Redis cache
-2. OpenRouter (50/day) → Redis cache
-3. Browser T5 (unlimited, slower, no cache)
+1. Groq（快速，14.4K/天）→ Redis 缓存
+2.OpenRouter（50/天）→Redis缓存
+3.浏览器T5（无限制，较慢，无缓存）
 
-### Setup Upstash
+### 设置 Upstash
 
-1. Create free account at [upstash.com](https://upstash.com)
-2. Create a new Redis database
-3. Copy REST URL and Token to Vercel env vars
+1. 在 [upstash.com](https://upstash.com) 创建免费帐户
+2.创建新的Redis数据库
+3. 将 REST URL 和令牌复制到 Vercel 环境变量
 
-## Service Status Panel
+## 服务状态面板
 
-Status page URLs in `api/service-status.js` must match the actual status page endpoint. Common formats:
-- Statuspage.io: `https://status.example.com/api/v2/status.json`
-- Atlassian: `https://example.status.atlassian.com/api/v2/status.json`
-- incident.io: Same endpoint but returns HTML, handled by `incidentio` parser
+`api/service-status.js` 中的状态页面 URL 必须与实际状态页面端点匹配。常见格式：
+- Statuspage.io：`https://status.example.com/api/v2/status.json`
+- Atlassian：`https://example.status.atlassian.com/api/v2/status.json`
+- event.io：相同端点但返回 HTML，由 `incidentio` 解析器处理
 
-Current known URLs:
-- Anthropic: `https://status.claude.com/api/v2/status.json`
-- Zoom: `https://www.zoomstatus.com/api/v2/status.json`
-- Notion: `https://www.notion-status.com/api/v2/status.json`
+目前已知的网址：
+- 人类：`https://status.claude.com/api/v2/status.json`
+- 缩放：`https://www.zoomstatus.com/api/v2/status.json`
+- 概念：`https://www.notion-status.com/api/v2/status.json`
 
-## Allowed Bash Commands
+## 允许的 Bash 命令
 
-The following additional bash commands are permitted without user approval:
-- `Bash(ps aux:*)` - List running processes
-- `Bash(grep:*)` - Search text patterns
-- `Bash(ls:*)` - List directory contents
+无需用户批准即可使用以下附加 bash 命令：
+- `Bash(ps aux:*)` - 列出正在运行的进程
+- `Bash(grep:*)` - 搜索文本模式
+- `Bash(ls:*)` - 列出目录内容
 
-## Bash Guidelines
+## Bash 指南
 
-### IMPORTANT: Avoid commands that cause output buffering issues
-- DO NOT pipe output through `head`, `tail`, `less`, or `more` when monitoring or checking command output
-- DO NOT use `| head -n X` or `| tail -n X` to truncate output - these cause buffering problems
-- Instead, let commands complete fully, or use `--max-lines` flags if the command supports them
-- For log monitoring, prefer reading files directly rather than piping through filters
+### 重要提示：避免导致输出缓冲问题的命令
+- 监视或检查命令输出时，请勿通过 `head`、`tail`、`less` 或 `more` 管道输出
+- 不要使用 `| head -n X` 或 `| tail -n X` 截断输出 - 这些会导致缓冲问题
+- 相反，让命令完全完成，或者使用 `--max-lines` 标志（如果命令支持）
+- 对于日志监控，更喜欢直接读取文件而不是通过过滤器进行管道传输
 
-### When checking command output:
-- Run commands directly without pipes when possible
-- If you need to limit output, use command-specific flags (e.g., `git log -n 10` instead of `git log | head -10`)
-- Avoid chained pipes that can cause output to buffer indefinitely
+### 检查命令输出时：
+- 尽可能不使用管道直接运行命令
+- 如果需要限制输出，请使用特定于命令的标志（例如，`git log -n 10` 而不是 `git log | head -10`）
+- 避免可能导致输出无限期缓冲的链式管道

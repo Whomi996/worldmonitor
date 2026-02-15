@@ -1,52 +1,52 @@
-# World Monitor Roadmap: Intelligence Correlation Enhancements
+# 世界监测路线图：情报关联增强
 
-This document outlines the top 5 features a geopolitical intelligence analyst would want, focusing on **correlation between existing data points** and leveraging **free APIs/RSS feeds only**.
+本文档概述了地缘政治情报分析师想要的前 5 个功能，重点关注**现有数据点之间的相关性**并利用**仅免费 API/RSS 源**。
 
 ---
 
-## Current Correlation Capabilities
+## 当前关联能力
 
-### What We Already Do Well
+### 我们已经做得很好的事情
 
-| Signal Type | Description | Data Sources |
+|信号类型|描述 |数据来源|
 |------------|-------------|--------------|
-| **Convergence** | 3+ source types report same story within 30min | News feeds |
-| **Triangulation** | Wire + Gov + Intel sources align on topic | News feeds |
-| **Velocity Spike** | Topic mention rate doubles with 6+ sources/hr | News feeds |
-| **Prediction Leading** | Polymarket moves 5%+ with low news coverage | Polymarket + News |
-| **Silent Divergence** | Market moves 2%+ with minimal related news | Yahoo/Finnhub + News |
-| **Flow/Price Divergence** | Energy price spike without pipeline news | Markets + News |
-| **Related Assets** | News stories enriched with nearby infrastructure | Hotspots + All assets |
-| **GDELT Tensions** | Country-pair tension scores with 7-day trends | GDELT GPR API |
+| **收敛** | 3+ 种来源类型在 30 分钟内报告相同的故事 |新闻提要 |
+| **三角测量** | Wire + Gov + Intel 消息来源在主题上一致 |新闻提要 |
+| **速度峰值** |每小时 6 个以上来源，主题提及率翻倍 |新闻提要 |
+| **预测领先** |新闻报道较少，Polymarket 股价上涨 5% 以上 |综合市场 + 新闻 |
+| **沉默的分歧** |相关新闻极少，市场波动超过 2% |雅虎/Finnhub + 新闻 |
+| **流量/价格差异** |没有管道新闻的情况下能源价格飙升市场+新闻|
+| **相关资产** |附近的基础设施丰富了新闻报道 |热点+所有资产|
+| **GDELT 紧张局势** |国家对紧张度得分与 7 天趋势 | GDELT 探地雷达 API |
 
-### What's Missing
+### 缺少什么
 
-1. **No cross-layer correlation** - Protests, military movements, and economic data don't talk to each other
-2. **No temporal pattern detection** - Can't detect "unusual for this time of year"
-3. **No geographic clustering** - Multiple event types in same region not flagged
-4. **No country-level aggregation** - No unified risk view per country
-5. **No infrastructure dependency mapping** - Don't show cascade effects
+1. **没有跨层关联** - 抗议、军事行动和经济数据不相互交流
+2. **无时间模式检测** - 无法检测“一年中这个时间的异常”
+3. **无地理集群** - 同一地区的多个事件类型未标记
+4. **没有国家级汇总** - 每个国家没有统一的风险视图
+5. **无基础设施依赖映射** - 不显示级联效应
 
 ---
 
-## Top 5 Priority Features
+## 5 大优先功能
 
-### 1. Multi-Signal Geographic Convergence
+### 1. 多信号地理融合
 
-**What:** When 3+ independent data types converge on the same geographic region within 24-48 hours, generate a high-priority alert.
+**内容：** 当 3 个以上独立数据类型在 24-48 小时内汇聚到同一地理区域时，生成高优先级警报。
 
-**Why:** The most valuable I&W (Indications & Warning) signals come from multiple independent sources detecting activity in the same area. A protest + military flight activity + shipping disruption in the same region is far more significant than any single event.
+**原因：** 最有价值的 I&W（指示和警告）信号来自检测同一区域活动的多个独立来源。同一地区的抗议+军事飞行活动+航运中断比任何单一事件都要严重得多。
 
-**Data Sources (Already Have):**
-- Protests (ACLED/GDELT) → lat/lon
-- Military flights (OpenSky) → lat/lon
-- Military vessels (AIS) → lat/lon
-- Earthquakes/natural events → lat/lon
-- News hotspots → lat/lon
-- Chokepoint congestion → lat/lon
-- Pipeline incidents → lat/lon (inferred)
+**数据来源（已有）：**
+- 抗议 (ACLED/GDELT) → 纬度/经度
+- 军事飞行 (OpenSky) → 纬度/经度
+- 军用船只 (AIS) → 纬度/经度
+- 地震/自然事件→纬度/经度
+- 新闻热点 → 纬度/经度
+- 阻塞点拥堵 → 纬度/经度
+- 管道事故 → 纬度/经度（推断）
 
-**Implementation:**
+**执行：**
 ```
 1. Define 50km grid cells globally
 2. Each refresh cycle, tag events to grid cells
@@ -55,39 +55,39 @@ This document outlines the top 5 features a geopolitical intelligence analyst wo
 5. Confidence = function(event_count, type_diversity, time_clustering)
 ```
 
-**Example Alert:**
-> ⚠️ **Geographic Convergence: Taiwan Strait**
-> - Military flights: 12 (3x normal)
-> - Naval vessels: 8 (2x normal)
-> - News velocity: Spike (+340%)
-> - Confidence: 87%
+**警报示例：**
+> ⚠️ **地理融合：台湾海峡**
+> - 军事飞行：12（正常的 3 倍）
+> - 海军舰艇：8（2x 正常）
+> - 新闻传播速度：峰值 (+340%)
+> - 置信度：87%
 
 ---
 
-### 2. Country Instability Index
+### 2.国家不稳定指数
 
-**What:** Real-time composite risk score for each country, aggregating all available signals into a single 0-100 index.
+**内容：** 每个国家/地区的实时综合风险评分，将所有可用信号汇总到一个 0-100 指数中。
 
-**Why:** Analysts need a quick way to answer "how stable is Country X right now?" without manually checking 10 different data sources.
+**为什么：** 分析师需要一种快速的方法来回答“X 国目前有多稳定？”无需手动检查 10 个不同的数据源。
 
-**Components (Already Have Data):**
-| Component | Source | Weight |
+**组件（已有数据）：**
+|组件|来源 |重量 |
 |-----------|--------|--------|
-| Protest frequency | ACLED/GDELT | 20% |
-| Protest severity | ACLED fatalities | 15% |
-| Conflict proximity | Conflict zones | 15% |
-| News sentiment | Clustered news | 10% |
-| News velocity | RSS feeds | 10% |
-| GDELT tension (as target) | GDELT GPR | 10% |
-| Sanctions status | Static config | 10% |
-| Infrastructure incidents | Cables/pipelines | 10% |
+|抗议频率| ACLED/GDELT | 20% |
+|抗议严重程度| ACLED 死亡人数 | 15% |
+|冲突临近 |冲突地区 | 15% |
+|新闻情绪|集群新闻| 10% |
+|新闻速度| RSS 提要 | 10% |
+| GDELT 张力（作为目标）| GDELT 探地雷达 | 10% |
+|制裁状况 |静态配置| 10% |
+|基础设施事故 |电缆/管道 | 10% |
 
-**Free Data to Add:**
-- **World Bank Governance Indicators** (annual, free API)
-- **UN Refugee Data** (UNHCR, RSS feeds)
-- **Election proximity** (static calendar)
+**免费添加数据：**
+- **世界银行治理指标**（年度，免费 API）
+- **联合国难民数据**（联合国难民署、RSS 提要）
+- **选举临近**（静态日历）
 
-**Implementation:**
+**执行：**
 ```
 1. Map all events to ISO country codes
 2. Maintain rolling 7-day and 30-day baselines per country
@@ -96,41 +96,41 @@ This document outlines the top 5 features a geopolitical intelligence analyst wo
 5. Track index changes for trend detection
 ```
 
-**UI:**
-- Choropleth map layer showing index by color
-- Sortable country list panel
-- Click country → drill-down to component breakdown
-- Alert when country moves 10+ points in 24h
+**用户界面：**
+- 等值区域地图图层按颜色显示索引
+- 可排序的国家列表面板
+- 单击国家 → 深入查看组件细分
+- 当国家在 24 小时内移动 10+ 点时发出警报
 
 ---
 
-### 3. Trade Route Risk Scoring
+### 3. 贸易路线风险评分
 
-**What:** Real-time risk assessment for major shipping routes, showing which supply chains are most vulnerable right now.
+**内容：** 主要航线的实时风险评估，显示哪些供应链目前最脆弱。
 
-**Why:** Supply chain disruptions are the primary economic consequence of geopolitical events. An analyst needs to quickly assess "if X happens, what trade is affected?"
+**原因：** 供应链中断是地缘政治事件的主要经济后果。分析师需要快速评估“如果 X 发生，哪些交易会受到影响？”
 
-**Major Routes to Score:**
-| Route | Chokepoints | Commodities |
+**主要得分路线：**
+|路线 |瓶颈|商品 |
 |-------|-------------|-------------|
-| Asia → Europe (Suez) | Suez, Bab el-Mandeb, Malacca | Containers, oil |
-| Asia → US West Coast | Malacca, Taiwan Strait, Panama | Containers, electronics |
-| Middle East → Europe | Hormuz, Suez, Bosphorus | Oil, LNG |
-| Russia → Europe | Baltic, Bosphorus | Oil, gas, grain |
-| South America → Asia | Panama, Magellan | Commodities, grain |
+|亚洲 → 欧洲（苏伊士） |苏伊士运河、曼德海峡、马六甲 |石油容器 |
+|亚洲 → 美国西海岸 |马六甲、台湾海峡、巴拿马 |容器，电子产品|
+|中东 → 欧洲 |霍尔木兹、苏伊士、博斯普鲁斯海峡 |石油、液化天然气 |
+|俄罗斯 → 欧洲 |波罗的海、博斯普鲁斯海峡 |石油、天然气、粮食 |
+|南美洲 → 亚洲 |巴拿马，麦哲伦 |商品、谷物 |
 
-**Risk Components:**
-| Factor | Source | Notes |
+**风险成分：**
+|因素 |来源 |笔记|
 |--------|--------|-------|
-| Chokepoint congestion | AIS density | Real-time |
-| Dark ship activity | AIS gaps | Real-time |
-| Weather/storms | NASA EONET | Real-time |
-| Conflict proximity | Conflict zones | Static + news |
-| Piracy indicators | News keywords | Real-time |
-| Sanctions impact | Config | Which ports blocked |
-| Port delays | Inferred from AIS | Real-time |
+|阻塞点拥堵| AIS 密度 |实时 |
+|暗船活动| AIS 差距 |实时 |
+|天气/暴风雨 |美国宇航局 EONET |实时 |
+|冲突临近 |冲突地区 |静态+新闻|
+|盗版指标|新闻关键词|实时 |
+|制裁影响|配置 |哪些端口被阻止 |
+|港口延误|从AIS推断|实时 |
 
-**Implementation:**
+**执行：**
 ```
 1. Define route polylines with chokepoint waypoints
 2. For each chokepoint, calculate: density_change + gap_rate + weather_alerts + conflict_distance
@@ -139,40 +139,40 @@ This document outlines the top 5 features a geopolitical intelligence analyst wo
 5. Compare to 30-day baseline for trend
 ```
 
-**UI:**
-- Route lines on map colored by risk (green → yellow → red)
-- Panel showing route rankings with trends
-- Click route → show chokepoint breakdown
-- Alert when route risk jumps 20+ points
+**用户界面：**
+- 地图上的路线按风险着色（绿色→黄色→红色）
+- 显示路线排名和趋势的面板
+- 点击路线→显示阻塞点细分
+- 当路线风险跃升 20 点以上时发出警报
 
 ---
 
-### 4. Infrastructure Cascade Visualization
+### 4.基础设施级联可视化
 
-**What:** When you click any infrastructure asset, show what depends on it and what would be affected by its disruption.
+**内容：** 当您单击任何基础设施资产时，显示依赖于该资产的内容以及受其中断影响的内容。
 
-**Why:** Critical infrastructure is interconnected. A submarine cable fault affects countries downstream. A pipeline disruption affects refineries and ports. Analysts need to see the "so what."
+**原因：** 关键基础设施是互连的。海底电缆故障影响下游国家。管道中断会影响炼油厂和港口。分析师需要看到“那又怎样”。
 
-**Dependency Mappings:**
+**依赖关系映射：**
 
-**Ports → dependent on:**
-- Pipelines (oil/LNG terminals)
-- Submarine cables (data for port operations)
-- Nearby naval bases (protection)
-- Chokepoints (access routes)
+**端口 → 依赖于：**
+- 管道（石油/液化天然气终端）
+- 海底电缆（港口运营数据）
+- 附近的海军基地（保护）
+- 阻塞点（进入路线）
 
-**Cables → serve:**
-- Countries (list from cable data)
-- Data centers (proximity)
-- Financial centers (criticality)
+**电缆 → 服务：**
+- 国家（来自有线数据的列表）
+- 数据中心（邻近）
+- 金融中心（重要性）
 
-**Pipelines → connect:**
-- Origin countries
-- Transit countries
-- Destination ports/refineries
-- Alternate routes
+**管道→连接：**
+- 原籍国
+- 过境国家
+- 目的地港口/炼油厂
+- 替代路线
 
-**Implementation:**
+**执行：**
 ```
 1. Build static dependency graph in config
 2. For cables: map landing points to countries
@@ -182,29 +182,29 @@ This document outlines the top 5 features a geopolitical intelligence analyst wo
 6. Show impact panel: "Disruption would affect: X countries, Y trade volume"
 ```
 
-**Data Enhancement (Free):**
-- **TeleGeography** submarine cable landing points (public)
-- **Global Energy Monitor** pipeline database (public)
-- **UN COMTRADE** for trade flow volumes (free API)
+**数据增强（免费）：**
+- **TeleGeography** 海底电缆登陆点（公共）
+- **全球能源监测**管道数据库（公共）
+- **UN COMTRADE** 用于贸易流量（免费 API）
 
 ---
 
-### 5. Temporal Anomaly Detection
+### 5. 时间异常检测
 
-**What:** Detect when current activity levels deviate significantly from historical norms for the same time period (day of week, month, season).
+**内容：** 检测当前活动水平何时显着偏离同一时间段（星期、月份、季节）的历史正常水平。
 
-**Why:** "Unusual activity" only makes sense in context. Military flights on a Tuesday might be normal; the same level on a Sunday might be significant. Activity in December might be normal for end-of-year exercises but unusual in March.
+**为什么：** “不寻常的活动”只有在上下文中才有意义。周二的军事飞行可能很正常；周日的相同水平可能很重要。 12 月的活动对于年终演习来说可能是正常的，但 3 月的活动则不同寻常。
 
-**What to Track:**
-| Data Type | Baseline Period | Anomaly Threshold |
+**要追踪的内容：**
+|数据类型|基线期 |异常阈值|
 |-----------|-----------------|-------------------|
-| Military flights per region | Same weekday, 4-week rolling | Z > 2.0 |
-| Naval vessels per chokepoint | Same weekday, 4-week rolling | Z > 2.0 |
-| Protest count per country | Same month, 3-year average | Z > 1.5 |
-| News velocity per topic | Same weekday, 4-week rolling | Z > 2.5 |
-| AIS gaps per region | Same weekday, 4-week rolling | Z > 2.0 |
+|每个地区的军事飞行|同一工作日，4 周滚动 | Z > 2.0 |
+|每个阻塞点的海军舰艇 |同一工作日，4 周滚动 | Z > 2.0 |
+|每个国家的抗议数量|同月，3 年平均值 | Z > 1.5 |
+|每个主题的新闻速度|同一工作日，4 周滚动 | Z > 2.5 |
+|各地区 AIS 差距 |同一工作日，4 周滚动 | Z > 2.0 |
 
-**Implementation:**
+**执行：**
 ```
 1. Store hourly/daily counts by category in IndexedDB
 2. Maintain separate baselines by: weekday, month, region
@@ -213,98 +213,98 @@ This document outlines the top 5 features a geopolitical intelligence analyst wo
 5. Alert format: "Military flights in Baltic 3.2x normal for Tuesday"
 ```
 
-**Example Alerts:**
-> 📊 **Temporal Anomaly: Baltic Region**
-> - Military flights: 47 (normal Tuesday avg: 15)
-> - Z-score: 2.8 (highly unusual)
-> - Last similar: March 2024 (NATO exercise)
+**警报示例：**
+> 📊 **时间异常：波罗的海地区**
+> - 军事航班：47 架（正常周二平均：15 架）
+> - Z 分数：2.8（非常不寻常）
+> - 最后一次类似演习：2024 年 3 月（北约演习）
 
-> 📊 **Temporal Anomaly: Iran Protests**
-> - Events this week: 23 (normal January avg: 8)
-> - Z-score: 1.9 (elevated)
-> - Note: Anniversary of 2023 protests approaching
+> 📊 **时间异常：伊朗抗议**
+> - 本周活动：23（正常一月平均：8）
+> - Z 分数：1.9（提高）
+> - 注意：2023 年抗议活动周年纪念日临近
 
 ---
 
-## Additional Free Data Sources to Integrate
+## 需要集成的其他免费数据源
 
-### Economic/Trade APIs (No Key Required)
+### 经济/贸易 API（无需密钥）
 
-| Source | Endpoint | Data | Rate Limit |
+|来源 |端点|数据|速率限制 |
 |--------|----------|------|------------|
-| **World Bank API** | `api.worldbank.org/v2/` | 16,000+ indicators, GDP, trade, FDI | None |
-| **IMF Data API** | `dataservices.imf.org/REST/SDMX_JSON.svc/` | IFS, trade flows, balance of payments | None |
-| **UN Comtrade** | `comtradeapi.un.org/public/v1/` | Bilateral trade flows by HS code | 100/day free |
-| **BIS Statistics** | `stats.bis.org/api/v1/` | Global liquidity, cross-border banking | None |
-| **OECD Data** | `stats.oecd.org/SDMX-JSON/` | OECD country indicators | None |
+| **世界银行API** | `api.worldbank.org/v2/` | 16,000 多个指标、GDP、贸易、FDI |无 |
+| **国际货币基金组织数据API** | `dataservices.imf.org/REST/SDMX_JSON.svc/` | IFS、贸易流量、国际收支|无 |
+| **联合国商品贸易统计数据库** | `comtradeapi.un.org/public/v1/` |按 HS 编码划分的双边贸易流量 | 100/天免费 |
+| **国际清算银行统计** | `stats.bis.org/api/v1/` |全球流动性、跨境银行业务|无 |
+| **经合组织数据** | `stats.oecd.org/SDMX-JSON/` | OECD country indicators |无 |
 
-### Food Security (Critical for Instability Correlation)
+### 粮食安全（对于不稳定相关性至关重要）
 
-| Source | Endpoint | Data | Notes |
+|来源 |端点|数据|笔记|
 |--------|----------|------|-------|
-| **FAO GIEWS RSS** | `fao.org/giews/english/shortnews/rss.xml` | Food price alerts, country briefs | Add to feeds.ts |
-| **FAO Food Price Monitor** | `fpma.fao.org/giews/fpmat4/` | Real-time commodity prices | JSON API |
-| **FAO STAT API** | `fenixservices.fao.org/faostat/api/v1/` | Food Price Index, production | REST |
+| **粮农组织 GIEWS RSS** | `fao.org/giews/english/shortnews/rss.xml` |食品价格警报、国家简报|添加到 feeds.ts |
+| **粮农组织粮食价格监测** | `fpma.fao.org/giews/fpmat4/` |实时商品价格 | JSON API |
+| **粮农组织 STAT API** | `fenixservices.fao.org/faostat/api/v1/` |食品价格指数，产量|休息 |
 
-### Sanctions Lists (Critical for Risk Scoring)
+### 制裁名单（对于风险评分至关重要）
 
-| Source | Endpoint | Data | Update Frequency |
+|来源 |端点|数据|更新频率 |
 |--------|----------|------|------------------|
-| **OFAC SDN List** | `sanctionslistservice.ofac.treas.gov/api/` | US sanctions | Daily |
-| **EU Sanctions** | `webgate.ec.europa.eu/fsd/fsf/public/files/` | EU restrictive measures | Weekly |
-| **UN Sanctions** | `scsanctions.un.org/resources/xml/` | Al-Qaida, DPRK, Iran, etc. | Real-time |
-| **OpenSanctions** | `api.opensanctions.org/` | Unified 100+ sources | Free tier: 1000/day |
+| **OFAC SDN 列表** | `sanctionslistservice.ofac.treas.gov/api/` |美国制裁|每日 |
+| **欧盟制裁** | `webgate.ec.europa.eu/fsd/fsf/public/files/` |欧盟限制措施|每周 |
+| **联合国制裁** | `scsanctions.un.org/resources/xml/` |基地组织、朝鲜、伊朗等|实时 |
+| **开放制裁** | `api.opensanctions.org/` |统一100+来源|免费等级：1000/天 |
 
-### Migration/Humanitarian (Instability Indicators)
+### 移民/人道主义（不稳定指标）
 
-| Source | Endpoint | Data | Notes |
+|来源 |端点|数据|笔记|
 |--------|----------|------|-------|
-| **UNHCR API** | `api.unhcr.org/` | Refugee populations, IDPs, asylum | No key |
-| **IOM DTM** | `dtm.iom.int/` | Displacement tracking, migration flows | Free registration |
-| **ReliefWeb API** | `api.reliefweb.int/v1/` | Humanitarian reports, disasters | No key |
-| **INFORM Risk** | `drmkc.jrc.ec.europa.eu/inform-index/` | Hazard/vulnerability scores | CSV download |
+| **联合国难民署应用程序接口** | `api.unhcr.org/` |难民人口、国内流离失所者、庇护|没有钥匙|
+| **IOM DTM** | `dtm.iom.int/` |位移跟踪、迁移流 |免费注册|
+| **ReliefWeb API** | `api.reliefweb.int/v1/` |人道主义报告、灾难|没有钥匙|
+| **告知风险** | `drmkc.jrc.ec.europa.eu/inform-index/` |危险/脆弱性评分 | CSV 下载 |
 
-### Think Tank RSS Feeds (Add to feeds.ts)
+### 智库 RSS 源（添加到 feeds.ts）
 
-**Security/Defense:**
-- RUSI: `rusi.org/rss.xml`
-- Chatham House: `chathamhouse.org/rss.xml`
-- ECFR: `ecfr.eu/feed/`
-- CFR: `cfr.org/rss`
-- Wilson Center: `wilsoncenter.org/rss.xml`
-- GMF: `gmfus.org/feed`
-- Stimson: `stimson.org/feed/`
-- CNAS: `cnas.org/rss`
+**安全/国防：**
+- 鲁西：`rusi.org/rss.xml`
+- 查塔姆研究所：`chathamhouse.org/rss.xml`
+- ECFR：`ecfr.eu/feed/`
+- CFR：`cfr.org/rss`
+- 威尔逊中心：`wilsoncenter.org/rss.xml`
+- 转基因食品：`gmfus.org/feed`
+- 史汀生：`stimson.org/feed/`
+- CNAS：`cnas.org/rss`
 
-**Nuclear/Arms Control:**
-- Arms Control Association: `armscontrol.org/rss/all`
-- FAS: `fas.org/feed/`
-- NTI: `nti.org/rss/`
-- Bulletin of Atomic Scientists: `thebulletin.org/feed/`
+**核/军备控制：**
+- 军备控制协会：`armscontrol.org/rss/all`
+- FAS：`fas.org/feed/`
+- NTI：`nti.org/rss/`
+- 原子科学家公报：`thebulletin.org/feed/`
 
-**Regional:**
-- Middle East Institute: `mei.edu/rss.xml`
-- Lowy Institute (Asia-Pacific): `lowyinstitute.org/feed`
-- EU ISS: `iss.europa.eu/rss.xml`
+**地区：**
+- 中东研究所：`mei.edu/rss.xml`
+- 洛伊研究所（亚太地区）：`lowyinstitute.org/feed`
+- 欧盟国际空间站：`iss.europa.eu/rss.xml`
 
-### Static Data (Annual/Quarterly Updates)
+### 静态数据（年度/季度更新）
 
-| Source | Data | Format | Use Case |
+|来源 |数据|格式|使用案例|
 |--------|------|--------|----------|
-| **SIPRI Arms Transfers** | Weapons exports by country | CSV | Military capability assessment |
-| **SIPRI MILEX** | Military spending | CSV | Defense budget trends |
-| **V-Dem** | 400+ democracy indicators | CSV | Governance quality |
-| **Fragile States Index** | Country risk scores | CSV | Baseline instability |
-| **Freedom House** | Democracy/freedom scores | CSV | Political environment |
-| **Global Terrorism Database** | Historical incidents | Registration | Pattern analysis |
+| **SIPRI 武器转让** |各国武器出口| CSV |军事能力评估|
+| **SIPRI MILEX** |军费| CSV |国防预算趋势|
+| **V-Dem** | 400+民主指标| CSV |治理质量|
+| **脆弱国家指数** |国家风险评分| CSV |基线不稳定|
+| **自由之家** |民主/自由得分 | CSV |政治环境|
+| **全球恐怖主义数据库** |历史事件|注册 |模式分析|
 
-### Election Calendar (Static Config)
+### 选举日历（静态配置）
 
-Maintain election calendar in `src/config/elections.ts`. When election date approaches:
-- **30 days**: Add to "upcoming events" panel
-- **7 days**: Boost country news correlation
-- **1 day**: Increase instability index weighting
-- **Election day**: Maximum alert sensitivity
+在 `src/config/elections.ts` 中维护选举日历。当选举日期临近时：
+- **30 天**：添加到“即将举行的活动”面板
+- **7 天**：增强国家新闻相关性
+- **1天**：增加不稳定指数权重
+- **选举日**：最大警报灵敏度
 
 ```typescript
 interface Election {
@@ -319,23 +319,23 @@ interface Election {
 
 ---
 
-## Implementation Priority
+## 实施优先级
 
-| Feature | Complexity | Impact | Priority |
+|特色 |复杂性 |影响 |优先|
 |---------|------------|--------|----------|
-| Multi-Signal Geographic Convergence | Medium | Very High | 1 |
-| Country Instability Index | Medium | High | 2 |
-| Temporal Anomaly Detection | Medium | High | 3 |
-| Trade Route Risk Scoring | High | High | 4 |
-| Infrastructure Cascade Viz | High | Medium | 5 |
+|多信号地理融合|中等|非常高 | 1 |
+|国家不稳定指数|中等|高| 2 |
+|时间异常检测 |中等|高| 3 |
+|贸易路线风险评分|高|高| 4 |
+|基础设施级联可视化|高|中等| 5 |
 
-**Recommended approach:** Implement features 1-3 first as they primarily leverage existing data with new correlation logic. Features 4-5 require additional data mapping and UI work.
+**推荐方法：** 首先实现功能 1-3，因为它们主要利用具有新关联逻辑的现有数据。功能 4-5 需要额外的数据映射和 UI 工作。
 
 ---
 
-## Technical Notes
+## 技术说明
 
-### IndexedDB Schema Extensions
+### IndexedDB 架构扩展
 
 ```typescript
 interface TemporalBaseline {
@@ -376,7 +376,7 @@ interface GeographicCell {
 }
 ```
 
-### New Signal Types
+### 新信号类型
 
 ```typescript
 type SignalType =
@@ -401,8 +401,8 @@ type SignalType =
 
 ## Conclusion
 
-The most valuable enhancements for a geopolitical analyst focus on **correlation, not accumulation**. The dashboard already aggregates vast amounts of data; the next step is making that data talk to each other.
+对于地缘政治分析师来说，最有价值的增强功能集中在**相关性，而不是积累**。仪表板已经聚合了大量数据；下一步是让数据相互对话。
 
-Priority 1 (Geographic Convergence) alone would significantly elevate the tool's I&W capability by detecting when multiple independent signals point to the same location—the hallmark of significant events.
+仅优先级 1（地理融合）就可以通过检测多个独立信号何时指向同一位置（这是重大事件的标志）来显着提升该工具的 I&W 能力。
 
-All proposed features use **existing data sources** or **free APIs/RSS feeds**, keeping with the project's accessible, open-source philosophy.
+所有提议的功能都使用**现有数据源**或**免费 API/RSS 提要**，与项目的可访问、开源理念保持一致。
